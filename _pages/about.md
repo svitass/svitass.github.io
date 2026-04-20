@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "杨惠"
+title: "YH"
 layout: splash
 author_profile: false
 redirect_from: 
@@ -11,18 +11,17 @@ redirect_from:
   <section class="portfolio-hero">
     <div class="portfolio-hero__copy">
       <p class="portfolio-eyebrow">PERSONAL PORTFOLIO</p>
-      <h1 class="portfolio-title">杨惠</h1>
+      <h1 class="portfolio-title">YH</h1>
       <p class="portfolio-subtitle">3D数字人 / 虚拟人算法工程师，聚焦角色生成与接入、面部语音驱动、动作生成与系统 Demo。</p>
       <p class="portfolio-summary">做过实时对话数字人、中文口型同步优化、图片到 3D 角色流程探索、Text2Motion 去脚滑和视频人物替换为 3D 虚拟角色，兼顾研究原型与工程落地。</p>
       <div class="portfolio-actions">
-        <a class="btn btn--primary" href="/files/YangHui-Resume.pdf">下载简历</a>
         <a class="btn btn--inverse" href="https://github.com/svitass">GitHub</a>
         <a class="btn btn--light-outline" href="#projects">查看项目</a>
       </div>
       <ul class="portfolio-contact">
-        <li><strong>电话</strong><span>15182982150</span></li>
-        <li><strong>邮箱</strong><span>2410383183@qq.com</span></li>
-        <li><strong>教育</strong><span>上海科技大学 计算机科学与技术硕士</span></li>
+        <li><strong>方向</strong><span>3D数字人 / 虚拟人系统</span></li>
+        <li><strong>重点</strong><span>角色生成、驱动与动作</span></li>
+        <li><strong>形式</strong><span>研究原型 + 工程 Demo</span></li>
       </ul>
     </div>
     <div class="portfolio-hero__panel">
@@ -173,7 +172,6 @@ redirect_from:
       </div>
       <div class="info-card info-card--actions">
         <h3>链接</h3>
-        <a class="btn btn--primary btn--block" href="/files/YangHui-Resume.pdf">下载简历</a>
         <a class="btn btn--inverse btn--block" href="https://github.com/svitass">GitHub 主页</a>
         <a class="btn btn--light-outline btn--block" href="/portfolio/">查看全部项目详情</a>
       </div>

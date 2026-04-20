@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "zh-CN"
-title                    : "杨惠 | 3D数字人 / 虚拟人算法工程师"
+title                    : "YH | 3D数字人 / 虚拟人算法工程师"
 title_separator          : "-"
-name                     : &name "杨惠"
+name                     : &name "YH"
 description              : &description "聚焦角色生成与接入、面部语音驱动、动作生成与系统 Demo 的 3D数字人 / 虚拟人算法工程师"
 url                      : https://svitass.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,13 +22,13 @@ repository               : "svitass/svitass.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "杨惠 / Hui Yang"
+  name             : "YH"
   pronouns         : # example: "she/her"  
   bio              : "3D数字人 / 虚拟人算法工程师，关注角色生成、语音与口型驱动、动作生成与系统 Demo。"
   location         : "中国"
   employer         : #"Red Brick University"
-  uri              : "https://svitass.github.io"
-  email            : "2410383183@qq.com"
+  uri              :
+  email            :
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
