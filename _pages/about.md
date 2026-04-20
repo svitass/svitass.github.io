@@ -65,7 +65,7 @@ redirect_from:
       <p>把项目放在同一条技术链上看，会更清楚我覆盖的是“角色、驱动、动作、系统、落地展示”这五个环节。</p>
     </div>
     <div class="overview-card">
-      <img src="/images/projects/digital-human-overview.svg" alt="数字人方向项目概览图">
+      <img src="/images/projects/overview.png" alt="数字人方向项目概览图">
     </div>
   </section>
 
