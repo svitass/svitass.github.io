@@ -69,6 +69,69 @@ redirect_from:
     </div>
   </section>
 
+  <section id="project-line" class="portfolio-section">
+    <div class="section-heading">
+      <p class="section-heading__eyebrow">PROJECT TRACK</p>
+      <h2>项目主线</h2>
+      <p>按技术主线查看项目。点击上方条目，下方会切换到对应方向下的项目与简介，每个项目单独一行。</p>
+    </div>
+    <div class="track-panel" data-track-panel>
+      <div class="track-nav" role="tablist" aria-label="项目主线分类">
+        <div class="track-nav__line">
+          <span class="track-nav__fill" data-track-fill></span>
+        </div>
+        <button class="track-nav__item is-active" type="button" role="tab" aria-selected="true" data-track="character" data-track-index="0">角色生成</button>
+        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="drive" data-track-index="1">驱动与动画</button>
+        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="face" data-track-index="2">面部与语音</button>
+        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="system" data-track-index="3">数字人系统与应用</button>
+        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="data" data-track-index="4">数据</button>
+      </div>
+
+      <div class="track-list" data-track-list>
+        <article class="track-row is-active" data-track-row data-track-group="character">
+          <a class="track-row__title" href="/portfolio/image-to-3d-character-pipeline/">图片到 3D 角色流程探索</a>
+          <p class="track-row__summary">预研 FaceBuilder → Mesh to MetaHuman → Character Assembly，验证单图角色生成结果能否真正接入实时数字人系统。</p>
+        </article>
+
+        <article class="track-row" data-track-row data-track-group="drive">
+          <a class="track-row__title" href="/portfolio/text2motion-footskate-optimization/">Text2Motion 与去脚滑优化</a>
+          <p class="track-row__summary">围绕动作生成做高效采样、脚步接地判断与去脚滑优化，提升动作自然度和演示可用性。</p>
+        </article>
+        <article class="track-row" data-track-row data-track-group="drive">
+          <a class="track-row__title" href="/portfolio/video-to-3d-avatar-replacement/">视频人物替换为 3D 虚拟角色</a>
+          <p class="track-row__summary">用 WHAM、Blender Python、Mixamo 等工具把视频人物动作迁移到 3D 角色上，形成完整的驱动与重定向流程。</p>
+        </article>
+
+        <article class="track-row" data-track-row data-track-group="face">
+          <a class="track-row__title" href="/portfolio/chinese-lipsync-optimization/">中文口型同步优化</a>
+          <p class="track-row__summary">围绕中文口型不同步问题做数据清洗、音画 offset 校正与两阶段微调，提升关键音素和快语速场景表现。</p>
+        </article>
+        <article class="track-row" data-track-row data-track-group="face">
+          <a class="track-row__title" href="/portfolio/realtime-3d-avatar-demo/">3D数字人实时对话 Demo</a>
+          <p class="track-row__summary">打通音频驱动面部动画、口型响应与实时对话表现，让角色具备可展示的面部与语音交互能力。</p>
+        </article>
+
+        <article class="track-row" data-track-row data-track-group="system">
+          <a class="track-row__title" href="/portfolio/realtime-3d-avatar-demo/">3D数字人实时对话 Demo</a>
+          <p class="track-row__summary">基于 Unreal Engine + MetaHuman 打通角色接入、交互状态、对话链路和前端展示，是数字人系统落地的主线项目。</p>
+        </article>
+        <article class="track-row" data-track-row data-track-group="system">
+          <a class="track-row__title" href="/portfolio/video-to-3d-avatar-replacement/">视频人物替换为 3D 虚拟角色</a>
+          <p class="track-row__summary">把 3D 角色真正用到视频生产流程里，属于数字人应用侧的可展示落地方向。</p>
+        </article>
+
+        <article class="track-row" data-track-row data-track-group="data">
+          <a class="track-row__title" href="/portfolio/chinese-lipsync-optimization/">中文口型同步优化</a>
+          <p class="track-row__summary">构建 5.57h 中文口型数据集，完成去磨皮美颜、遮挡样本清洗与音画同步校正，是面部驱动方向的数据基础。</p>
+        </article>
+        <article class="track-row" data-track-row data-track-group="data">
+          <a class="track-row__title" href="/portfolio/text2motion-footskate-optimization/">Text2Motion 与去脚滑优化</a>
+          <p class="track-row__summary">完成 Xsens 到 SMPLH 的批量重定向与 HumanML3D 风格处理，支撑 Music2Dance / Text2Motion 数据集制作。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="projects" class="portfolio-section">
     <div class="section-heading">
       <p class="section-heading__eyebrow">SELECTED PROJECTS</p>
@@ -178,3 +241,43 @@ redirect_from:
     </div>
   </section>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var panel = document.querySelector("[data-track-panel]");
+    if (!panel) return;
+
+    var buttons = Array.prototype.slice.call(panel.querySelectorAll("[data-track]"));
+    var rows = Array.prototype.slice.call(panel.querySelectorAll("[data-track-row]"));
+    var fill = panel.querySelector("[data-track-fill]");
+
+    function setTrack(track) {
+      var activeIndex = 0;
+
+      buttons.forEach(function (button) {
+        var isActive = button.getAttribute("data-track") === track;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-selected", isActive ? "true" : "false");
+        if (isActive) activeIndex = Number(button.getAttribute("data-track-index") || 0);
+      });
+
+      rows.forEach(function (row) {
+        var isMatch = row.getAttribute("data-track-group") === track;
+        row.classList.toggle("is-active", isMatch);
+      });
+
+      if (fill) {
+        var width = buttons.length > 1 ? (activeIndex / (buttons.length - 1)) * 100 : 0;
+        fill.style.width = width + "%";
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        setTrack(button.getAttribute("data-track"));
+      });
+    });
+
+    setTrack("character");
+  });
+</script>
