@@ -1,22 +1,18 @@
-# main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "首页"
+    url: /#top
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "项目"
+    url: /#projects
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
+  - title: "成果"
+    url: /#papers
+
+  - title: "项目详情"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  - title: "简历"
+    url: /files/YangHui-Resume.pdf
+
+  - title: "GitHub"
+    url: https://github.com/svitass

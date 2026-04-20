@@ -7,11 +7,11 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Yang Hui / Personal Homepage"
+locale                   : "zh-CN"
+title                    : "杨惠 | 3D数字人 / 虚拟人算法工程师"
 title_separator          : "-"
-name                     : &name "Yang Hui"
-description              : &description "a RA from CAIR-HKISI-CAS"
+name                     : &name "杨惠"
+description              : &description "聚焦角色生成与接入、面部语音驱动、动作生成与系统 Demo 的 3D数字人 / 虚拟人算法工程师"
 url                      : https://svitass.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "svitass/svitass.github.io"
@@ -22,12 +22,12 @@ repository               : "svitass/svitass.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yang Hui"
+  name             : "杨惠 / Hui Yang"
   pronouns         : # example: "she/her"  
-  bio              : # "Short biography for the left-hand sidebar"
-  location         : #"Shen Zhen, China"
+  bio              : "3D数字人 / 虚拟人算法工程师，关注角色生成、语音与口型驱动、动作生成与系统 Demo。"
+  location         : "中国"
   employer         : #"Red Brick University"
-  uri              : # URL
+  uri              : "https://svitass.github.io"
   email            : "2410383183@qq.com"
 
   # Academic websites
@@ -42,12 +42,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # "academicpages"
+  github           : "svitass"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          :
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -136,7 +136,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  false # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 

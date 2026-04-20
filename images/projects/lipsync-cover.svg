@@ -1,0 +1,19 @@
+﻿<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="40" fill="#FEF7EF"/>
+  <rect x="90" y="90" width="1420" height="720" rx="34" fill="#FFFDFC" stroke="#E5C6AE" stroke-width="4"/>
+  <text x="150" y="190" fill="#CB6A36" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="36" font-weight="700">Chinese Lip Sync Optimization</text>
+  <text x="150" y="244" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="28">Data cleaning, audio-visual alignment and staged fine-tuning</text>
+  <rect x="150" y="320" width="560" height="360" rx="28" fill="#FFF2EA" stroke="#E5C6AE" stroke-width="3"/>
+  <rect x="890" y="320" width="560" height="360" rx="28" fill="#EAF7F8" stroke="#8BC0C7" stroke-width="3"/>
+  <text x="430" y="394" text-anchor="middle" fill="#A24C23" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Before</text>
+  <text x="1170" y="394" text-anchor="middle" fill="#145B66" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">After</text>
+  <text x="430" y="470" text-anchor="middle" fill="#A24C23" font-family="Space Grotesk, sans-serif" font-size="70" font-weight="700">1.95f</text>
+  <text x="430" y="520" text-anchor="middle" fill="#7C4A33" font-family="Noto Sans SC, sans-serif" font-size="28">平均绝对偏移</text>
+  <text x="1170" y="470" text-anchor="middle" fill="#145B66" font-family="Space Grotesk, sans-serif" font-size="70" font-weight="700">0.62f</text>
+  <text x="1170" y="520" text-anchor="middle" fill="#315F66" font-family="Noto Sans SC, sans-serif" font-size="28">平均绝对偏移</text>
+  <text x="430" y="612" text-anchor="middle" fill="#A24C23" font-family="Space Grotesk, sans-serif" font-size="58" font-weight="700">15.76%</text>
+  <text x="430" y="654" text-anchor="middle" fill="#7C4A33" font-family="Noto Sans SC, sans-serif" font-size="26">完全对齐占比</text>
+  <text x="1170" y="612" text-anchor="middle" fill="#145B66" font-family="Space Grotesk, sans-serif" font-size="58" font-weight="700">40.08%</text>
+  <text x="1170" y="654" text-anchor="middle" fill="#315F66" font-family="Noto Sans SC, sans-serif" font-size="26">完全对齐占比</text>
+  <text x="150" y="760" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="26">5.57h dataset · 234 speakers · subject-independent split</text>
+</svg>

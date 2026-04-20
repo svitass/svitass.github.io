@@ -1,0 +1,21 @@
+﻿<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="40" fill="#F4F0E8"/>
+  <rect x="90" y="90" width="1420" height="720" rx="34" fill="#FFFCF7" stroke="#D7C9AF" stroke-width="4"/>
+  <text x="140" y="182" fill="#17324B" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="38" font-weight="700">Text2Motion and Foot Skate Reduction</text>
+  <text x="140" y="236" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="28">Faster diffusion sampling and better contact-aware motion quality</text>
+  <rect x="150" y="320" width="360" height="330" rx="28" fill="#FFF2EA" stroke="#E3B18C" stroke-width="3"/>
+  <rect x="620" y="320" width="360" height="330" rx="28" fill="#EAF7F8" stroke="#8BC0C7" stroke-width="3"/>
+  <rect x="1090" y="320" width="360" height="330" rx="28" fill="#EAF1FF" stroke="#A6BDD8" stroke-width="3"/>
+  <text x="330" y="400" text-anchor="middle" fill="#A24C23" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Text Prompt</text>
+  <text x="330" y="464" text-anchor="middle" fill="#7C4A33" font-family="Noto Sans SC, sans-serif" font-size="26">cache text features</text>
+  <text x="330" y="504" text-anchor="middle" fill="#7C4A33" font-family="Noto Sans SC, sans-serif" font-size="26">half precision</text>
+  <text x="800" y="400" text-anchor="middle" fill="#145B66" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Diffusion Sampler</text>
+  <text x="800" y="464" text-anchor="middle" fill="#315F66" font-family="Noto Sans SC, sans-serif" font-size="26">SDE DPM-Solver++ 2M</text>
+  <text x="800" y="504" text-anchor="middle" fill="#315F66" font-family="Noto Sans SC, sans-serif" font-size="26">efficient inference</text>
+  <text x="1270" y="400" text-anchor="middle" fill="#29517A" font-family="Space Grotesk, sans-serif" font-size="34" font-weight="700">Motion Quality</text>
+  <text x="1270" y="464" text-anchor="middle" fill="#3F6489" font-family="Noto Sans SC, sans-serif" font-size="26">foot contact check</text>
+  <text x="1270" y="504" text-anchor="middle" fill="#3F6489" font-family="Noto Sans SC, sans-serif" font-size="26">less foot skate</text>
+  <line x1="510" y1="485" x2="620" y2="485" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <line x1="980" y1="485" x2="1090" y2="485" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <text x="150" y="742" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="26">Related outcome: ACM MM 2024 Oral · StableMoFusion</text>
+</svg>
