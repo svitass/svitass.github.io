@@ -10,19 +10,43 @@ redirect_from:
 <div id="top" class="portfolio-home portfolio-home--resume">
   <section class="resume-hero">
     <div class="resume-hero__copy">
-      <div class="resume-hero__identity">
-        <h1 class="resume-hero__name">YH</h1>
-        <div class="resume-hero__links" aria-label="联系方式">
-          <a class="resume-hero__icon-link" href="https://github.com/svitass" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2.17c-3.2.69-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.29-5.26-5.75 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.19a11.07 11.07 0 0 1 5.8 0c2.22-1.5 3.18-1.19 3.18-1.19.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.11 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.06.79 2.14v3.18c0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z"/>
-            </svg>
-          </a>
-          <a class="resume-hero__icon-link" href="mailto:2410383183@qq.com" aria-label="邮箱">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3 5.5h18a1.5 1.5 0 0 1 1.5 1.5v10A1.5 1.5 0 0 1 21 18.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm0 1.5v.26l9 6.18 9-6.18V7H3Zm18 10V9.08l-8.57 5.89a.75.75 0 0 1-.86 0L3 9.08V17h18Z"/>
-            </svg>
-          </a>
+      <div class="resume-hero__identity-card">
+        <div class="resume-hero__avatar-frame">
+          <div class="resume-hero__avatar">
+            <img src="/images/profile/yh-portrait.png" alt="YH 头像">
+          </div>
+        </div>
+        <div class="resume-hero__identity">
+          <p class="portfolio-eyebrow">DIGITAL HUMAN ENGINEER</p>
+          <h1 class="resume-hero__name">YH</h1>
+          <p class="resume-hero__role">3D 数字人 / 虚拟人算法工程师</p>
+          <p class="resume-hero__summary">聚焦角色生成接入、中文口型与语音驱动、动作生成与去脚滑优化，以及可对话数字人系统 Demo 的落地验证。</p>
+          <ul class="resume-hero__facts">
+            <li>
+              <strong>产出</strong>
+              4 篇论文 / 3 项专利
+            </li>
+            <li>
+              <strong>方向</strong>
+              角色生成、动作驱动、面部语音、系统 Demo
+            </li>
+            <li>
+              <strong>工具链</strong>
+              PyTorch / Unreal Engine / Blender
+            </li>
+          </ul>
+          <div class="resume-hero__links" aria-label="联系方式">
+            <a class="resume-hero__icon-link" href="https://github.com/svitass" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2.17c-3.2.69-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.29-5.26-5.75 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.19a11.07 11.07 0 0 1 5.8 0c2.22-1.5 3.18-1.19 3.18-1.19.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.11 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.06.79 2.14v3.18c0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+            <a class="resume-hero__icon-link" href="mailto:2410383183@qq.com" aria-label="邮箱">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5.5h18a1.5 1.5 0 0 1 1.5 1.5v10A1.5 1.5 0 0 1 21 18.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm0 1.5v.26l9 6.18 9-6.18V7H3Zm18 10V9.08l-8.57 5.89a.75.75 0 0 1-.86 0L3 9.08V17h18Z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -117,14 +141,43 @@ redirect_from:
       <h2>论文 / 专利</h2>
       <p>保留最直接的结果索引，用于快速补充简历中的代表性产出。</p>
     </div>
-    <div class="resume-proof resume-proof--single">
+    <div class="resume-proof resume-proof--full">
       <article class="resume-proof__card">
-        <h3>论文 / 专利</h3>
-        <ul>
-          <li>StableMoFusion: 动作生成与去脚滑优化，ACM MM 2024 Oral</li>
-          <li>HardMo++: 大规模 Hardcase 动捕数据集构建</li>
-          <li>OOD-HOI / DigitSurge: 交互生成与医疗场景系统探索</li>
-          <li>虚拟人驱动、视频人物替换、动作序列生成相关专利</li>
+        <h3>论文</h3>
+        <ul class="resume-proof__list">
+          <li>
+            <strong>StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework</strong>
+            <p>第二作者，ACM MM 2024 Oral</p>
+          </li>
+          <li>
+            <strong>HardMo++: A Large-Scale Hardcase Dataset for Motion Capture</strong>
+            <p>参与动作重建与大规模 Hardcase 动捕数据集工作。</p>
+          </li>
+          <li>
+            <strong>OOD-HOI: Text-Driven 3D Whole-Body Human-Object Interaction Generation Beyond Training Domains</strong>
+            <p>参与域外人-物交互生成研究。</p>
+          </li>
+          <li>
+            <strong>DigitSurge: A Digital Operating Room for Surgery Simulation</strong>
+            <p>参与数字化手术室模拟系统研究。</p>
+          </li>
+        </ul>
+      </article>
+      <article class="resume-proof__card">
+        <h3>专利</h3>
+        <ul class="resume-proof__list">
+          <li>
+            <strong>一种虚拟人驱动方法，装置，设备及可读存储介质</strong>
+            <p>专利号：202310098261.0</p>
+          </li>
+          <li>
+            <strong>一种将视频中的人物替换为3D虚拟角色的方法</strong>
+            <p>专利号：CN202411064734.6</p>
+          </li>
+          <li>
+            <strong>动作序列生成方法、装置、电子设备及存储介质</strong>
+            <p>专利号：ZL202510942578.7</p>
+          </li>
         </ul>
       </article>
     </div>
