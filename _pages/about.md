@@ -58,33 +58,42 @@ redirect_from:
     </div>
 
     <div class="fishbone-stage" data-fishbone>
-      <div class="fishbone-stage__rail"></div>
       <div class="fishbone-stage__badge">数字人经历链路</div>
+      <div class="fishbone-track">
+        <div class="fishbone-track__notes fishbone-track__notes--top" aria-hidden="true">
+          <span>图片到角色 / 可编辑接入</span>
+          <span>口型同步 / 实时对话</span>
+          <span>清洗 / 对齐 / 多源整合</span>
+        </div>
 
-      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="character" data-track-index="0">
-        <span class="fishbone-node__title">角色生成</span>
-        <span class="fishbone-node__meta">图片到角色 / 可编辑接入</span>
-      </button>
+        <div class="fishbone-track__main" role="tablist" aria-label="数字人经历主线">
+          <button class="fishbone-step" type="button" data-track-key="character" data-track-index="0">
+            <span class="fishbone-step__index">1</span>
+            <span class="fishbone-step__label">角色生成</span>
+          </button>
+          <button class="fishbone-step" type="button" data-track-key="drive" data-track-index="1">
+            <span class="fishbone-step__index">2</span>
+            <span class="fishbone-step__label">驱动与动画</span>
+          </button>
+          <button class="fishbone-step" type="button" data-track-key="face" data-track-index="2">
+            <span class="fishbone-step__index">3</span>
+            <span class="fishbone-step__label">面部与语音</span>
+          </button>
+          <button class="fishbone-step is-active" type="button" data-track-key="system" data-track-index="3">
+            <span class="fishbone-step__index">4</span>
+            <span class="fishbone-step__label">数字人系统与应用</span>
+          </button>
+          <button class="fishbone-step" type="button" data-track-key="data" data-track-index="4">
+            <span class="fishbone-step__index">5</span>
+            <span class="fishbone-step__label">数据</span>
+          </button>
+        </div>
 
-      <button class="fishbone-node fishbone-node--bottom" type="button" data-track-key="drive" data-track-index="1">
-        <span class="fishbone-node__title">驱动与动画</span>
-        <span class="fishbone-node__meta">动作处理 / 重定向 / 生成</span>
-      </button>
-
-      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="face" data-track-index="2">
-        <span class="fishbone-node__title">面部与语音</span>
-        <span class="fishbone-node__meta">口型同步 / 实时对话</span>
-      </button>
-
-      <button class="fishbone-node fishbone-node--bottom is-active" type="button" data-track-key="system" data-track-index="3">
-        <span class="fishbone-node__title">数字人系统与应用</span>
-        <span class="fishbone-node__meta">Demo / 交互 / 场景化落地</span>
-      </button>
-
-      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="data" data-track-index="4">
-        <span class="fishbone-node__title">数据</span>
-        <span class="fishbone-node__meta">清洗 / 对齐 / 多源整合</span>
-      </button>
+        <div class="fishbone-track__notes fishbone-track__notes--bottom" aria-hidden="true">
+          <span>动作处理 / 重定向 / 生成</span>
+          <span>Demo / 交互 / 场景化落地</span>
+        </div>
+      </div>
     </div>
 
     <div class="experience-showcase">

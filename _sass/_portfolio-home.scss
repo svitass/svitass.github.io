@@ -10,6 +10,10 @@
   --portfolio-teal: #2f7f8c;
   --portfolio-rust: #cb6a36;
   --portfolio-deep: #17324b;
+  --portfolio-stone-1: #f0ece4;
+  --portfolio-stone-2: #e3ddd2;
+  --portfolio-stone-3: #bdb3a3;
+  --portfolio-stone-4: #7f7567;
 }
 
 body {
@@ -403,156 +407,141 @@ body {
 }
 
 .fishbone-stage {
-  position: relative;
   display: grid;
-  gap: 1rem;
-  padding: 2rem 1.5rem 2.2rem;
-  overflow: hidden;
-}
-
-.fishbone-stage::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  padding: 2rem 1.5rem;
   background:
-    radial-gradient(circle at 16% 18%, rgba(203, 106, 54, 0.12), transparent 20%),
-    radial-gradient(circle at 84% 24%, rgba(47, 127, 140, 0.12), transparent 24%);
-  pointer-events: none;
+    radial-gradient(circle at 12% 40%, rgba(203, 106, 54, 0.08), transparent 18%),
+    radial-gradient(circle at 88% 38%, rgba(47, 127, 140, 0.08), transparent 22%),
+    rgba(255, 255, 255, 0.84);
 }
 
 .fishbone-stage__badge {
-  position: absolute;
-  left: 1.35rem;
-  top: 50%;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 108px;
-  min-height: 264px;
+  min-height: 148px;
   padding: 1rem;
   border-radius: 24px;
-  background: rgba(22, 31, 43, 0.66);
+  background: rgba(59, 57, 55, 0.78);
   color: #fff;
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.38;
   text-align: center;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: translateY(-50%);
 }
 
-.fishbone-stage__rail {
-  position: absolute;
-  top: 50%;
-  left: 170px;
-  right: 2rem;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(46, 104, 182, 0.88), rgba(46, 104, 182, 0.52));
+.fishbone-track {
+  display: grid;
+  gap: 1rem;
 }
 
-.fishbone-node {
+.fishbone-track__notes {
+  display: grid;
+  gap: 1rem;
+}
+
+.fishbone-track__notes--top {
+  grid-template-columns: 1.25fr 1.1fr 0.95fr;
+}
+
+.fishbone-track__notes--bottom {
+  grid-template-columns: 1.2fr 1fr;
+  justify-content: center;
+  padding-left: 14%;
+  padding-right: 10%;
+}
+
+.fishbone-track__notes span {
   position: relative;
-  z-index: 1;
-  width: min(100%, 220px);
-  padding: 0.85rem 1rem;
-  border: 1px solid rgba(46, 104, 182, 0.24);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(127, 117, 103, 0.16);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--portfolio-ink);
-  text-align: left;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-}
-
-.fishbone-node::before {
-  content: "";
-  position: absolute;
-  left: 28px;
-  width: 2px;
-  background: rgba(46, 104, 182, 0.72);
-}
-
-.fishbone-node::after {
-  content: "";
-  position: absolute;
-  left: 21px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 3px solid rgba(46, 104, 182, 0.28);
-  background: #fff;
-}
-
-.fishbone-node--top {
-  margin-left: calc(170px + var(--offset, 0px));
-  margin-bottom: 158px;
-}
-
-.fishbone-node--top::before {
-  bottom: -90px;
-  height: 90px;
-}
-
-.fishbone-node--top::after {
-  bottom: -102px;
-}
-
-.fishbone-node--bottom {
-  margin-left: calc(170px + var(--offset, 0px));
-  margin-top: 156px;
-}
-
-.fishbone-node--bottom::before {
-  top: -88px;
-  height: 88px;
-}
-
-.fishbone-node--bottom::after {
-  top: -100px;
-}
-
-.fishbone-node[data-track-index="0"] { --offset: 36px; }
-.fishbone-node[data-track-index="1"] { --offset: 170px; }
-.fishbone-node[data-track-index="2"] { --offset: 348px; }
-.fishbone-node[data-track-index="3"] { --offset: 548px; }
-.fishbone-node[data-track-index="4"] { --offset: 770px; }
-
-.fishbone-node:hover {
-  transform: translateY(-2px);
-  border-color: rgba(46, 104, 182, 0.48);
-}
-
-.fishbone-node.is-active {
-  border-color: rgba(46, 104, 182, 0.82);
-  background: linear-gradient(145deg, rgba(46, 104, 182, 0.98), rgba(71, 151, 201, 0.92));
-  color: #fff;
-  box-shadow: 0 18px 40px rgba(46, 104, 182, 0.24);
-}
-
-.fishbone-node.is-active::after {
-  border-color: rgba(46, 104, 182, 0.92);
-  background: rgba(46, 104, 182, 0.95);
-  box-shadow: 0 0 0 6px rgba(46, 104, 182, 0.16);
-}
-
-.fishbone-node__title {
-  display: block;
-  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-  font-size: 1.08rem;
-  font-weight: 700;
-}
-
-.fishbone-node__meta {
-  display: block;
-  margin-top: 0.38rem;
-  color: inherit;
-  opacity: 0.82;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--portfolio-muted);
   font-size: 0.92rem;
   line-height: 1.55;
+  text-align: center;
+}
+
+.fishbone-track__main {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.fishbone-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 82px;
+  padding: 1rem 1.2rem;
+  border: 0;
+  background: var(--portfolio-stone-1);
+  color: #7f7669;
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.22s ease, color 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease;
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 18px 50%);
+}
+
+.fishbone-step:first-child {
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 0 50%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.fishbone-step:last-child {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 18px 50%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.fishbone-step + .fishbone-step {
+  margin-left: -16px;
+}
+
+.fishbone-step:hover {
+  background: var(--portfolio-stone-2);
+  color: #5e584f;
+}
+
+.fishbone-step.is-active {
+  z-index: 2;
+  background: linear-gradient(180deg, #9b9184 0%, #83796d 100%);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(99, 91, 80, 0.18);
+}
+
+.fishbone-step__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  font-size: 0.88rem;
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+
+.fishbone-step__label {
+  display: block;
+  line-height: 1.4;
 }
 
 .experience-showcase {
@@ -1073,33 +1062,39 @@ body {
   }
 
   .fishbone-stage {
-    padding-top: 1.2rem;
+    grid-template-columns: 1fr;
+    padding-top: 1.25rem;
   }
 
   .fishbone-stage__badge {
-    position: static;
-    width: 100%;
     min-height: 0;
     padding: 0.9rem 1rem;
     font-size: 1rem;
-    writing-mode: horizontal-tb;
-    transform: none;
   }
 
-  .fishbone-stage__rail {
-    display: none;
+  .fishbone-track__notes {
+    grid-template-columns: 1fr;
   }
 
-  .fishbone-node,
-  .fishbone-node--top,
-  .fishbone-node--bottom {
-    width: 100%;
-    margin: 0;
+  .fishbone-track__notes--bottom {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .fishbone-node::before,
-  .fishbone-node::after {
-    display: none;
+  .fishbone-track__main {
+    grid-template-columns: 1fr;
+  }
+
+  .fishbone-step,
+  .fishbone-step:first-child,
+  .fishbone-step:last-child {
+    clip-path: none;
+    border-radius: 18px;
+  }
+
+  .fishbone-step + .fishbone-step {
+    margin-left: 0;
+    margin-top: 0.65rem;
   }
 
   .experience-showcase__header {
@@ -1122,34 +1117,28 @@ body {
 
 @include breakpoint(max-width $large) {
   .fishbone-stage {
+    grid-template-columns: 1fr;
     padding-top: 1.4rem;
     padding-left: 1.1rem;
     padding-right: 1.1rem;
   }
 
   .fishbone-stage__badge {
-    position: static;
-    width: 100%;
     min-height: 0;
     padding: 0.85rem 1rem;
     font-size: 1rem;
-    writing-mode: horizontal-tb;
-    transform: none;
+    max-width: 220px;
   }
 
-  .fishbone-stage__rail {
-    display: none;
+  .fishbone-track__notes--bottom {
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
-  .fishbone-node,
-  .fishbone-node--top,
-  .fishbone-node--bottom {
-    width: 100%;
-    margin: 0;
-  }
-
-  .fishbone-node::before,
-  .fishbone-node::after {
-    display: none;
+  .fishbone-step {
+    font-size: 0.92rem;
+    min-height: 78px;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
   }
 }
