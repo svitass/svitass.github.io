@@ -73,31 +73,31 @@ redirect_from:
       <div class="fishbone-stage__badge">数字人经历链路</div>
       <div class="fishbone-track">
         <div class="fishbone-track__notes fishbone-track__notes--top" aria-hidden="true">
-          <span>图片到角色 / 可编辑接入</span>
-          <span>口型同步 / 实时对话</span>
           <span>清洗 / 对齐 / 多源整合</span>
+          <span>口型同步 / 实时对话</span>
+          <span>图片到角色 / 可编辑接入</span>
         </div>
 
         <div class="fishbone-track__main" role="tablist" aria-label="数字人经历主线">
-          <button class="fishbone-step" type="button" data-track-key="character" data-track-index="0">
+          <button class="fishbone-step" type="button" data-track-key="data" data-track-index="0">
             <span class="fishbone-step__index">1</span>
-            <span class="fishbone-step__label">角色生成</span>
+            <span class="fishbone-step__label">数据</span>
           </button>
           <button class="fishbone-step" type="button" data-track-key="drive" data-track-index="1">
             <span class="fishbone-step__index">2</span>
-            <span class="fishbone-step__label">驱动与动画</span>
+            <span class="fishbone-step__label">骨骼动画</span>
           </button>
           <button class="fishbone-step" type="button" data-track-key="face" data-track-index="2">
             <span class="fishbone-step__index">3</span>
-            <span class="fishbone-step__label">面部与语音</span>
+            <span class="fishbone-step__label">面部</span>
           </button>
           <button class="fishbone-step is-active" type="button" data-track-key="system" data-track-index="3">
             <span class="fishbone-step__index">4</span>
             <span class="fishbone-step__label">数字人系统与应用</span>
           </button>
-          <button class="fishbone-step" type="button" data-track-key="data" data-track-index="4">
+          <button class="fishbone-step" type="button" data-track-key="character" data-track-index="4">
             <span class="fishbone-step__index">5</span>
-            <span class="fishbone-step__label">数据</span>
+            <span class="fishbone-step__label">角色生成</span>
           </button>
         </div>
 
@@ -205,7 +205,7 @@ redirect_from:
         ]
       },
       drive: {
-        title: "驱动与动画",
+        title: "骨骼动画",
         description: "这一段主要解决动作怎么来、怎么处理、怎么重定向、怎么生成得更自然，覆盖了数据处理、动作生成和角色驱动三层工作。",
         projects: [
           {
@@ -245,7 +245,7 @@ redirect_from:
         ]
       },
       face: {
-        title: "面部与语音",
+        title: "面部",
         description: "这一段关注实时对话数字人的表情、口型和语音协同问题，目标是让角色在中文场景和实时交互场景下更像一个真正可交流的数字人。",
         projects: [
           {
