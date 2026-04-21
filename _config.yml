@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "zh-CN"
-title                    : "YH | 3D数字人 / 虚拟人算法工程师"
+title                    : "YH"
 title_separator          : "-"
 name                     : &name "YH"
 description              : &description "聚焦角色生成与接入、面部语音驱动、动作生成与系统 Demo 的 3D数字人 / 虚拟人算法工程师"
@@ -144,6 +144,7 @@ analytics:
 include:
   - .htaccess
   - _pages
+  - _portfolio
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
