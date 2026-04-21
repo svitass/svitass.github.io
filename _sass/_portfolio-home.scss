@@ -70,6 +70,10 @@ body {
 }
 
 .resume-hero__copy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 320px;
   padding: 2.35rem;
 }
 
@@ -1059,6 +1063,10 @@ body {
 
   .resume-hero__name {
     font-size: 3.6rem;
+  }
+
+  .resume-hero__copy {
+    min-height: 0;
   }
 
   .fishbone-stage {

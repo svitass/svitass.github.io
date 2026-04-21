@@ -10,19 +10,7 @@ redirect_from:
 <div id="top" class="portfolio-home portfolio-home--resume">
   <section class="resume-hero">
     <div class="resume-hero__copy">
-      <p class="portfolio-eyebrow">RESUME COMPANION</p>
       <h1 class="resume-hero__name">YH</h1>
-      <p class="resume-hero__role">数字人方向经历补充页</p>
-      <p class="resume-hero__summary">围绕角色生成、驱动与动画、面部与语音、数字人系统与应用、数据五条主线，我把算法预研、数据处理、系统 Demo 和应用验证串成一条可展示的数字人经历链路。</p>
-      <div class="resume-hero__actions">
-        <a class="btn btn--inverse" href="#experience-map">查看鱼骨主线</a>
-        <a class="btn btn--light-outline" href="/portfolio/">项目详情页</a>
-      </div>
-      <ul class="resume-hero__facts">
-        <li><strong>链路</strong><span>角色 → 驱动 → 面部 → 系统 → 数据</span></li>
-        <li><strong>风格</strong><span>研究原型与工程验证并行</span></li>
-        <li><strong>关键词</strong><span>MetaHuman / MuseTalk / Diffusion / Blender / Unreal</span></li>
-      </ul>
     </div>
 
     <aside class="resume-hero__visual">
