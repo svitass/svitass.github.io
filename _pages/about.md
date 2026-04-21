@@ -17,10 +17,7 @@ redirect_from:
           </div>
         </div>
         <div class="resume-hero__identity">
-          <p class="portfolio-eyebrow">DIGITAL HUMAN ENGINEER</p>
           <h1 class="resume-hero__name">YH</h1>
-          <p class="resume-hero__role">3D 数字人 / 虚拟人算法工程师</p>
-          <p class="resume-hero__summary">聚焦角色生成接入、中文口型与语音驱动、动作生成与去脚滑优化，以及可对话数字人系统 Demo 的落地验证。</p>
           <div class="resume-hero__links" aria-label="联系方式">
             <a class="resume-hero__icon-link" href="https://github.com/svitass" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <svg viewBox="0 0 24 24" aria-hidden="true">
