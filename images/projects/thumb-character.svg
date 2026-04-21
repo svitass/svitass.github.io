@@ -1,0 +1,11 @@
+﻿<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#F5EDE1"/>
+  <rect x="44" y="40" width="552" height="340" rx="24" fill="#FFF9F0" stroke="#D8C3A1" stroke-width="4"/>
+  <circle cx="148" cy="210" r="52" fill="#CB6A36" fill-opacity="0.14"/>
+  <path d="M134 220C150 188 184 170 226 170H324C356 170 380 144 380 112V96" stroke="#CB6A36" stroke-width="10" stroke-linecap="round"/>
+  <path d="M134 220C150 252 184 270 226 270H418" stroke="#2F7F8C" stroke-width="10" stroke-linecap="round"/>
+  <rect x="372" y="78" width="120" height="40" rx="20" fill="#17324B"/>
+  <rect x="428" y="250" width="124" height="42" rx="21" fill="#2F7F8C"/>
+  <text x="320" y="352" text-anchor="middle" fill="#17324B" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="42" font-weight="700">角色生成</text>
+  <text x="320" y="388" text-anchor="middle" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="22">从图片输入到可驱动角色接入</text>
+</svg>

@@ -3,222 +3,123 @@ permalink: /
 title: "YH"
 layout: splash
 author_profile: false
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-<div id="top" class="portfolio-home">
-  <section class="portfolio-hero">
-    <div class="portfolio-hero__copy">
-      <p class="portfolio-eyebrow">PERSONAL PORTFOLIO</p>
-      <h1 class="portfolio-title">YH</h1>
-      <p class="portfolio-subtitle">3D数字人 / 虚拟人算法工程师，聚焦角色生成与接入、面部语音驱动、动作生成与系统 Demo。</p>
-      <p class="portfolio-summary">做过实时对话数字人、中文口型同步优化、图片到 3D 角色流程探索、Text2Motion 去脚滑和视频人物替换为 3D 虚拟角色，兼顾研究原型与工程落地。</p>
-      <div class="portfolio-actions">
-        <a class="btn btn--inverse" href="https://github.com/svitass">GitHub</a>
-        <a class="btn btn--light-outline" href="#projects">查看项目</a>
+<div id="top" class="portfolio-home portfolio-home--resume">
+  <section class="resume-hero">
+    <div class="resume-hero__copy">
+      <p class="portfolio-eyebrow">RESUME COMPANION</p>
+      <h1 class="resume-hero__name">YH</h1>
+      <p class="resume-hero__role">数字人方向经历补充页</p>
+      <p class="resume-hero__summary">围绕角色生成、驱动与动画、面部与语音、数字人系统与应用、数据五条主线，我把算法预研、数据处理、系统 Demo 和应用验证串成一条可展示的数字人经历链路。</p>
+      <div class="resume-hero__actions">
+        <a class="btn btn--inverse" href="#experience-map">查看鱼骨主线</a>
+        <a class="btn btn--light-outline" href="/portfolio/">项目详情页</a>
       </div>
-      <ul class="portfolio-contact">
-        <li><strong>方向</strong><span>3D数字人 / 虚拟人系统</span></li>
-        <li><strong>重点</strong><span>角色生成、驱动与动作</span></li>
-        <li><strong>形式</strong><span>研究原型 + 工程 Demo</span></li>
+      <ul class="resume-hero__facts">
+        <li><strong>链路</strong><span>角色 → 驱动 → 面部 → 系统 → 数据</span></li>
+        <li><strong>风格</strong><span>研究原型与工程验证并行</span></li>
+        <li><strong>关键词</strong><span>MetaHuman / MuseTalk / Diffusion / Blender / Unreal</span></li>
       </ul>
     </div>
-    <div class="portfolio-hero__panel">
-      <div class="metric-card">
-        <span class="metric-card__label">中文口型数据集</span>
-        <strong>5.57h</strong>
-        <span>234 speakers / subject-independent split</span>
+
+    <aside class="resume-hero__visual">
+      <div class="resume-hero__map-card">
+        <div class="resume-hero__map-head">
+          <span>Overview Reference</span>
+          <strong>数字人经历总览</strong>
+        </div>
+        <img src="/images/projects/overview.png" alt="数字人方向经历总览图">
       </div>
-      <div class="metric-grid">
-        <div class="metric-grid__item">
-          <span>平均绝对偏移</span>
+      <div class="resume-hero__signal">
+        <div class="resume-hero__signal-item">
+          <span>中文口型优化</span>
           <strong>1.95 帧 → 0.62 帧</strong>
         </div>
-        <div class="metric-grid__item">
-          <span>完全对齐占比</span>
-          <strong>15.76% → 40.08%</strong>
-        </div>
-        <div class="metric-grid__item">
-          <span>论文成果</span>
+        <div class="resume-hero__signal-item">
+          <span>动作生成成果</span>
           <strong>ACM MM 2024 Oral</strong>
         </div>
-        <div class="metric-grid__item">
-          <span>专利</span>
-          <strong>3 项</strong>
+        <div class="resume-hero__signal-item">
+          <span>项目产出</span>
+          <strong>论文 / 专利 / Demo</strong>
         </div>
       </div>
-      <div class="focus-list">
-        <span>角色生成与接入</span>
-        <span>面部语音驱动</span>
-        <span>动作生成与去脚滑</span>
-        <span>视频角色替换</span>
-        <span>Unreal Engine + Blender + PyTorch</span>
+    </aside>
+  </section>
+
+  <section id="experience-map" class="portfolio-section">
+    <div class="section-heading section-heading--wide">
+      <p class="section-heading__eyebrow">EXPERIENCE MAP</p>
+      <h2>数字人经历鱼骨主线</h2>
+      <p>主线不是简单分类，而是我在数字人方向上逐步搭起来的一条能力链。点击鱼骨上的节点，下方会切换到该方向下的代表项目，一行一个项目，展示项目内容和我的参与度。</p>
+    </div>
+
+    <div class="fishbone-stage" data-fishbone>
+      <div class="fishbone-stage__rail"></div>
+      <div class="fishbone-stage__badge">数字人经历链路</div>
+
+      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="character" data-track-index="0">
+        <span class="fishbone-node__title">角色生成</span>
+        <span class="fishbone-node__meta">图片到角色 / 可编辑接入</span>
+      </button>
+
+      <button class="fishbone-node fishbone-node--bottom" type="button" data-track-key="drive" data-track-index="1">
+        <span class="fishbone-node__title">驱动与动画</span>
+        <span class="fishbone-node__meta">动作处理 / 重定向 / 生成</span>
+      </button>
+
+      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="face" data-track-index="2">
+        <span class="fishbone-node__title">面部与语音</span>
+        <span class="fishbone-node__meta">口型同步 / 实时对话</span>
+      </button>
+
+      <button class="fishbone-node fishbone-node--bottom is-active" type="button" data-track-key="system" data-track-index="3">
+        <span class="fishbone-node__title">数字人系统与应用</span>
+        <span class="fishbone-node__meta">Demo / 交互 / 场景化落地</span>
+      </button>
+
+      <button class="fishbone-node fishbone-node--top" type="button" data-track-key="data" data-track-index="4">
+        <span class="fishbone-node__title">数据</span>
+        <span class="fishbone-node__meta">清洗 / 对齐 / 多源整合</span>
+      </button>
+    </div>
+
+    <div class="experience-showcase">
+      <div class="experience-showcase__header">
+        <div>
+          <p class="portfolio-eyebrow">ACTIVE TRACK</p>
+          <h3 data-track-title>数字人系统与应用</h3>
+          <p data-track-description>把角色、驱动、交互和场景化展示真正串起来，让数字人能力不只停留在单点算法，而能进入可演示的系统形态。</p>
+        </div>
+        <a class="experience-showcase__link" href="/portfolio/">查看独立项目详情页</a>
       </div>
+      <div class="experience-showcase__list" data-track-projects></div>
     </div>
   </section>
 
-  <section id="overview" class="portfolio-section">
-    <div class="section-heading">
-      <p class="section-heading__eyebrow">OVERVIEW</p>
-      <h2>数字人方向项目概览</h2>
-      <p>把项目放在同一条技术链上看，会更清楚我覆盖的是“角色、驱动、动作、系统、落地展示”这五个环节。</p>
+  <section class="portfolio-section">
+    <div class="section-heading section-heading--wide">
+      <p class="section-heading__eyebrow">OUTPUTS</p>
+      <h2>成果与方法</h2>
+      <p>这页的重点是链路展示，但也保留一层结果索引，方便快速判断我在数字人方向上的产出类型和常用技术组合。</p>
     </div>
-    <div class="overview-card">
-      <img src="/images/projects/overview.png" alt="数字人方向项目概览图">
-    </div>
-  </section>
-
-  <section id="project-line" class="portfolio-section">
-    <div class="section-heading">
-      <p class="section-heading__eyebrow">PROJECT TRACK</p>
-      <h2>项目主线</h2>
-      <p>按技术主线查看项目。点击上方条目，下方会切换到对应方向下的项目与简介，每个项目单独一行。</p>
-    </div>
-    <div class="track-panel" data-track-panel>
-      <div class="track-nav" role="tablist" aria-label="项目主线分类">
-        <div class="track-nav__line">
-          <span class="track-nav__fill" data-track-fill></span>
-        </div>
-        <button class="track-nav__item is-active" type="button" role="tab" aria-selected="true" data-track="character" data-track-index="0">角色生成</button>
-        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="drive" data-track-index="1">驱动与动画</button>
-        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="face" data-track-index="2">面部与语音</button>
-        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="system" data-track-index="3">数字人系统与应用</button>
-        <button class="track-nav__item" type="button" role="tab" aria-selected="false" data-track="data" data-track-index="4">数据</button>
-      </div>
-
-      <div class="track-list" data-track-list>
-        <article class="track-row is-active" data-track-row data-track-group="character">
-          <a class="track-row__title" href="/portfolio/image-to-3d-character-pipeline/">图片到 3D 角色流程探索</a>
-          <p class="track-row__summary">预研 FaceBuilder → Mesh to MetaHuman → Character Assembly，验证单图角色生成结果能否真正接入实时数字人系统。</p>
-        </article>
-
-        <article class="track-row" data-track-row data-track-group="drive">
-          <a class="track-row__title" href="/portfolio/text2motion-footskate-optimization/">Text2Motion 与去脚滑优化</a>
-          <p class="track-row__summary">围绕动作生成做高效采样、脚步接地判断与去脚滑优化，提升动作自然度和演示可用性。</p>
-        </article>
-        <article class="track-row" data-track-row data-track-group="drive">
-          <a class="track-row__title" href="/portfolio/video-to-3d-avatar-replacement/">视频人物替换为 3D 虚拟角色</a>
-          <p class="track-row__summary">用 WHAM、Blender Python、Mixamo 等工具把视频人物动作迁移到 3D 角色上，形成完整的驱动与重定向流程。</p>
-        </article>
-
-        <article class="track-row" data-track-row data-track-group="face">
-          <a class="track-row__title" href="/portfolio/chinese-lipsync-optimization/">中文口型同步优化</a>
-          <p class="track-row__summary">围绕中文口型不同步问题做数据清洗、音画 offset 校正与两阶段微调，提升关键音素和快语速场景表现。</p>
-        </article>
-        <article class="track-row" data-track-row data-track-group="face">
-          <a class="track-row__title" href="/portfolio/realtime-3d-avatar-demo/">3D数字人实时对话 Demo</a>
-          <p class="track-row__summary">打通音频驱动面部动画、口型响应与实时对话表现，让角色具备可展示的面部与语音交互能力。</p>
-        </article>
-
-        <article class="track-row" data-track-row data-track-group="system">
-          <a class="track-row__title" href="/portfolio/realtime-3d-avatar-demo/">3D数字人实时对话 Demo</a>
-          <p class="track-row__summary">基于 Unreal Engine + MetaHuman 打通角色接入、交互状态、对话链路和前端展示，是数字人系统落地的主线项目。</p>
-        </article>
-        <article class="track-row" data-track-row data-track-group="system">
-          <a class="track-row__title" href="/portfolio/video-to-3d-avatar-replacement/">视频人物替换为 3D 虚拟角色</a>
-          <p class="track-row__summary">把 3D 角色真正用到视频生产流程里，属于数字人应用侧的可展示落地方向。</p>
-        </article>
-
-        <article class="track-row" data-track-row data-track-group="data">
-          <a class="track-row__title" href="/portfolio/chinese-lipsync-optimization/">中文口型同步优化</a>
-          <p class="track-row__summary">构建 5.57h 中文口型数据集，完成去磨皮美颜、遮挡样本清洗与音画同步校正，是面部驱动方向的数据基础。</p>
-        </article>
-        <article class="track-row" data-track-row data-track-group="data">
-          <a class="track-row__title" href="/portfolio/text2motion-footskate-optimization/">Text2Motion 与去脚滑优化</a>
-          <p class="track-row__summary">完成 Xsens 到 SMPLH 的批量重定向与 HumanML3D 风格处理，支撑 Music2Dance / Text2Motion 数据集制作。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="portfolio-section">
-    <div class="section-heading">
-      <p class="section-heading__eyebrow">SELECTED PROJECTS</p>
-      <h2>项目卡片</h2>
-      <p>首页只保留面试官最关心的内容：封面、定位、技术关键词和详情入口。</p>
-    </div>
-    <div class="project-grid">
-      <article class="project-card">
-        <a class="project-card__media" href="/portfolio/realtime-3d-avatar-demo/"><img src="/images/projects/chat-system.png" alt="3D数字人实时对话 Demo"></a>
-        <div class="project-card__body">
-          <h3><a href="/portfolio/realtime-3d-avatar-demo/">3D数字人实时对话 Demo</a></h3>
-          <p>基于 Unreal Engine + MetaHuman 打通角色接入、面部驱动、交互状态和对话 Demo 链路。</p>
-          <p class="project-tags">Unreal Engine / MetaHuman / Live Link / Pixel Streaming</p>
-          <a class="project-link" href="/portfolio/realtime-3d-avatar-demo/">点进去看详情</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <a class="project-card__media" href="/portfolio/chinese-lipsync-optimization/"><img src="/images/projects/lipsync-cover.svg" alt="中文口型同步优化"></a>
-        <div class="project-card__body">
-          <h3><a href="/portfolio/chinese-lipsync-optimization/">中文口型同步优化</a></h3>
-          <p>围绕中文口型不同步问题做数据清洗、音画校正与两阶段微调，显著改善关键发音场景表现。</p>
-          <p class="project-tags">MuseTalk / LatentSync / Data Cleaning / Alignment</p>
-          <a class="project-link" href="/portfolio/chinese-lipsync-optimization/">点进去看详情</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <a class="project-card__media" href="/portfolio/image-to-3d-character-pipeline/"><img src="/images/projects/image-to-3d-cover.svg" alt="图片到 3D 角色流程探索"></a>
-        <div class="project-card__body">
-          <h3><a href="/portfolio/image-to-3d-character-pipeline/">图片到 3D 角色流程探索</a></h3>
-          <p>验证从单张图片构建 3D 数字人角色的可行性，重点打通 FaceBuilder 到 Character Assembly 的接入流程。</p>
-          <p class="project-tags">FaceBuilder / Mesh to MetaHuman / Character Assembly</p>
-          <a class="project-link" href="/portfolio/image-to-3d-character-pipeline/">点进去看详情</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <a class="project-card__media" href="/portfolio/text2motion-footskate-optimization/"><img src="/images/projects/motion-cover.svg" alt="Text2Motion 与去脚滑优化"></a>
-        <div class="project-card__body">
-          <h3><a href="/portfolio/text2motion-footskate-optimization/">Text2Motion 与去脚滑优化</a></h3>
-          <p>围绕 Diffusion 动作生成做推理加速与脚步接地建模，兼顾训练效率、生成质量和演示可用性。</p>
-          <p class="project-tags">Diffusion / DPM-Solver++ / Foot Contact / SMPLH</p>
-          <a class="project-link" href="/portfolio/text2motion-footskate-optimization/">点进去看详情</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <a class="project-card__media" href="/portfolio/video-to-3d-avatar-replacement/"><img src="/images/projects/video-replacement-cover.svg" alt="视频人物替换为 3D 虚拟角色"></a>
-        <div class="project-card__body">
-          <h3><a href="/portfolio/video-to-3d-avatar-replacement/">视频人物替换为 3D 虚拟角色</a></h3>
-          <p>把真实视频中的人物动作迁移到 3D 角色并重新合成背景，形成可展示的角色替换流程。</p>
-          <p class="project-tags">SAM / ProPainter / WHAM / Blender Python / Mixamo</p>
-          <a class="project-link" href="/portfolio/video-to-3d-avatar-replacement/">点进去看详情</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="papers" class="portfolio-section">
-    <div class="section-heading">
-      <p class="section-heading__eyebrow">ADDITIONAL INFO</p>
-      <h2>论文 / 专利 / 技术栈</h2>
-      <p>补充信息放在同一屏，方便面试官快速判断成果深度与工程能力。</p>
-    </div>
-    <div class="info-grid">
-      <div class="info-card">
-        <h3>论文</h3>
+    <div class="resume-proof">
+      <article class="resume-proof__card">
+        <h3>论文 / 专利</h3>
         <ul>
-          <li><strong>StableMoFusion</strong>: Towards Robust and Efficient Diffusion-based Motion Generation Framework</li>
-          <li><strong>HardMo++</strong>: A Large-Scale Hardcase Dataset for Motion Capture</li>
-          <li><strong>OOD-HOI</strong>: Text-Driven 3D Whole-Body Human-Object Interaction Generation Beyond Training Domains</li>
-          <li><strong>DigitSurge</strong>: A Digital Operating Room for Surgery Simulation</li>
+          <li>StableMoFusion: 动作生成与去脚滑优化，ACM MM 2024 Oral</li>
+          <li>HardMo++: 大规模 Hardcase 动捕数据集构建</li>
+          <li>OOD-HOI / DigitSurge: 交互生成与医疗场景系统探索</li>
+          <li>虚拟人驱动、视频人物替换、动作序列生成相关专利</li>
         </ul>
-      </div>
-      <div class="info-card">
-        <h3>专利</h3>
-        <ul>
-          <li>一种虚拟人驱动方法、装置、设备及可读存储介质</li>
-          <li>一种将视频中的人物替换为 3D 虚拟角色的方法</li>
-          <li>动作序列生成方法、装置、电子设备及存储介质</li>
-        </ul>
-      </div>
-      <div class="info-card">
-        <h3>技术栈</h3>
+      </article>
+
+      <article class="resume-proof__card">
+        <h3>常用技术链路</h3>
         <div class="stack-cloud">
-          <span>Python</span>
           <span>PyTorch</span>
           <span>Unreal Engine</span>
           <span>MetaHuman</span>
@@ -227,57 +128,273 @@ redirect_from:
           <span>LatentSync</span>
           <span>SMPL / SMPLH / SMPLX</span>
           <span>Live Link</span>
-          <span>Text2Motion</span>
-          <span>SAM</span>
-          <span>ProPainter</span>
           <span>WHAM</span>
+          <span>ProPainter</span>
+          <span>Diffusion</span>
+          <span>HumanML3D</span>
         </div>
-      </div>
-      <div class="info-card info-card--actions">
-        <h3>链接</h3>
-        <a class="btn btn--inverse btn--block" href="https://github.com/svitass">GitHub 主页</a>
-        <a class="btn btn--light-outline btn--block" href="/portfolio/">查看全部项目详情</a>
-      </div>
+      </article>
+
+      <article class="resume-proof__card resume-proof__card--accent">
+        <h3>导航</h3>
+        <p>如果你想看更完整的职责、技术链路和结果，可以继续进入项目详情页或 GitHub。</p>
+        <a class="btn btn--inverse btn--block" href="/portfolio/">查看项目详情页</a>
+        <a class="btn btn--light-outline btn--block" href="https://github.com/svitass">GitHub</a>
+      </article>
     </div>
   </section>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var panel = document.querySelector("[data-track-panel]");
-    if (!panel) return;
+    var trackData = {
+      character: {
+        title: "角色生成",
+        description: "这一段关注的是角色从哪里来，以及生成结果能不能真的接到数字人系统里，而不是只停留在孤立的建模或重建结果。",
+        projects: [
+          {
+            title: "图片到可驱动 3D 角色流程探索",
+            summary: "预研 FaceBuilder → Mesh to MetaHuman → Character Assembly，验证单张图片生成的角色能否直接进入实时数字人链路。",
+            involvement: "技术预研负责",
+            level: 82,
+            tags: ["FaceBuilder", "Mesh to MetaHuman", "Character Assembly"],
+            image: "/images/projects/image-to-3d-cover.svg",
+            link: "/portfolio/image-to-3d-character-pipeline/"
+          },
+          {
+            title: "2D 数字人形象构建",
+            summary: "基于 MuseTalk 和 LiveTalking 做 2D 数字人形象构建，支持由图片或视频生成可对话形象，作为系统接入的前置环节。",
+            involvement: "核心实现",
+            level: 78,
+            tags: ["MuseTalk", "LiveTalking", "2D Avatar"],
+            image: "/images/projects/thumb-character.svg"
+          },
+          {
+            title: "持续探索：图片 → 3D Gaussian → 可编辑角色",
+            summary: "持续关注更低门槛的角色生成路线，希望把图像输入进一步推向可编辑、可驱动、可接入系统的 3D 角色表达。",
+            involvement: "持续探索",
+            level: 62,
+            tags: ["3D Gaussian", "Editable Avatar", "Character Pipeline"],
+            image: "/images/projects/thumb-character.svg"
+          }
+        ]
+      },
+      drive: {
+        title: "驱动与动画",
+        description: "这一段主要解决动作怎么来、怎么处理、怎么重定向、怎么生成得更自然，覆盖了数据处理、动作生成和角色驱动三层工作。",
+        projects: [
+          {
+            title: "Xsens 动作处理与 FBX 管线",
+            summary: "把 Xsens 采集动作批量重定向到 SMPLH 骨骼，并从 FBX 中读取动画数据，转成 HumanML3D 可用格式，支撑后续动作数据制作。",
+            involvement: "负责实现",
+            level: 80,
+            tags: ["Xsens", "FBX", "SMPLH", "HumanML3D"],
+            image: "/images/projects/thumb-drive.svg"
+          },
+          {
+            title: "Text2Motion 与去脚滑优化",
+            summary: "在 Diffusion 动作生成链路中做采样加速、文本特征缓存和脚步接地判断，兼顾生成质量与工业场景可用性。",
+            involvement: "核心负责",
+            level: 86,
+            tags: ["Diffusion", "DPM-Solver++", "Foot Contact", "SMPLH"],
+            image: "/images/projects/motion-cover.svg",
+            link: "/portfolio/text2motion-footskate-optimization/"
+          },
+          {
+            title: "视频人物动作估计与动作重定向",
+            summary: "围绕视频人物替换任务，串联 3D 姿态估计、SMPLX、中间骨架表达与 Mixamo / MetaHuman 的动作重定向流程。",
+            involvement: "核心实现",
+            level: 76,
+            tags: ["WHAM", "SMPLX", "Mixamo", "MetaHuman"],
+            image: "/images/projects/video-replacement-cover.svg",
+            link: "/portfolio/video-to-3d-avatar-replacement/"
+          },
+          {
+            title: "持续探索：Music2Dance / Speech2Gesture / Text2HOI",
+            summary: "持续围绕音乐、语音和人-物交互等更复杂的动作生成场景做探索，扩展数字人在泛动作方向上的表达能力。",
+            involvement: "持续探索",
+            level: 64,
+            tags: ["Music2Dance", "Speech2Gesture", "Text2HOI"],
+            image: "/images/projects/thumb-drive.svg"
+          }
+        ]
+      },
+      face: {
+        title: "面部与语音",
+        description: "这一段关注实时对话数字人的表情、口型和语音协同问题，目标是让角色在中文场景和实时交互场景下更像一个真正可交流的数字人。",
+        projects: [
+          {
+            title: "中文口型同步优化",
+            summary: "构建 5.57h 中文口型数据集，完成样本清洗、音画 offset 校正与两阶段微调，重点改善双唇音、撮口音和快语速场景。",
+            involvement: "主导推进",
+            level: 88,
+            tags: ["MuseTalk", "LatentSync", "Lip Sync", "Alignment"],
+            image: "/images/projects/lipsync-cover.svg",
+            link: "/portfolio/chinese-lipsync-optimization/"
+          },
+          {
+            title: "2D 数字人实时对话",
+            summary: "基于 MuseTalk 和 LiveTalking 做 2D 数字人实时对话系统，支持实时对话、打断、背景切换与自定义形象接入。",
+            involvement: "核心负责",
+            level: 80,
+            tags: ["Realtime Dialogue", "2D Avatar", "Interrupt"],
+            image: "/images/projects/thumb-face.svg"
+          },
+          {
+            title: "3D 数字人实时对话 / 情绪控制",
+            summary: "把实时音频、面部动画和交互状态串到 MetaHuman 中，进一步验证 3D 数字人的情绪和交互响应表现。",
+            involvement: "负责验证与打通",
+            level: 78,
+            tags: ["MetaHuman", "Face Animation", "Emotion State"],
+            image: "/images/projects/chat-system.png",
+            link: "/portfolio/realtime-3d-avatar-demo/"
+          }
+        ]
+      },
+      system: {
+        title: "数字人系统与应用",
+        description: "这一段聚焦怎么把数字人的各个能力真正变成一个系统或场景化应用，包括交互控制、内容生产和医疗场景系统探索。",
+        projects: [
+          {
+            title: "3D 数字人实时对话 Demo",
+            summary: "基于 Unreal Engine + MetaHuman 打通角色接入、音频驱动面部动画、Live Link、交互状态与前端展示，是整条链路的系统承载项目。",
+            involvement: "主导 Demo 打通",
+            level: 84,
+            tags: ["Unreal Engine", "MetaHuman", "Live Link", "Pixel Streaming"],
+            image: "/images/projects/chat-system.png",
+            link: "/portfolio/realtime-3d-avatar-demo/"
+          },
+          {
+            title: "视频人物替换为 3D 虚拟角色",
+            summary: "把视频中的人物动作迁移到 3D 虚拟角色并重新合成背景，形成从捕捉到渲染到合成的完整应用流程。",
+            involvement: "核心实现",
+            level: 78,
+            tags: ["SAM", "ProPainter", "WHAM", "Blender Python"],
+            image: "/images/projects/video-replacement-cover.svg",
+            link: "/portfolio/video-to-3d-avatar-replacement/"
+          },
+          {
+            title: "实时打断 / 背景切换 / 交互控制",
+            summary: "围绕实际演示需求设计系统交互能力，让数字人具备更完整的可展示性，而不是只有静态生成或单轮响应。",
+            involvement: "系统链路负责",
+            level: 76,
+            tags: ["Interrupt", "Background Switch", "State Control"],
+            image: "/images/projects/chat-architecture.png"
+          },
+          {
+            title: "手术室模拟系统 DigitSurge",
+            summary: "在 Unreal 中搭建手术室环境，结合 LLM 做任务分解，并通过动作生成模块完成医学场景下的数字人系统探索。",
+            involvement: "第一作者方向推进",
+            level: 82,
+            tags: ["Unreal Engine", "LLM", "Motion Planning", "Medical Scene"],
+            image: "/images/projects/thumb-system.svg"
+          }
+        ]
+      },
+      data: {
+        title: "数据",
+        description: "这一段支撑前面所有方向，包括中文口型数据、多源动作数据、Hardcase 校准和医疗动作数据集构建，属于我在数字人方向上的底层支撑工作。",
+        projects: [
+          {
+            title: "中文口型数据清洗与对齐校正",
+            summary: "构建中文口型数据集，清理磨皮美颜、字幕挡脸、手挡脸、模糊样本，并做音画对齐校正，提升训练监督质量。",
+            involvement: "主导推进",
+            level: 86,
+            tags: ["Lip Data", "Cleaning", "Offset Correction"],
+            image: "/images/projects/thumb-data.svg"
+          },
+          {
+            title: "多源动作数据采集与整合",
+            summary: "收集整合 Music2Dance 相关数据源，并持续关注 Speech2Gesture、CyanPuppets 等方向，形成更丰富的动作数据来源。",
+            involvement: "负责整合",
+            level: 74,
+            tags: ["Music2Dance", "Speech2Gesture", "Dataset Integration"],
+            image: "/images/projects/thumb-data.svg"
+          },
+          {
+            title: "HardMo++ 标注校准",
+            summary: "围绕手腕、脚踝、侧身等困难场景做标注校准和数据增强，提升动作重建数据在 hardcase 场景下的可用性。",
+            involvement: "核心参与",
+            level: 70,
+            tags: ["HardMo++", "ScoreHMR", "Annotation Calibration"],
+            image: "/images/projects/thumb-data.svg"
+          },
+          {
+            title: "医学动作数据集构建",
+            summary: "结合外科培训视频、HMR 方法和 VideoLLaMA2 生成文本描述，构建医疗场景特有的动作文本数据集，服务 DigitSurge 系统。",
+            involvement: "主导构建",
+            level: 83,
+            tags: ["Medical Dataset", "VideoLLaMA2", "SMPLX"],
+            image: "/images/projects/thumb-data.svg"
+          }
+        ]
+      }
+    };
 
-    var buttons = Array.prototype.slice.call(panel.querySelectorAll("[data-track]"));
-    var rows = Array.prototype.slice.call(panel.querySelectorAll("[data-track-row]"));
-    var fill = panel.querySelector("[data-track-fill]");
+    var stage = document.querySelector("[data-fishbone]");
+    if (!stage) return;
 
-    function setTrack(track) {
-      var activeIndex = 0;
+    var buttons = Array.prototype.slice.call(stage.querySelectorAll("[data-track-key]"));
+    var titleNode = document.querySelector("[data-track-title]");
+    var descriptionNode = document.querySelector("[data-track-description]");
+    var listNode = document.querySelector("[data-track-projects]");
+
+    function renderTrack(key) {
+      var track = trackData[key];
+      if (!track || !listNode) return;
 
       buttons.forEach(function (button) {
-        var isActive = button.getAttribute("data-track") === track;
-        button.classList.toggle("is-active", isActive);
-        button.setAttribute("aria-selected", isActive ? "true" : "false");
-        if (isActive) activeIndex = Number(button.getAttribute("data-track-index") || 0);
+        var active = button.getAttribute("data-track-key") === key;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
       });
 
-      rows.forEach(function (row) {
-        var isMatch = row.getAttribute("data-track-group") === track;
-        row.classList.toggle("is-active", isMatch);
-      });
+      if (titleNode) titleNode.textContent = track.title;
+      if (descriptionNode) descriptionNode.textContent = track.description;
 
-      if (fill) {
-        var width = buttons.length > 1 ? (activeIndex / (buttons.length - 1)) * 100 : 0;
-        fill.style.width = width + "%";
-      }
+      listNode.innerHTML = track.projects
+        .map(function (project) {
+          var titleMarkup = project.link
+            ? '<a class="experience-row__title" href="' + project.link + '">' + project.title + "</a>"
+            : '<span class="experience-row__title">' + project.title + "</span>";
+
+          var tagsMarkup = project.tags
+            .map(function (tag) {
+              return '<span>' + tag + "</span>";
+            })
+            .join("");
+
+          return (
+            '<article class="experience-row">' +
+              '<div class="experience-row__media">' +
+                '<img src="' + project.image + '" alt="' + project.title + '">' +
+              "</div>" +
+              '<div class="experience-row__body">' +
+                '<div class="experience-row__top">' +
+                  '<div class="experience-row__main">' +
+                    titleMarkup +
+                    '<p class="experience-row__summary">' + project.summary + "</p>" +
+                    '<div class="experience-row__tags">' + tagsMarkup + "</div>" +
+                  "</div>" +
+                  '<div class="experience-row__involvement">' +
+                    '<span>参与度</span>' +
+                    '<strong>' + project.involvement + "</strong>" +
+                    '<div class="experience-row__meter"><span style="width:' + project.level + '%"></span></div>' +
+                  "</div>" +
+                "</div>" +
+              "</div>" +
+            "</article>"
+          );
+        })
+        .join("");
     }
 
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
-        setTrack(button.getAttribute("data-track"));
+        renderTrack(button.getAttribute("data-track-key"));
       });
     });
 
-    setTrack("character");
+    renderTrack("system");
   });
 </script>

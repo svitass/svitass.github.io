@@ -1,0 +1,12 @@
+﻿<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#F8F1EA"/>
+  <rect x="42" y="42" width="556" height="336" rx="24" fill="#FFFDFB" stroke="#E1C9B8" stroke-width="4"/>
+  <circle cx="176" cy="174" r="62" fill="#CB6A36" fill-opacity="0.15"/>
+  <path d="M152 174C152 150 171 131 195 131H233C257 131 276 150 276 174V200C276 224 257 243 233 243H195C171 243 152 224 152 200V174Z" stroke="#CB6A36" stroke-width="8"/>
+  <path d="M320 142H520" stroke="#2F7F8C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M320 186H478" stroke="#2F7F8C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M320 230H542" stroke="#17324B" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="486" cy="230" r="26" fill="#17324B"/>
+  <text x="320" y="352" text-anchor="middle" fill="#17324B" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="42" font-weight="700">面部与语音</text>
+  <text x="320" y="388" text-anchor="middle" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="22">口型、语音与实时对话协同</text>
+</svg>

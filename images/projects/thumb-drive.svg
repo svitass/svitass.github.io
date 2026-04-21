@@ -1,0 +1,11 @@
+﻿<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#EEF5F6"/>
+  <rect x="42" y="42" width="556" height="336" rx="24" fill="#F9FDFD" stroke="#B7D4D8" stroke-width="4"/>
+  <rect x="80" y="124" width="120" height="120" rx="24" fill="#17324B"/>
+  <rect x="260" y="108" width="120" height="140" rx="24" fill="#2F7F8C" fill-opacity="0.88"/>
+  <rect x="438" y="92" width="120" height="156" rx="24" fill="#8CC1C7"/>
+  <path d="M140 196L318 178L498 170" stroke="#CB6A36" stroke-width="10" stroke-linecap="round"/>
+  <path d="M140 254L318 236L498 228" stroke="#2F7F8C" stroke-width="10" stroke-linecap="round"/>
+  <text x="320" y="352" text-anchor="middle" fill="#17324B" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="42" font-weight="700">驱动与动画</text>
+  <text x="320" y="388" text-anchor="middle" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="22">动作处理、重定向与生成链路</text>
+</svg>

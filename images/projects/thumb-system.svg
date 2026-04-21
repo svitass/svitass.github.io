@@ -1,0 +1,14 @@
+﻿<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#EEF2F9"/>
+  <rect x="42" y="42" width="556" height="336" rx="24" fill="#FBFCFF" stroke="#C0CDE0" stroke-width="4"/>
+  <rect x="88" y="98" width="160" height="190" rx="24" fill="#17324B"/>
+  <rect x="280" y="118" width="108" height="56" rx="18" fill="#2F7F8C"/>
+  <rect x="280" y="198" width="108" height="56" rx="18" fill="#CB6A36"/>
+  <rect x="420" y="98" width="136" height="190" rx="24" fill="#E8EFFA" stroke="#9EB5D4" stroke-width="4"/>
+  <path d="M248 160H280" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M388 160H420" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M248 226H280" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M388 226H420" stroke="#17324B" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="352" text-anchor="middle" fill="#17324B" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="42" font-weight="700">系统与应用</text>
+  <text x="320" y="388" text-anchor="middle" fill="#55657A" font-family="Noto Sans SC, sans-serif" font-size="22">把单点能力变成可展示的系统</text>
+</svg>
