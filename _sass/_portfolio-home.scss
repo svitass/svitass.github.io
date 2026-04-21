@@ -1,32 +1,32 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap");
 
 :root {
-  --portfolio-ink: #102033;
-  --portfolio-muted: #55657a;
-  --portfolio-line: rgba(16, 32, 51, 0.12);
-  --portfolio-surface: rgba(255, 255, 255, 0.92);
-  --portfolio-cream: #f7f2e7;
-  --portfolio-sand: #edd9b5;
-  --portfolio-teal: #2f7f8c;
-  --portfolio-rust: #cb6a36;
-  --portfolio-deep: #17324b;
-  --portfolio-stone-1: #f0ece4;
-  --portfolio-stone-2: #e3ddd2;
-  --portfolio-stone-3: #bdb3a3;
-  --portfolio-stone-4: #7f7567;
+  --portfolio-ink: #1f2430;
+  --portfolio-muted: #646c78;
+  --portfolio-line: rgba(31, 36, 48, 0.12);
+  --portfolio-surface: rgba(255, 255, 255, 0.86);
+  --portfolio-cream: #f4f2ee;
+  --portfolio-sand: #ebe7e0;
+  --portfolio-teal: #6f7884;
+  --portfolio-rust: #7c7469;
+  --portfolio-deep: #353b45;
+  --portfolio-stone-1: #eeebe5;
+  --portfolio-stone-2: #e1ddd6;
+  --portfolio-stone-3: #c1bbae;
+  --portfolio-stone-4: #726b62;
 }
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(203, 106, 54, 0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(47, 127, 140, 0.16), transparent 24%),
-    linear-gradient(180deg, #fbf8f1 0%, #f4efe5 100%);
+    radial-gradient(circle at top left, rgba(124, 116, 105, 0.08), transparent 24%),
+    radial-gradient(circle at top right, rgba(111, 120, 132, 0.06), transparent 22%),
+    linear-gradient(180deg, #f8f7f4 0%, #efede8 100%);
   color: var(--portfolio-ink);
 }
 
 .masthead,
 .page__footer {
-  background: rgba(247, 242, 231, 0.78);
+  background: rgba(248, 247, 244, 0.82);
   backdrop-filter: blur(10px);
 }
 
@@ -64,17 +64,23 @@ body {
 .experience-showcase,
 .resume-proof__card {
   border: 1px solid var(--portfolio-line);
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 24px 60px rgba(16, 32, 51, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 48px rgba(31, 36, 48, 0.06);
 }
 
 .resume-hero__copy {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 320px;
-  padding: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  padding: 2.5rem 2.35rem;
+}
+
+.resume-hero__identity {
+  display: grid;
+  justify-items: start;
+  gap: 1.15rem;
 }
 
 .resume-hero__name {
@@ -83,6 +89,39 @@ body {
   font-size: clamp(4.25rem, 10vw, 6.8rem);
   line-height: 0.92;
   letter-spacing: -0.06em;
+}
+
+.resume-hero__links {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.resume-hero__icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--portfolio-deep);
+  font-size: 1.15rem;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.resume-hero__icon-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(53, 59, 69, 0.2);
+  background: var(--portfolio-stone-1);
+}
+
+.resume-hero__icon-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .resume-hero__role {
@@ -143,15 +182,16 @@ body {
   gap: 1rem;
   padding: 1.2rem;
   background:
-    radial-gradient(circle at top left, rgba(203, 106, 54, 0.12), transparent 30%),
-    linear-gradient(160deg, rgba(23, 50, 75, 0.96), rgba(47, 127, 140, 0.9));
-  color: #fff;
+    radial-gradient(circle at top left, rgba(124, 116, 105, 0.06), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 245, 241, 0.88));
+  color: var(--portfolio-ink);
 }
 
 .resume-hero__map-card {
   padding: 1rem;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(31, 36, 48, 0.08);
 }
 
 .resume-hero__map-head {
@@ -164,7 +204,7 @@ body {
 }
 
 .resume-hero__map-head span {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--portfolio-muted);
   font-size: 0.84rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -194,7 +234,8 @@ body {
 .resume-hero__signal-item {
   padding: 0.95rem 1rem;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--portfolio-stone-1);
+  border: 1px solid rgba(31, 36, 48, 0.06);
 }
 
 .resume-hero__signal-item strong {
@@ -247,7 +288,7 @@ body {
 .portfolio-eyebrow,
 .section-heading__eyebrow {
   margin: 0 0 0.85rem;
-  color: var(--portfolio-rust);
+  color: var(--portfolio-stone-4);
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
@@ -417,9 +458,9 @@ body {
   align-items: center;
   padding: 2rem 1.5rem;
   background:
-    radial-gradient(circle at 12% 40%, rgba(203, 106, 54, 0.08), transparent 18%),
-    radial-gradient(circle at 88% 38%, rgba(47, 127, 140, 0.08), transparent 22%),
-    rgba(255, 255, 255, 0.84);
+    radial-gradient(circle at 12% 40%, rgba(124, 116, 105, 0.06), transparent 18%),
+    radial-gradient(circle at 88% 38%, rgba(111, 120, 132, 0.05), transparent 22%),
+    rgba(255, 255, 255, 0.82);
 }
 
 .fishbone-stage__badge {
@@ -429,7 +470,7 @@ body {
   min-height: 148px;
   padding: 1rem;
   border-radius: 24px;
-  background: rgba(59, 57, 55, 0.78);
+  background: linear-gradient(180deg, #8a8378 0%, #767066 100%);
   color: #fff;
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
   font-size: 1.45rem;
@@ -466,7 +507,7 @@ body {
   justify-content: center;
   min-height: 56px;
   padding: 0.75rem 1rem;
-  border: 1px solid rgba(127, 117, 103, 0.16);
+  border: 1px solid rgba(31, 36, 48, 0.08);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.74);
   color: var(--portfolio-muted);
@@ -492,7 +533,7 @@ body {
   padding: 1rem 1.2rem;
   border: 0;
   background: var(--portfolio-stone-1);
-  color: #7f7669;
+  color: #746d63;
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -520,14 +561,14 @@ body {
 
 .fishbone-step:hover {
   background: var(--portfolio-stone-2);
-  color: #5e584f;
+  color: #5f5951;
 }
 
 .fishbone-step.is-active {
   z-index: 2;
-  background: linear-gradient(180deg, #9b9184 0%, #83796d 100%);
+  background: linear-gradient(180deg, #8e877d 0%, #726b62 100%);
   color: #fff;
-  box-shadow: 0 12px 26px rgba(99, 91, 80, 0.18);
+  box-shadow: 0 12px 26px rgba(90, 84, 77, 0.16);
 }
 
 .fishbone-step__index {
@@ -575,7 +616,7 @@ body {
 }
 
 .experience-showcase__link {
-  color: var(--portfolio-rust);
+  color: var(--portfolio-deep);
   font-weight: 700;
   text-decoration: none !important;
   white-space: nowrap;
@@ -593,7 +634,7 @@ body {
   padding: 1rem;
   border: 1px solid var(--portfolio-line);
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .experience-row__media img {
@@ -637,8 +678,8 @@ body {
   align-items: center;
   padding: 0.45rem 0.72rem;
   border-radius: 999px;
-  background: rgba(47, 127, 140, 0.1);
-  color: var(--portfolio-teal);
+  background: rgba(111, 120, 132, 0.11);
+  color: var(--portfolio-deep);
   font-size: 0.88rem;
   font-weight: 700;
 }
@@ -646,7 +687,7 @@ body {
 .experience-row__involvement {
   padding: 0.9rem 0.95rem;
   border-radius: 18px;
-  background: rgba(237, 217, 181, 0.18);
+  background: rgba(238, 235, 229, 0.82);
 }
 
 .experience-row__involvement strong {
@@ -666,7 +707,7 @@ body {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--portfolio-rust), var(--portfolio-teal));
+  background: linear-gradient(90deg, #938b80, #706a62);
 }
 
 .resume-proof {
@@ -676,6 +717,10 @@ body {
   @include breakpoint($large) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.resume-proof--single {
+  max-width: 920px;
 }
 
 .resume-proof__card {

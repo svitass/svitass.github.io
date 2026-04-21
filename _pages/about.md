@@ -10,7 +10,21 @@ redirect_from:
 <div id="top" class="portfolio-home portfolio-home--resume">
   <section class="resume-hero">
     <div class="resume-hero__copy">
-      <h1 class="resume-hero__name">YH</h1>
+      <div class="resume-hero__identity">
+        <h1 class="resume-hero__name">YH</h1>
+        <div class="resume-hero__links" aria-label="联系方式">
+          <a class="resume-hero__icon-link" href="https://github.com/svitass" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2.17c-3.2.69-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.29-5.26-5.75 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.19a11.07 11.07 0 0 1 5.8 0c2.22-1.5 3.18-1.19 3.18-1.19.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.11 0 4.47-2.7 5.45-5.28 5.74.42.36.79 1.06.79 2.14v3.18c0 .31.21.68.8.56A11.53 11.53 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z"/>
+            </svg>
+          </a>
+          <a class="resume-hero__icon-link" href="mailto:2410383183@qq.com" aria-label="邮箱">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 5.5h18a1.5 1.5 0 0 1 1.5 1.5v10A1.5 1.5 0 0 1 21 18.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm0 1.5v.26l9 6.18 9-6.18V7H3Zm18 10V9.08l-8.57 5.89a.75.75 0 0 1-.86 0L3 9.08V17h18Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <aside class="resume-hero__visual">
@@ -100,10 +114,10 @@ redirect_from:
   <section class="portfolio-section">
     <div class="section-heading section-heading--wide">
       <p class="section-heading__eyebrow">OUTPUTS</p>
-      <h2>成果与方法</h2>
-      <p>这页的重点是链路展示，但也保留一层结果索引，方便快速判断我在数字人方向上的产出类型和常用技术组合。</p>
+      <h2>论文 / 专利</h2>
+      <p>保留最直接的结果索引，用于快速补充简历中的代表性产出。</p>
     </div>
-    <div class="resume-proof">
+    <div class="resume-proof resume-proof--single">
       <article class="resume-proof__card">
         <h3>论文 / 专利</h3>
         <ul>
@@ -112,31 +126,6 @@ redirect_from:
           <li>OOD-HOI / DigitSurge: 交互生成与医疗场景系统探索</li>
           <li>虚拟人驱动、视频人物替换、动作序列生成相关专利</li>
         </ul>
-      </article>
-
-      <article class="resume-proof__card">
-        <h3>常用技术链路</h3>
-        <div class="stack-cloud">
-          <span>PyTorch</span>
-          <span>Unreal Engine</span>
-          <span>MetaHuman</span>
-          <span>Blender</span>
-          <span>MuseTalk</span>
-          <span>LatentSync</span>
-          <span>SMPL / SMPLH / SMPLX</span>
-          <span>Live Link</span>
-          <span>WHAM</span>
-          <span>ProPainter</span>
-          <span>Diffusion</span>
-          <span>HumanML3D</span>
-        </div>
-      </article>
-
-      <article class="resume-proof__card resume-proof__card--accent">
-        <h3>导航</h3>
-        <p>如果你想看更完整的职责、技术链路和结果，可以继续进入项目详情页或 GitHub。</p>
-        <a class="btn btn--inverse btn--block" href="/portfolio/">查看项目详情页</a>
-        <a class="btn btn--light-outline btn--block" href="https://github.com/svitass">GitHub</a>
       </article>
     </div>
   </section>
