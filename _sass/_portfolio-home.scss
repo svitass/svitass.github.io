@@ -856,6 +856,19 @@ body {
   background: rgba(255, 255, 255, 0.72);
 }
 
+.experience-row--link {
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.experience-row--link:hover,
+.experience-row--link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(53, 59, 69, 0.18);
+  box-shadow: 0 18px 36px rgba(31, 36, 48, 0.08);
+  outline: none;
+}
+
 .experience-row__media img {
   display: block;
   width: 100%;

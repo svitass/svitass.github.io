@@ -323,7 +323,8 @@ redirect_from:
             involvement: "主导推进",
             level: 86,
             tags: ["Lip Data", "Cleaning", "Offset Correction"],
-            image: "/images/projects/thumb-data.svg"
+            image: "/images/projects/thumb-data.svg",
+            link: "/portfolio/chinese-lipsync-optimization/"
           },
           {
             title: "多源动作数据采集与整合",
@@ -386,8 +387,16 @@ redirect_from:
             })
             .join("");
 
+          var rowClass = project.link
+            ? "experience-row experience-row--link"
+            : "experience-row";
+
+          var rowAttrs = project.link
+            ? ' data-href="' + project.link + '" tabindex="0" role="link"'
+            : "";
+
           return (
-            '<article class="experience-row">' +
+            '<article class="' + rowClass + '"' + rowAttrs + '>' +
               '<div class="experience-row__media">' +
                 '<img src="' + project.image + '" alt="' + project.title + '">' +
               "</div>" +
@@ -410,6 +419,23 @@ redirect_from:
         })
         .join("");
     }
+
+    listNode.addEventListener("click", function (event) {
+      var row = event.target.closest(".experience-row--link");
+      if (!row) return;
+      if (event.target.closest("a")) return;
+      var href = row.getAttribute("data-href");
+      if (href) window.location.href = href;
+    });
+
+    listNode.addEventListener("keydown", function (event) {
+      var row = event.target.closest(".experience-row--link");
+      if (!row) return;
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      var href = row.getAttribute("data-href");
+      if (href) window.location.href = href;
+    });
 
     buttons.forEach(function (button) {
       button.addEventListener("click", function () {
