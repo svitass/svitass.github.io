@@ -323,7 +323,7 @@ redirect_from:
             involvement: "主导推进",
             level: 86,
             tags: ["Lip Data", "Cleaning", "Offset Correction"],
-            image: "/images/projects/thumb-data.svg",
+            image: "/images/projects/chinese-speaking-dataset-speakers.png",
             link: "/portfolio/chinese-lipsync-optimization/"
           },
           {
