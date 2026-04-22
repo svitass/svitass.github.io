@@ -72,7 +72,7 @@ redirect_from:
         <div class="fishbone-track__notes fishbone-track__notes--top" aria-hidden="true">
           <span>清洗 / 对齐 / 多源整合</span>
           <span>口型同步 / 实时对话</span>
-          <span>图片到角色 / 可编辑接入</span>
+          <span>角色接入 / 演示闭环</span>
         </div>
 
         <div class="fishbone-track__main" role="tablist" aria-label="数字人经历主线">
@@ -91,10 +91,6 @@ redirect_from:
           <button class="fishbone-step is-active" type="button" data-track-key="system" data-track-index="3">
             <span class="fishbone-step__index">4</span>
             <span class="fishbone-step__label">数字人系统与应用</span>
-          </button>
-          <button class="fishbone-step" type="button" data-track-key="character" data-track-index="4">
-            <span class="fishbone-step__index">5</span>
-            <span class="fishbone-step__label">角色生成</span>
           </button>
         </div>
 
@@ -170,37 +166,6 @@ redirect_from:
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var trackData = {
-      character: {
-        title: "角色生成",
-        description: "这一段关注的是角色从哪里来，以及生成结果能不能真的接到数字人系统里，而不是只停留在孤立的建模或重建结果。",
-        projects: [
-          {
-            title: "图片到可驱动 3D 角色流程探索",
-            summary: "预研 FaceBuilder → Mesh to MetaHuman → Character Assembly，验证单张图片生成的角色能否直接进入实时数字人链路。",
-            involvement: "技术预研负责",
-            level: 82,
-            tags: ["FaceBuilder", "Mesh to MetaHuman", "Character Assembly"],
-            image: "/images/projects/image-to-3d-cover.svg",
-            link: "/portfolio/image-to-3d-character-pipeline/"
-          },
-          {
-            title: "2D 数字人形象构建",
-            summary: "基于 MuseTalk 和 LiveTalking 做 2D 数字人形象构建，支持由图片或视频生成可对话形象，作为系统接入的前置环节。",
-            involvement: "核心实现",
-            level: 78,
-            tags: ["MuseTalk", "LiveTalking", "2D Avatar"],
-            image: "/images/projects/2d-avatar-create.png"
-          },
-          {
-            title: "持续探索：图片 → 3D Gaussian → 可编辑角色",
-            summary: "持续关注更低门槛的角色生成路线，希望把图像输入进一步推向可编辑、可驱动、可接入系统的 3D 角色表达。",
-            involvement: "持续探索",
-            level: 62,
-            tags: ["3D Gaussian", "Editable Avatar", "Character Pipeline"],
-            image: "/images/projects/thumb-character.svg"
-          }
-        ]
-      },
       drive: {
         title: "骨骼动画",
         description: "这一段主要解决动作怎么来、怎么处理、怎么重定向、怎么生成得更自然，覆盖了数据处理、动作生成和角色驱动三层工作。",

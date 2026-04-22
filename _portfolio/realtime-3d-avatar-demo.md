@@ -2,7 +2,7 @@
 title: "3D数字人实时对话 Demo"
 collection: portfolio
 permalink: /portfolio/realtime-3d-avatar-demo/
-excerpt: "基于 Unreal Engine + MetaHuman 打通角色接入、面部驱动、交互控制与可对话 Demo 验证。"
+excerpt: "基于 Unreal Engine + MetaHuman 打通角色资产接入、面部驱动、交互控制与可对话 Demo 验证。"
 header:
   teaser: "projects/3d-digital-human-demo-poster.jpg"
 author_profile: false
@@ -12,7 +12,7 @@ author_profile: false
   <div class="project-detail__intro">
     <section class="project-detail__block">
       <h2>项目定位</h2>
-      <p class="project-detail__lead">围绕 3D 数字人的真实可演示链路做系统打通，让角色生成、音频驱动面部动画、交互状态切换和实时对话能够在一个 Demo 里连续工作。</p>
+      <p class="project-detail__lead">围绕 3D 数字人的真实可演示链路做系统打通，让角色资产接入、音频驱动面部动画、交互状态切换和实时对话能够在一个 Demo 里连续工作。</p>
       <div class="detail-chips">
         <span>Unreal Engine</span>
         <span>MetaHuman</span>
@@ -38,6 +38,19 @@ author_profile: false
       <li>围绕音频输入与面部动画驱动，打通音频到口型/面部表情的响应链路。</li>
       <li>设计对话状态机，支持 Idle、Listening、Thinking、Talking 等交互状态切换。</li>
       <li>结合 Pixel Streaming / Web 对话界面，验证网页侧触发、角色响应与演示展示的一致性。</li>
+    </ul>
+  </section>
+
+  <section class="project-detail__block">
+    <h2>角色资产接入探索</h2>
+    <div class="project-visual">
+      <img src="/images/projects/image-to-3d-cover.svg" alt="FaceBuilder 到 MetaHuman 的角色接入流程">
+      <p class="project-visual__caption">这部分不是独立的自动角色生成项目，而是为 3D 对话 Demo 补齐可用角色来源。我基于 FaceBuilder、Mesh to MetaHuman 和 Character Assembly 做了接入验证，确认单图出发的角色资产能否进入 MetaHuman 体系并继续用于实时驱动。</p>
+    </div>
+    <ul class="detail-list">
+      <li>以 FaceBuilder 生成可编辑头部基础，再通过 Mesh to MetaHuman 接入 MetaHuman 角色体系，减少从静态素材到可驱动角色之间的断层。</li>
+      <li>重点关注的是“能不能接入系统”而不是“能不能自动生成得很完整”，因此后处理、拓扑修正和材质细调仍然需要较多手动修正。</li>
+      <li>这条链路依赖现成软件能力和人工校正，更适合作为 Demo 资产准备方案，而不是单独包装成一条成熟的角色生成主线。</li>
     </ul>
   </section>
 
@@ -73,7 +86,7 @@ author_profile: false
     <ul class="detail-result">
       <li>完成可对话 3D 数字人 Demo，覆盖角色接入、面部语音驱动、交互状态和展示界面。</li>
       <li>验证了 Character Assembly、Live Link、交互控制等关键模块可以作为后续工程化扩展基础。</li>
-      <li>为后续“图片到 3D 角色”和“动作驱动体系”项目提供统一的目标承载平台。</li>
+      <li>补齐了基于 FaceBuilder / MetaHuman 的角色资产接入方案，让 Demo 具备可替换角色来源与完整演示闭环。</li>
     </ul>
   </section>
 </div>
