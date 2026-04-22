@@ -48,13 +48,7 @@ author_profile: false
         <source src="/files/3d-digital-human-demo.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频，请直接下载观看。
       </video>
-      <p class="project-visual__caption">最新 3D 数字人 Demo 视频，可直接在页面内播放。也可<a href="/files/3d-digital-human-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
-      <img src="/images/projects/chat-demo.gif" alt="3D数字人实时对话演示 GIF">
-      <p class="project-visual__caption">实时对话数字人演示。角色能够完成基础对话响应与可视化展示。</p>
-      <img src="/images/projects/chat-system.png" alt="3D数字人系统控制界面">
-      <p class="project-visual__caption">系统控制界面，包含背景切换、动作状态控制和对话面板。</p>
-      <img src="/images/projects/chat-architecture.png" alt="3D数字人系统架构图">
-      <p class="project-visual__caption">项目链路涉及语音、对话、驱动与渲染模块协同。</p>
+      <p class="project-visual__caption">3D 数字人 Demo 视频，可直接在页面内播放。也可<a href="/files/3d-digital-human-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
     </div>
   </section>
 
