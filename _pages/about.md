@@ -315,7 +315,8 @@ redirect_from:
             involvement: "负责整合",
             level: 74,
             tags: ["Music2Dance", "Speech2Gesture", "Dataset Integration"],
-            image: "/images/projects/music2dance-dataset-table.png"
+            image: "/images/projects/multi-source-motion-datasets-cover.jpg",
+            link: "/portfolio/multi-source-motion-dataset-integration/"
           },
           {
             title: "HardMo++ 标注校准",
@@ -336,6 +337,10 @@ redirect_from:
         ]
       }
     };
+
+    trackData.data.projects = trackData.data.projects.filter(function (project) {
+      return project.image !== "/images/projects/medical-dataset-capture-setup.png";
+    });
 
     var stage = document.querySelector("[data-fishbone]");
     if (!stage) return;
