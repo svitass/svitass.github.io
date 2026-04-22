@@ -59,6 +59,115 @@ redirect_from:
     </aside>
   </section>
 
+  <section id="chinese-dataset" class="portfolio-section">
+    <div class="section-heading section-heading--wide">
+      <p class="section-heading__eyebrow">CHINESE DATASET</p>
+      <h2>中文说话人视频数据集</h2>
+      <p>基于 TalkVid 与 JoyGen 做了中文场景下的二次处理，当前仓库内保留了可直接用于中文口型同步、数字人口部驱动与说话人视频建模的裁剪片段、配套音频和逐帧人脸标注。</p>
+    </div>
+
+    <div class="dataset-showcase">
+      <div class="dataset-showcase__intro">
+        <article class="dataset-panel dataset-panel--highlight">
+          <p class="portfolio-eyebrow">CURRENT SUBSET</p>
+          <h3>仓库内可直接使用的中文说话视频</h3>
+          <p>按当前 <code>dataset</code> 文件夹中实际存在的 <code>mp4</code> 统计，共有 <strong>3853</strong> 个视频片段，累计 <strong>17.06 小时</strong>，覆盖 <strong>128 个命名归并说话人</strong>。</p>
+          <div class="dataset-kpis">
+            <div class="dataset-kpi">
+              <span>总时长</span>
+              <strong>17.06h</strong>
+            </div>
+            <div class="dataset-kpi">
+              <span>视频片段</span>
+              <strong>3853</strong>
+            </div>
+            <div class="dataset-kpi">
+              <span>说话人归并</span>
+              <strong>128</strong>
+            </div>
+            <div class="dataset-kpi">
+              <span>视频帧率</span>
+              <strong>25 FPS</strong>
+            </div>
+          </div>
+          <div class="dataset-tags">
+            <span>MP4 + WAV 配对</span>
+            <span>16 kHz 单声道音频</span>
+            <span>逐帧人脸框</span>
+            <span>逐帧关键点</span>
+            <span>JSON 元数据</span>
+          </div>
+        </article>
+
+        <article class="dataset-panel">
+          <p class="portfolio-eyebrow">FORMAT</p>
+          <h3>数据组织与字段</h3>
+          <div class="dataset-format">
+            <div>
+              <strong>目录结构</strong>
+              <p><code>dataset/{TalkVid, JoyGen}/meta/*.json</code><br><code>dataset/{TalkVid, JoyGen}/video_audio_clip_root/*.{mp4,wav}</code></p>
+            </div>
+            <div>
+              <strong>标注字段</strong>
+              <p><code>mp4_path</code> / <code>wav_path</code> / <code>video_size</code> / <code>face_size</code> / <code>frames</code> / <code>face_list</code> / <code>landmark_list</code> / <code>isvalid</code></p>
+            </div>
+            <div>
+              <strong>训练相关信息</strong>
+              <p>支持逐帧口型建模、音视频对齐、裁剪脸框重建与说话人视频检索；<code>video_size</code> 与 <code>face_size</code> 采用 <code>[height, width]</code> 顺序。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <article class="dataset-speakers">
+        <div class="dataset-speakers__head">
+          <div>
+            <p class="portfolio-eyebrow">SPEAKER OVERVIEW</p>
+            <h3>说话人总览图</h3>
+          </div>
+          <a class="dataset-speakers__link" href="/files/dataset/chinese-speaking-dataset-summary.json">下载统计 JSON</a>
+        </div>
+        <img src="/images/projects/chinese-speaking-dataset-speakers.png" alt="中文说话人视频数据集说话人总览图">
+        <p class="dataset-speakers__caption">总览图按当前仓库中的代表样本生成。JoyGen 按源视频前缀归并；TalkVid 当前元数据未显式提供 <code>speaker_id</code>，此处按文件命名进行概览级归并，适合主页展示，不作为严格身份标注声明。</p>
+      </article>
+    </div>
+
+    <div class="dataset-breakdown">
+      <article class="dataset-card">
+        <p class="portfolio-eyebrow">TALKVID PROCESSED</p>
+        <h3>TalkVid 子集</h3>
+        <ul class="dataset-card__list">
+          <li><strong>12.93 小时 / 2347 段可用视频</strong>，当前仓库里另有 1744 条元数据未附对应 mp4。</li>
+          <li><strong>平均片段长度 19.83 秒</strong>，中位数 19.0 秒，适合中文口型和长句驱动训练。</li>
+          <li><strong>音频格式</strong> 为 16 kHz、16-bit、单声道 WAV，并额外保留 2287 条 <code>_16k.wav</code>。</li>
+          <li><strong>人脸占画面比例</strong> 平均 6.01%，适合中近景说话人建模和人脸裁剪复用。</li>
+        </ul>
+      </article>
+
+      <article class="dataset-card">
+        <p class="portfolio-eyebrow">JOYGEN PROCESSED</p>
+        <h3>JoyGen 子集</h3>
+        <ul class="dataset-card__list">
+          <li><strong>4.13 小时 / 1506 段可用视频</strong>，元数据与视频一一配对，无缺失样本。</li>
+          <li><strong>103 个源说话人归并</strong>，平均每位说话人 14.62 段视频，中位数 10 段。</li>
+          <li><strong>平均片段长度 9.88 秒</strong>，更适合高密度口型同步和短句生成训练。</li>
+          <li><strong>人脸占画面比例</strong> 平均 10.81%，近景比例更高，对嘴型监督更友好。</li>
+        </ul>
+      </article>
+
+      <article class="dataset-card">
+        <p class="portfolio-eyebrow">WHY IT MATTERS</p>
+        <h3>说话人视频数据集常看的信息</h3>
+        <ul class="dataset-card__list">
+          <li><strong>时长、片段数、说话人数</strong> 决定覆盖度与训练上限。</li>
+          <li><strong>帧率、分辨率、脸框占比</strong> 直接影响口型、表情和裁剪质量。</li>
+          <li><strong>音频规格与音视频配对</strong> 决定后续对齐、重采样与训练稳定性。</li>
+          <li><strong>逐帧边框和关键点</strong> 能显著降低二次清洗与预处理成本。</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
   <section id="experience-map" class="portfolio-section">
     <div class="section-heading section-heading--wide">
       <p class="section-heading__eyebrow">EXPERIENCE MAP</p>

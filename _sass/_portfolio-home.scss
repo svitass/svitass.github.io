@@ -661,6 +661,191 @@ body {
   gap: 0.9rem;
 }
 
+.dataset-showcase {
+  display: grid;
+  gap: 1rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+    align-items: start;
+  }
+}
+
+.dataset-showcase__intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.dataset-panel,
+.dataset-speakers,
+.dataset-card {
+  border: 1px solid var(--portfolio-line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 48px rgba(31, 36, 48, 0.06);
+}
+
+.dataset-panel {
+  padding: 1.35rem 1.4rem;
+}
+
+.dataset-panel h3,
+.dataset-speakers h3,
+.dataset-card h3 {
+  margin: 0;
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+}
+
+.dataset-panel p:last-child,
+.dataset-format p,
+.dataset-card__list li,
+.dataset-speakers__caption {
+  color: var(--portfolio-muted);
+  line-height: 1.85;
+}
+
+.dataset-panel--highlight {
+  background:
+    radial-gradient(circle at top left, rgba(111, 120, 132, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 245, 241, 0.88));
+}
+
+.dataset-kpis {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.dataset-kpi {
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(31, 36, 48, 0.08);
+  border-radius: 18px;
+  background: rgba(244, 242, 238, 0.92);
+}
+
+.dataset-kpi span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dataset-kpi strong {
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.dataset-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.dataset-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.76rem;
+  border-radius: 999px;
+  background: rgba(111, 120, 132, 0.1);
+  color: var(--portfolio-deep);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.dataset-format {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 0.95rem;
+}
+
+.dataset-format div {
+  padding: 1rem 1.05rem;
+  border-radius: 18px;
+  background: rgba(244, 242, 238, 0.86);
+  border: 1px solid rgba(31, 36, 48, 0.08);
+}
+
+.dataset-format strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 0.96rem;
+}
+
+.dataset-format p {
+  margin: 0;
+}
+
+.dataset-speakers {
+  padding: 1.1rem;
+  background:
+    radial-gradient(circle at top right, rgba(124, 116, 105, 0.06), transparent 24%),
+    rgba(255, 255, 255, 0.9);
+}
+
+.dataset-speakers__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.dataset-speakers__head .portfolio-eyebrow {
+  margin-bottom: 0.55rem;
+}
+
+.dataset-speakers__link {
+  color: var(--portfolio-deep);
+  font-weight: 700;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.dataset-speakers img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 36, 48, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.dataset-speakers__caption {
+  margin: 0.9rem 0 0;
+  font-size: 0.94rem;
+}
+
+.dataset-breakdown {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.dataset-card {
+  padding: 1.3rem 1.35rem;
+}
+
+.dataset-card__list {
+  margin: 0.95rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.dataset-card__list li + li {
+  margin-top: 0.7rem;
+}
+
 .experience-row {
   display: grid;
   gap: 1rem;

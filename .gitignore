@@ -10,3 +10,8 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Local dataset assets
+/dataset/
+/材料/
+images/projects/.dataset-speaker-cache/
