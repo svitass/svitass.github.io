@@ -351,6 +351,8 @@ redirect_from:
       return true;
     });
     if (xsensProject) {
+      xsensProject.image = "/images/projects/xsens-fbx-pipeline-cover.jpg";
+      xsensProject.link = "/portfolio/xsens-fbx-pipeline/";
       trackData.data.projects.splice(1, 0, xsensProject);
     }
 
