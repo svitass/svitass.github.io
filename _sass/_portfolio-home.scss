@@ -487,9 +487,9 @@ body {
 
 .fishbone-stage {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  gap: 1.2rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: stretch;
   padding: 2rem 1.5rem;
   background:
     radial-gradient(circle at 12% 40%, rgba(124, 116, 105, 0.06), transparent 18%),
@@ -501,15 +501,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 148px;
-  padding: 1rem;
-  border-radius: 24px;
+  justify-self: start;
+  min-height: 0;
+  padding: 0.85rem 1.1rem;
+  border-radius: 18px;
   background: linear-gradient(180deg, #8a8378 0%, #767066 100%);
   color: #fff;
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-  font-size: 1.45rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.38;
+  line-height: 1.2;
   text-align: center;
 }
 
