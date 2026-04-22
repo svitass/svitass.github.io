@@ -363,6 +363,30 @@ redirect_from:
       return project;
     });
 
+    trackData.drive.projects = trackData.drive.projects.filter(function (project) {
+      return !(project.image === "/images/projects/thumb-drive.svg" && project.tags && project.tags.indexOf("Text2HOI") !== -1);
+    });
+    trackData.drive.projects.push(
+      {
+        title: "Speech2Gesture 探索",
+        summary: "围绕语音韵律、语义到上半身动作的映射做持续探索，重点关注可用于数字人对话和讲解场景的手势生成方向。",
+        involvement: "持续探索",
+        level: 64,
+        tags: ["Speech2Gesture", "Upper-body Motion", "Gesture Generation"],
+        image: "/images/projects/speech2gesture-cover.png",
+        link: "/portfolio/speech2gesture-exploration/"
+      },
+      {
+        title: "Text2HOI / OOD-HOI 探索",
+        summary: "围绕文本驱动的人-物交互动作生成做探索，重点关注超出训练域的 HOI 生成能力与交互合理性。",
+        involvement: "研究参与",
+        level: 66,
+        tags: ["Text2HOI", "OOD-HOI", "Human-Object Interaction"],
+        image: "/images/projects/text2hoi-results.png",
+        link: "/portfolio/text2hoi-exploration/"
+      }
+    );
+
     var stage = document.querySelector("[data-fishbone]");
     if (!stage) return;
 
