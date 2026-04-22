@@ -4,7 +4,7 @@ collection: portfolio
 permalink: /portfolio/chinese-lipsync-optimization/
 excerpt: "针对中文场景口型效果不足的问题，完成数据清洗、音画 offset 校正和两阶段微调。"
 header:
-  teaser: "projects/lipsync-cover.svg"
+  teaser: "projects/chinese-lipsync-compare-cover.jpg"
 author_profile: false
 ---
 
@@ -149,10 +149,23 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>效果展示</h2>
-    <div class="project-visual">
-      <img src="/images/projects/lipsync-cover.svg" alt="中文口型同步优化指标图">
-      <p class="project-visual__caption">当前详情页先展示量化结果与关键问题分布，后续可以直接替换为真实口型前后对比视频。</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
+      <div class="project-visual">
+        <video controls playsinline preload="metadata" poster="/images/projects/chinese-lipsync-before-poster.jpg" style="width:100%; border-radius:16px; background:#000;">
+          <source src="/files/chinese-lipsync-before.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频，请直接下载观看。
+        </video>
+        <p class="project-visual__caption">优化前：直接使用原始链路时，中文场景下更容易出现口型跟随不稳、关键音素闭合不到位等问题。</p>
+      </div>
+      <div class="project-visual">
+        <video controls playsinline preload="metadata" poster="/images/projects/chinese-lipsync-after-poster.jpg" style="width:100%; border-radius:16px; background:#000;">
+          <source src="/files/chinese-lipsync-after.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频，请直接下载观看。
+        </video>
+        <p class="project-visual__caption">优化后：经过数据清洗、音画 offset 校正和两阶段微调后，唇形闭合、撮口与快语速下的稳定性都有明显改善。</p>
+      </div>
     </div>
+    <p class="project-visual__caption">上面保留的是你补充到 <code>材料/</code> 里的真实前后对比视频，页面内可以直接播放，也能更直观看到中文口型优化带来的差异。</p>
   </section>
 
   <section class="project-detail__block">

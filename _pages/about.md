@@ -251,7 +251,7 @@ redirect_from:
             involvement: "主导推进",
             level: 88,
             tags: ["MuseTalk", "LatentSync", "Lip Sync", "Alignment"],
-            image: "/images/projects/lipsync-cover.svg",
+            image: "/images/projects/chinese-lipsync-compare-cover.jpg",
             link: "/portfolio/chinese-lipsync-optimization/"
           }
         ]
