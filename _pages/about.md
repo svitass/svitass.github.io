@@ -387,6 +387,26 @@ redirect_from:
       }
     );
 
+    trackData.drive.projects = trackData.drive.projects.map(function (project) {
+      if (project.image === "/images/projects/video-replacement-pipeline.png") {
+        project.title = "瑙嗛浜虹墿鏇挎崲涓?3D 铏氭嫙瑙掕壊";
+        project.summary = "鎶婄湡浜鸿棰戜腑鐨勪汉鐗╁姩浣滆縼绉诲埌 3D 铏氭嫙瑙掕壊锛屽洿缁?WHAM銆乻MPLX銆丮ixamo 鍜?Blender 绠＄嚎瀹屾垚鍔ㄤ綔閲嶅畾鍚戙€佽鑹查┍鍔ㄤ笌鏈€缁堝悎鎴愩€?";
+        project.involvement = "鏍稿績瀹炵幇";
+      }
+      return project;
+    });
+
+    trackData.system.projects = trackData.system.projects.filter(function (project) {
+      return project.image !== "/images/projects/video-replacement-pipeline.png";
+    });
+    trackData.system.projects = trackData.system.projects.map(function (project) {
+      if (project.image === "/images/projects/digitsurge-overview.png") {
+        project.summary = "鍦?Unreal 鍦烘櫙涓粨鍚?LLM 鍋氫换鍔″垎瑙ｅ拰鍔ㄤ綔妯″潡鎺ユ帴锛屽仛鎵嬫湳瀹ゅ満鏅笅鐨勭爺绌跺瀷绯荤粺 demo 鎺㈢储銆?";
+        project.involvement = "RA 鐮旂┒ demo";
+      }
+      return project;
+    });
+
     var stage = document.querySelector("[data-fishbone]");
     if (!stage) return;
 
