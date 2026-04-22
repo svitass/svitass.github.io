@@ -4,7 +4,7 @@ collection: portfolio
 permalink: /portfolio/text2motion-footskate-optimization/
 excerpt: "基于 Diffusion 的文本生成动作项目，完成推理加速与脚步接地建模，并产出 ACM MM Oral 论文。"
 header:
-  teaser: "projects/motion-cover.svg"
+  teaser: "projects/stablemofusion-footskate-result.png"
 author_profile: false
 ---
 
@@ -44,8 +44,16 @@ author_profile: false
   <section class="project-detail__block">
     <h2>效果展示</h2>
     <div class="project-visual">
-      <img src="/images/projects/motion-cover.svg" alt="Text2Motion 与去脚滑优化技术图">
-      <p class="project-visual__caption">项目强调从数据处理、采样加速到脚步接地建模的完整动作生成链路。</p>
+      <img src="/images/projects/stablemofusion-foot-contact.png" alt="Text2Motion 去脚滑建模示意图">
+      <p class="project-visual__caption">去脚滑部分引入脚步接地约束，把脚底受力和接触状态显式纳入优化，而不是只看视觉平滑度。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/stablemofusion-speed-fid.png" alt="Text2Motion 推理速度与 FID 对比图">
+      <p class="project-visual__caption">加速不是单独追求更快，而是在推理时间和生成质量之间做工程上可落地的平衡。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/stablemofusion-footskate-result.png" alt="Text2Motion 去脚滑前后效果对比图">
+      <p class="project-visual__caption">材料中的定性结果图直接展示了脚滑基线与优化后结果的差异，重点是脚步接地更可信。</p>
     </div>
   </section>
 

@@ -4,7 +4,7 @@ collection: portfolio
 permalink: /portfolio/video-to-3d-avatar-replacement/
 excerpt: "使用背景恢复、动作捕捉和 Blender 自动化脚本，将真实视频中的人物替换成 3D 虚拟角色。"
 header:
-  teaser: "projects/video-replacement-cover.svg"
+  teaser: "projects/video-replacement-pipeline.png"
 author_profile: false
 ---
 
@@ -45,8 +45,16 @@ author_profile: false
   <section class="project-detail__block">
     <h2>效果展示</h2>
     <div class="project-visual">
-      <img src="/images/projects/video-replacement-cover.svg" alt="视频人物替换为 3D 虚拟角色流程图">
-      <p class="project-visual__caption">项目把人物分离、动作捕捉、角色重定向和最终合成组织成一条可自动化执行的流程。</p>
+      <img src="/images/projects/video-replacement-pipeline.png" alt="视频人物替换为 3D 虚拟角色流程图">
+      <p class="project-visual__caption">材料里保留下来的实际流程图，覆盖人物分离、背景恢复、动作获取、角色重定向和最终合成几个关键环节。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/video-replacement-before.png" alt="视频人物替换原始视频画面">
+      <p class="project-visual__caption">输入端是真实人物视频，先提取背景和人体运动，再进入 3D 角色驱动流程。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/video-replacement-after.png" alt="视频人物替换后的 3D 角色结果">
+      <p class="project-visual__caption">输出端替换为 3D 虚拟角色，同时尽量保留原视频动作节奏和背景语义。</p>
     </div>
   </section>
 

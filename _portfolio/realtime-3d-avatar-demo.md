@@ -4,7 +4,7 @@ collection: portfolio
 permalink: /portfolio/realtime-3d-avatar-demo/
 excerpt: "基于 Unreal Engine + MetaHuman 打通角色接入、面部驱动、交互控制与可对话 Demo 验证。"
 header:
-  teaser: "projects/chat-system.png"
+  teaser: "projects/3d-digital-human-demo-poster.jpg"
 author_profile: false
 ---
 
@@ -39,6 +39,22 @@ author_profile: false
       <li>设计对话状态机，支持 Idle、Listening、Thinking、Talking 等交互状态切换。</li>
       <li>结合 Pixel Streaming / Web 对话界面，验证网页侧触发、角色响应与演示展示的一致性。</li>
     </ul>
+  </section>
+
+  <section class="project-detail__block">
+    <h2>关键实现截图</h2>
+    <div class="project-visual">
+      <img src="/images/projects/realtime-3d-face-driving.png" alt="3D 数字人面部驱动调试界面">
+      <p class="project-visual__caption">在 Unreal Engine 中先验证脸部变形目标和权重写入是否稳定，确保后续音频驱动不会停留在理论链路上。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/realtime-3d-livelink.png" alt="3D 数字人 Live Link 骨骼驱动节点">
+      <p class="project-visual__caption">身体侧通过 Live Link 接入姿态流，把外部驱动和角色动画图真正接起来，而不是只做离线导入。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/realtime-3d-video-driver.png" alt="3D 数字人视频驱动角色流程图">
+      <p class="project-visual__caption">围绕视频或外部姿态信号做驱动链路验证，覆盖输入解析、去抖、动画补全和角色运行时输出。</p>
+    </div>
   </section>
 
   <section class="project-detail__block">

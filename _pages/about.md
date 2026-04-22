@@ -189,7 +189,7 @@ redirect_from:
             involvement: "核心实现",
             level: 78,
             tags: ["MuseTalk", "LiveTalking", "2D Avatar"],
-            image: "/images/projects/thumb-character.svg"
+            image: "/images/projects/2d-avatar-create.png"
           },
           {
             title: "持续探索：图片 → 3D Gaussian → 可编辑角色",
@@ -211,7 +211,7 @@ redirect_from:
             involvement: "负责实现",
             level: 80,
             tags: ["Xsens", "FBX", "SMPLH", "HumanML3D"],
-            image: "/images/projects/thumb-drive.svg"
+            image: "/images/projects/xsens-retarget.png"
           },
           {
             title: "Text2Motion 与去脚滑优化",
@@ -219,7 +219,7 @@ redirect_from:
             involvement: "核心负责",
             level: 86,
             tags: ["Diffusion", "DPM-Solver++", "Foot Contact", "SMPLH"],
-            image: "/images/projects/motion-cover.svg",
+            image: "/images/projects/stablemofusion-footskate-result.png",
             link: "/portfolio/text2motion-footskate-optimization/"
           },
           {
@@ -228,7 +228,7 @@ redirect_from:
             involvement: "核心实现",
             level: 76,
             tags: ["WHAM", "SMPLX", "Mixamo", "MetaHuman"],
-            image: "/images/projects/video-replacement-cover.svg",
+            image: "/images/projects/video-replacement-pipeline.png",
             link: "/portfolio/video-to-3d-avatar-replacement/"
           },
           {
@@ -266,7 +266,7 @@ redirect_from:
             involvement: "主导 Demo 打通",
             level: 84,
             tags: ["Unreal Engine", "MetaHuman", "Live Link", "Pixel Streaming"],
-            image: "/images/projects/2d-realtime-dialogue-cover.jpg",
+            image: "/images/projects/3d-digital-human-demo-poster.jpg",
             link: "/portfolio/realtime-3d-avatar-demo/"
           },
           {
@@ -275,7 +275,7 @@ redirect_from:
             involvement: "核心实现",
             level: 78,
             tags: ["SAM", "ProPainter", "WHAM", "Blender Python"],
-            image: "/images/projects/video-replacement-cover.svg",
+            image: "/images/projects/video-replacement-pipeline.png",
             link: "/portfolio/video-to-3d-avatar-replacement/"
           },
           {
@@ -284,7 +284,7 @@ redirect_from:
             involvement: "系统链路负责",
             level: 76,
             tags: ["Realtime Dialogue", "2D Avatar", "Background Switch", "Interrupt"],
-            image: "/images/projects/2d-realtime-dialogue-cover.jpg"
+            image: "/images/projects/2d-avatar-system-overview.png"
           },
           {
             title: "手术室模拟系统 DigitSurge",
@@ -292,7 +292,7 @@ redirect_from:
             involvement: "第一作者方向推进",
             level: 82,
             tags: ["Unreal Engine", "LLM", "Motion Planning", "Medical Scene"],
-            image: "/images/projects/thumb-system.svg"
+            image: "/images/projects/digitsurge-overview.png"
           }
         ]
       },
@@ -315,7 +315,7 @@ redirect_from:
             involvement: "负责整合",
             level: 74,
             tags: ["Music2Dance", "Speech2Gesture", "Dataset Integration"],
-            image: "/images/projects/thumb-data.svg"
+            image: "/images/projects/music2dance-dataset-table.png"
           },
           {
             title: "HardMo++ 标注校准",
@@ -323,7 +323,7 @@ redirect_from:
             involvement: "核心参与",
             level: 70,
             tags: ["HardMo++", "ScoreHMR", "Annotation Calibration"],
-            image: "/images/projects/thumb-data.svg"
+            image: "/images/projects/hardmo-pipeline.jpg"
           },
           {
             title: "医学动作数据集构建",
@@ -331,7 +331,7 @@ redirect_from:
             involvement: "主导构建",
             level: 83,
             tags: ["Medical Dataset", "VideoLLaMA2", "SMPLX"],
-            image: "/images/projects/thumb-data.svg"
+            image: "/images/projects/medical-dataset-capture-setup.png"
           }
         ]
       }
