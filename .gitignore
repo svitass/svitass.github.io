@@ -15,3 +15,7 @@ package-lock.json
 /dataset/
 /材料/
 images/projects/.dataset-speaker-cache/
+images/projects/.speaker-audit/
+images/projects/speaker-audit-joygen/
+images/projects/tmp-2d-cover-*.jpg
+files/3d-digital-human-demo-h264.mp4

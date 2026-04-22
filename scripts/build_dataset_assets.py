@@ -22,10 +22,10 @@ TRAIN_FILENAME = "train.txt"
 
 DATASETS = {
     "TalkVid": {
-        "speaker_from_stem": lambda stem: re.match(r"^(clip\d+)_", stem).group(1),
+        "speaker_from_stem": lambda stem: talkvid_video_id(stem),
         "source_from_stem": lambda stem: talkvid_video_id(stem),
-        "source_group_from_stem": lambda stem: talkvid_source_group(stem),
-        "speaker_count_method": "Grouped by filename prefix clipxxx. The current metadata does not expose an explicit speaker_id, so this is a naming-based estimate for overview use.",
+        "source_group_from_stem": lambda stem: talkvid_video_id(stem),
+        "speaker_count_method": "Grouped by the source video ID after stripping the clipxxx prefix. This matches the train split organization and avoids counting the same identity multiple times across duplicated clip prefixes.",
     },
     "JoyGen": {
         "speaker_from_stem": lambda stem: stem.split("_shot_")[0],
@@ -44,11 +44,6 @@ def talkvid_parts(stem: str) -> tuple[str, str, str, str]:
 
 def talkvid_video_id(stem: str) -> str:
     return talkvid_parts(stem)[0]
-
-
-def talkvid_source_group(stem: str) -> str:
-    video_id, source_idx, _, _ = talkvid_parts(stem)
-    return f"{video_id}_{source_idx}"
 
 
 def ffprobe_json(path: Path, select_streams: str, show_entries: str) -> dict:

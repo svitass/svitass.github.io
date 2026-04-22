@@ -39,7 +39,7 @@ author_profile: false
         <article class="dataset-panel dataset-panel--highlight">
           <p class="portfolio-eyebrow">TRAIN SPLIT</p>
           <h3>实际训练使用的中文说话视频</h3>
-          <p>重算后共有 <strong>2262</strong> 个视频片段，累计 <strong>8.98 小时</strong>，覆盖 <strong>112 个命名归并说话人</strong>。</p>
+          <p>重算后共有 <strong>2262</strong> 个视频片段，累计 <strong>8.98 小时</strong>，覆盖 <strong>325 个说话人</strong>。其中 TalkVid 按源视频 ID 归并为 234 人，JoyGen 按源前缀归并为 91 人。</p>
           <div class="dataset-kpis">
             <div class="dataset-kpi">
               <span>总时长</span>
@@ -51,7 +51,7 @@ author_profile: false
             </div>
             <div class="dataset-kpi">
               <span>说话人归并</span>
-              <strong>112</strong>
+              <strong>325</strong>
             </div>
             <div class="dataset-kpi">
               <span>视频帧率</span>
@@ -96,7 +96,7 @@ author_profile: false
           <a class="dataset-speakers__link" href="/files/dataset/chinese-speaking-dataset-summary.json">下载统计 JSON</a>
         </div>
         <img src="/images/projects/chinese-speaking-dataset-speakers.png" alt="中文说话人视频数据集说话人总览图">
-        <p class="dataset-speakers__caption">总览图仅基于训练集样本生成。JoyGen 按源视频前缀归并；TalkVid 当前元数据未显式提供 <code>speaker_id</code>，此处按文件命名进行概览级归并，适合主页展示，不作为严格身份标注声明。</p>
+        <p class="dataset-speakers__caption">总览图仅基于训练集样本生成。JoyGen 按源视频前缀归并；TalkVid 按去除 <code>clipxxx_</code> 后的源视频 ID 归并。此前按 <code>clip</code> 前缀统计会把同一身份拆成多组，这一版已修正。</p>
       </article>
     </div>
 
@@ -106,6 +106,7 @@ author_profile: false
         <h3>TalkVid 子集</h3>
         <ul class="dataset-card__list">
           <li><strong>5.57 小时 / 1017 段训练视频</strong>，全部来自 <code>dataset/TalkVid/train.txt</code>，训练清单与本地文件完全对齐。</li>
+          <li><strong>234 个说话人</strong>，按去除 <code>clipxxx_</code> 后的源视频 ID 归并；该口径与我最初项目记录中的 234 speakers 对齐。</li>
           <li><strong>平均片段长度 19.71 秒</strong>，中位数 19.12 秒，适合中文口型和长句驱动训练。</li>
           <li><strong>训练音频配对完整</strong>，1017 段视频均有 16 kHz、16-bit、单声道 WAV，同时库存中还保留 2287 条 <code>_16k.wav</code>。</li>
           <li><strong>库存与训练口径差异明显</strong>：仓库库存有 2347 段 mp4、4091 条元数据，其中 1744 条元数据未附对应 mp4，不应计入训练统计。</li>
