@@ -69,12 +69,6 @@ redirect_from:
     <div class="fishbone-stage" data-fishbone>
       <div class="fishbone-stage__badge">数字人经历链路</div>
       <div class="fishbone-track">
-        <div class="fishbone-track__notes fishbone-track__notes--top" aria-hidden="true">
-          <span>清洗 / 对齐 / 多源整合</span>
-          <span>口型同步 / 实时对话</span>
-          <span>角色接入 / 演示闭环</span>
-        </div>
-
         <div class="fishbone-track__main" role="tablist" aria-label="数字人经历主线">
           <button class="fishbone-step" type="button" data-track-key="data" data-track-index="0">
             <span class="fishbone-step__index">1</span>
