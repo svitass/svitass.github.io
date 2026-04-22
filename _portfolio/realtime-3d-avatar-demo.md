@@ -44,7 +44,7 @@ author_profile: false
   <section class="project-detail__block">
     <h2>效果展示</h2>
     <div class="project-visual">
-      <video controls playsinline preload="metadata" style="width:100%; border-radius:16px; background:#000;">
+      <video controls playsinline preload="metadata" poster="/images/projects/3d-digital-human-demo-poster.jpg" style="width:100%; border-radius:16px; background:#000;">
         <source src="/files/3d-digital-human-demo.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频，请直接下载观看。
       </video>
