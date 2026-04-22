@@ -69,21 +69,21 @@ redirect_from:
     <div class="dataset-showcase">
       <div class="dataset-showcase__intro">
         <article class="dataset-panel dataset-panel--highlight">
-          <p class="portfolio-eyebrow">CURRENT SUBSET</p>
-          <h3>仓库内可直接使用的中文说话视频</h3>
-          <p>按当前 <code>dataset</code> 文件夹中实际存在的 <code>mp4</code> 统计，共有 <strong>3853</strong> 个视频片段，累计 <strong>17.06 小时</strong>，覆盖 <strong>128 个命名归并说话人</strong>。</p>
+          <p class="portfolio-eyebrow">TRAIN SPLIT</p>
+          <h3>实际训练使用的中文说话视频</h3>
+          <p>按 <code>dataset/TalkVid/train.txt</code> 与 <code>dataset/JoyGen/train.txt</code> 重算，且只统计同时具备 <code>json + mp4 + wav</code> 的训练样本，共有 <strong>2262</strong> 个视频片段，累计 <strong>8.98 小时</strong>，覆盖 <strong>112 个命名归并说话人</strong>。</p>
           <div class="dataset-kpis">
             <div class="dataset-kpi">
               <span>总时长</span>
-              <strong>17.06h</strong>
+              <strong>8.98h</strong>
             </div>
             <div class="dataset-kpi">
               <span>视频片段</span>
-              <strong>3853</strong>
+              <strong>2262</strong>
             </div>
             <div class="dataset-kpi">
               <span>说话人归并</span>
-              <strong>128</strong>
+              <strong>112</strong>
             </div>
             <div class="dataset-kpi">
               <span>视频帧率</span>
@@ -128,7 +128,7 @@ redirect_from:
           <a class="dataset-speakers__link" href="/files/dataset/chinese-speaking-dataset-summary.json">下载统计 JSON</a>
         </div>
         <img src="/images/projects/chinese-speaking-dataset-speakers.png" alt="中文说话人视频数据集说话人总览图">
-        <p class="dataset-speakers__caption">总览图按当前仓库中的代表样本生成。JoyGen 按源视频前缀归并；TalkVid 当前元数据未显式提供 <code>speaker_id</code>，此处按文件命名进行概览级归并，适合主页展示，不作为严格身份标注声明。</p>
+        <p class="dataset-speakers__caption">总览图仅基于训练集样本生成。JoyGen 按源视频前缀归并；TalkVid 当前元数据未显式提供 <code>speaker_id</code>，此处按文件命名进行概览级归并，适合主页展示，不作为严格身份标注声明。</p>
       </article>
     </div>
 
@@ -137,10 +137,10 @@ redirect_from:
         <p class="portfolio-eyebrow">TALKVID PROCESSED</p>
         <h3>TalkVid 子集</h3>
         <ul class="dataset-card__list">
-          <li><strong>12.93 小时 / 2347 段可用视频</strong>，当前仓库里另有 1744 条元数据未附对应 mp4。</li>
-          <li><strong>平均片段长度 19.83 秒</strong>，中位数 19.0 秒，适合中文口型和长句驱动训练。</li>
-          <li><strong>音频格式</strong> 为 16 kHz、16-bit、单声道 WAV，并额外保留 2287 条 <code>_16k.wav</code>。</li>
-          <li><strong>人脸占画面比例</strong> 平均 6.01%，适合中近景说话人建模和人脸裁剪复用。</li>
+          <li><strong>5.57 小时 / 1017 段训练视频</strong>，全部来自 <code>dataset/TalkVid/train.txt</code>，训练清单与本地文件完全对齐。</li>
+          <li><strong>平均片段长度 19.71 秒</strong>，中位数 19.12 秒，适合中文口型和长句驱动训练。</li>
+          <li><strong>训练音频配对完整</strong>，1017 段视频均有 16 kHz、16-bit、单声道 WAV，同时库存中还保留 2287 条 <code>_16k.wav</code>。</li>
+          <li><strong>库存与训练口径差异明显</strong>：仓库库存有 2347 段 mp4、4091 条元数据，其中 1744 条元数据未附对应 mp4，不应计入训练统计。</li>
         </ul>
       </article>
 
@@ -148,10 +148,10 @@ redirect_from:
         <p class="portfolio-eyebrow">JOYGEN PROCESSED</p>
         <h3>JoyGen 子集</h3>
         <ul class="dataset-card__list">
-          <li><strong>4.13 小时 / 1506 段可用视频</strong>，元数据与视频一一配对，无缺失样本。</li>
-          <li><strong>103 个源说话人归并</strong>，平均每位说话人 14.62 段视频，中位数 10 段。</li>
-          <li><strong>平均片段长度 9.88 秒</strong>，更适合高密度口型同步和短句生成训练。</li>
-          <li><strong>人脸占画面比例</strong> 平均 10.81%，近景比例更高，对嘴型监督更友好。</li>
+          <li><strong>3.41 小时 / 1245 段训练视频</strong>，全部来自 <code>dataset/JoyGen/train.txt</code>，训练清单与本地文件完全对齐。</li>
+          <li><strong>91 个源说话人归并</strong>，平均每位说话人 13.68 段视频，中位数 8 段。</li>
+          <li><strong>平均片段长度 9.87 秒</strong>，更适合高密度口型同步和短句生成训练。</li>
+          <li><strong>库存与训练差异较小</strong>：库存为 1506 段，训练实际使用 1245 段，说明主要是清单过滤而不是文件缺失。</li>
         </ul>
       </article>
 

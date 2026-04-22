@@ -1,60 +1,63 @@
 {
   "generated_from": "dataset",
+  "selection_rule": "Only samples listed in dataset/*/train.txt and backed by both JSON metadata and MP4 media are counted.",
   "datasets": {
     "TalkVid": {
       "name": "TalkVid",
+      "split_basis": "train.txt",
+      "train_list_count": 1017,
       "meta_json_count": 4091,
-      "usable_clip_count": 2347,
-      "meta_without_mp4_count": 1744,
-      "total_duration_seconds": 46539.52,
-      "total_duration_human": "12.93 h",
+      "inventory_clip_count": 2347,
+      "inventory_meta_without_mp4_count": 1744,
+      "usable_clip_count": 1017,
+      "train_missing_mp4_count": 0,
+      "train_missing_meta_count": 0,
+      "total_duration_seconds": 20042.96,
+      "total_duration_human": "5.57 h",
       "duration_stats_seconds": {
-        "mean": 19.829,
-        "median": 19.0,
-        "min": 5.92,
+        "mean": 19.708,
+        "median": 19.12,
+        "min": 6.4,
         "max": 39.92
       },
-      "unique_speakers": 25,
+      "unique_speakers": 21,
       "clips_per_speaker": {
-        "mean": 93.88,
-        "median": 10,
-        "max": 1596
+        "mean": 48.43,
+        "median": 5,
+        "max": 685
       },
       "speaker_count_method": "Grouped by filename prefix clipxxx. The current metadata does not expose an explicit speaker_id, so this is a naming-based estimate for overview use.",
       "resolution": [
         "1080x1440",
         "1080x1920",
-        "1280x648",
         "1280x720",
-        "1428x1080",
-        "1440x1080",
         "1904x1080",
-        "1906x1080",
         "1920x1080",
-        "1920x960",
         "1920x972"
       ],
       "fps": [
         25.0
       ],
       "frame_count_stats": {
-        "mean": 495.73,
-        "median": 475,
-        "min": 148,
+        "mean": 492.7,
+        "median": 478,
+        "min": 160,
         "max": 998
       },
       "face_box_stats": {
-        "mean_width": 295.39,
-        "mean_height": 393.31,
-        "median_width": 286,
-        "median_height": 384,
-        "mean_area_ratio_percent": 6.01,
-        "median_area_ratio_percent": 5.42
+        "mean_width": 314.91,
+        "mean_height": 416.81,
+        "median_width": 305,
+        "median_height": 407,
+        "mean_area_ratio_percent": 6.72,
+        "median_area_ratio_percent": 6.06
       },
       "modalities": {
-        "mp4_clips": 2347,
-        "wav_clips": 2347,
-        "wav_16k_clips": 2287,
+        "train_mp4_clips": 1017,
+        "train_wav_clips": 1017,
+        "train_wav_16k_clips": 1017,
+        "inventory_wav_clips": 2347,
+        "inventory_wav_16k_clips": 2287,
         "original_wav_sample_rates": [
           16000
         ],
@@ -82,6 +85,7 @@
         "root": "dataset/TalkVid",
         "meta_dir": "dataset/TalkVid/meta",
         "media_dir": "dataset/TalkVid/video_audio_clip_root",
+        "split_file": "dataset/TalkVid/train.txt",
         "pairing_rule": "One JSON metadata file and one MP4 clip share the same stem; each clip also has paired WAV audio.",
         "json_fields": [
           "face_list",
@@ -105,93 +109,94 @@
         ]
       },
       "speaker_examples": {
-        "clip000": "clip000_-33Tyhb_ehs_002_214.980_231.940",
+        "clip000": "clip000_-NrKnqFLa0A_002_186.920_391.608",
         "clip001": "clip001_-XrkF8mnLZw_003_156.140_219.980",
         "clip002": "clip002_0_BO2MU1TwA_001_0.100_101.120",
         "clip003": "clip003_4R1yqW6RFck_001_0.100_413.280",
         "clip004": "clip004_-NrKnqFLa0A_001_0.100_186.720",
-        "clip005": "clip005_2uKLg39UrKs_001_0.100_412.267",
+        "clip005": "clip005_8XHTT-TQkS4_001_0.100_307.467",
         "clip006": "clip006_0_BO2MU1TwA_005_255.900_448.980",
-        "clip007": "clip007_4MeAzGp7QUY_001_4.720_588.240",
+        "clip007": "clip007_4R1yqW6RFck_003_477.911_769.202",
         "clip008": "clip008_5PdEAwErUck_001_0.100_459.275",
-        "clip009": "clip009_6UhngwP2lVQ_004_147.233_878.233",
-        "clip010": "clip010_MtOKCR0iY8k_002_23.767_531.167",
+        "clip009": "clip009_BWTNrM9gHvc_001_1162.100_1487.800",
+        "clip010": "clip010_S6n2DOMjf3o_001_248.067_752.467",
         "clip011": "clip011_SH1i0SU6qwY_003_211.233_978.900",
-        "clip012": "clip012_0f6XZnagHGA_002_145.100_850.600",
-        "clip013": "clip013_9ndPNV9NZg8_001_1086.285_1675.474",
-        "clip014": "clip014_7FFW4p9pznE_002_18.733_480.933",
-        "clip015": "clip015_6bD13UfC2CI_003_983.783_1643.409",
-        "clip016": "clip016_f1SBVMjKDwc_004_268.167_840.967",
-        "clip017": "clip017_A5P4_-LQ8I8_001_0.100_1472.200",
+        "clip012": "clip012_TF3Hb0YQwyE_001_0.100_393.000",
+        "clip013": "clip013_TF3Hb0YQwyE_004_1386.667_1833.667",
+        "clip014": "clip014_TJVronOA1ig_002_18.533_751.567",
+        "clip015": "clip015_A8fi4PhdCoM_001_9.100_467.300",
+        "clip017": "clip017_TJVronOA1ig_002_18.533_751.567",
         "clip018": "clip018_TJVronOA1ig_002_18.533_751.567",
         "clip019": "clip019_Jo0Y2Z2P2nk_002_27.000_678.500",
-        "clip020": "clip020_TJp0xmzjOKU_002_68.860_744.020",
         "clip021": "clip021_6cVIotSKeE0_002_22.800_850.733",
-        "clip022": "clip022_0f6XZnagHGA_002_145.100_850.600",
-        "clip023": "clip023_quwI29-C9Jc_001_0.100_1219.883",
-        "clip024": "clip024_6UhngwP2lVQ_004_147.233_878.233"
+        "clip023": "clip023_TJVronOA1ig_002_18.533_751.567"
       },
       "top_sources_by_clips": [
-        [
-          "pvPJQ8dSCEo",
-          80
-        ],
-        [
-          "ak8d3ZZ_LA0",
-          54
-        ],
-        [
-          "8GERUZ3Tet8",
-          36
-        ],
         [
           "g0RWoZnOANM",
           35
         ],
         [
-          "ar8xuX-XEEE",
-          34
+          "9CRI6CMkMok",
+          27
+        ],
+        [
+          "pyDJVXVzmbY",
+          24
+        ],
+        [
+          "TF3Hb0YQwyE",
+          22
+        ],
+        [
+          "9eOGgAKXm4Y",
+          20
+        ],
+        [
+          "Se9LvevEpZU",
+          20
+        ],
+        [
+          "ak8d3ZZ_LA0",
+          20
         ],
         [
           "bsGAqKZLTLE",
-          34
+          19
         ],
         [
-          "Lyl9-l1LC10",
-          29
+          "4R1yqW6RFck",
+          18
         ],
         [
-          "LGGEF-VNu6E",
-          28
-        ],
-        [
-          "TO6owuydvSc",
-          28
-        ],
-        [
-          "9CRI6CMkMok",
-          27
+          "6NKO4foW8oQ",
+          15
         ]
       ]
     },
     "JoyGen": {
       "name": "JoyGen",
+      "split_basis": "train.txt",
+      "train_list_count": 1245,
       "meta_json_count": 1506,
-      "usable_clip_count": 1506,
-      "meta_without_mp4_count": 0,
-      "total_duration_seconds": 14882.52,
-      "total_duration_human": "4.13 h",
+      "inventory_clip_count": 1506,
+      "inventory_meta_without_mp4_count": 0,
+      "usable_clip_count": 1245,
+      "train_missing_mp4_count": 0,
+      "train_missing_meta_count": 0,
+      "total_duration_seconds": 12293.12,
+      "total_duration_human": "3.41 h",
       "duration_stats_seconds": {
-        "mean": 9.882,
+        "mean": 9.874,
         "median": 10.0,
         "min": 6.0,
         "max": 19.76
       },
-      "unique_speakers": 103,
+      "unique_speakers": 91,
       "clips_per_speaker": {
-        "mean": 14.62,
-        "median": 10,
-        "max": 97
+        "mean": 13.68,
+        "median": 8,
+        "max": 80
       },
       "speaker_count_method": "Grouped by the source identifier before _shot_.",
       "resolution": [
@@ -211,23 +216,25 @@
         25.0
       ],
       "frame_count_stats": {
-        "mean": 247.05,
-        "median": 250.0,
+        "mean": 246.85,
+        "median": 250,
         "min": 150,
         "max": 494
       },
       "face_box_stats": {
-        "mean_width": 403.97,
-        "mean_height": 515.46,
-        "median_width": 373.5,
-        "median_height": 503.5,
-        "mean_area_ratio_percent": 10.81,
-        "median_area_ratio_percent": 9.31
+        "mean_width": 410.0,
+        "mean_height": 524.19,
+        "median_width": 383,
+        "median_height": 513,
+        "mean_area_ratio_percent": 11.12,
+        "median_area_ratio_percent": 9.75
       },
       "modalities": {
-        "mp4_clips": 1506,
-        "wav_clips": 1506,
-        "wav_16k_clips": 0,
+        "train_mp4_clips": 1245,
+        "train_wav_clips": 1245,
+        "train_wav_16k_clips": 0,
+        "inventory_wav_clips": 1506,
+        "inventory_wav_16k_clips": 0,
         "original_wav_sample_rates": [
           16000
         ],
@@ -253,6 +260,7 @@
         "root": "dataset/JoyGen",
         "meta_dir": "dataset/JoyGen/meta",
         "media_dir": "dataset/JoyGen/video_audio_clip_root",
+        "split_file": "dataset/JoyGen/train.txt",
         "pairing_rule": "One JSON metadata file and one MP4 clip share the same stem; each clip also has paired WAV audio.",
         "json_fields": [
           "face_list",
@@ -306,16 +314,14 @@
         "Bili_0129": "Bili_0129_shot_004_000",
         "Bili_0133": "Bili_0133_shot_002_000",
         "Bili_0192": "Bili_0192_shot_001_000",
-        "Bili_0209": "Bili_0209_shot_009_002",
         "Bili_0225": "Bili_0225_shot_003_000",
-        "Bili_0244": "Bili_0244_shot_001_000",
         "Bili_0263": "Bili_0263_shot_003_030",
         "Bili_0265": "Bili_0265_shot_001_000",
         "Bili_0267": "Bili_0267_shot_003_000",
         "Bili_0273": "Bili_0273_shot_018_001",
         "Bili_0284": "Bili_0284_shot_001_005",
         "Bili_0286": "Bili_0286_shot_002_002",
-        "Bili_0292": "Bili_0292_shot_007_000",
+        "Bili_0292": "Bili_0292_shot_021_000",
         "Bili_0299": "Bili_0299_shot_001_001",
         "Bili_0305": "Bili_0305_shot_002_001",
         "Bili_0320": "Bili_0320_shot_001_000",
@@ -329,11 +335,7 @@
         "Bili_0363": "Bili_0363_shot_001_000",
         "Bili_0367": "Bili_0367_shot_005_005",
         "Bili_0368": "Bili_0368_shot_001_001",
-        "Bili_0379": "Bili_0379_shot_001_000",
-        "Bili_0384": "Bili_0384_shot_001_000",
         "Bili_0387": "Bili_0387_shot_002_012",
-        "Bili_0394": "Bili_0394_shot_003_001",
-        "Bili_0397": "Bili_0397_shot_014_001",
         "Bili_0400": "Bili_0400_shot_001_001",
         "Bili_0410": "Bili_0410_shot_001_001",
         "Bili_0412": "Bili_0412_shot_001_008",
@@ -341,22 +343,18 @@
         "Bili_0495": "Bili_0495_shot_001_006",
         "Bili_0509": "Bili_0509_shot_002_000",
         "Bili_0521": "Bili_0521_shot_001_035",
-        "Bili_0535": "Bili_0535_shot_007_009",
         "Bili_0540": "Bili_0540_shot_003_000",
         "Bili_0542": "Bili_0542_shot_005_001",
         "Bili_0557": "Bili_0557_shot_001_001",
         "Bili_0558": "Bili_0558_shot_004_012",
         "Bili_0560": "Bili_0560_shot_001_001",
         "Bili_0562": "Bili_0562_shot_001_002",
-        "Bili_0565": "Bili_0565_shot_004_021",
         "Bili_0567": "Bili_0567_shot_002_003",
-        "Bili_0573": "Bili_0573_shot_002_005",
         "Bili_0576": "Bili_0576_shot_065_000",
         "Bili_0580": "Bili_0580_shot_005_002",
         "Bili_0582": "Bili_0582_shot_002_001",
         "Bili_0583": "Bili_0583_shot_001_000",
-        "Bili_0591": "Bili_0591_shot_003_000",
-        "Bili_0596": "Bili_0596_shot_001_026",
+        "Bili_0591": "Bili_0591_shot_005_000",
         "Bili_0598": "Bili_0598_shot_011_000",
         "Bili_0618": "Bili_0618_shot_001_032",
         "Bili_0621": "Bili_0621_shot_001_000",
@@ -364,16 +362,14 @@
         "Bili_0634": "Bili_0634_shot_001_000",
         "Bili_0644": "Bili_0644_shot_001_001",
         "Bili_0648": "Bili_0648_shot_002_000",
-        "Bili_0651": "Bili_0651_shot_001_000",
+        "Bili_0651": "Bili_0651_shot_003_000",
         "Bili_0659": "Bili_0659_shot_011_000",
         "Bili_0670": "Bili_0670_shot_003_002",
         "SaveTik.io_7336869647305887027_hd": "SaveTik.io_7336869647305887027_hd_shot_002_000",
         "SaveTik.io_7342776901041196297_hd": "SaveTik.io_7342776901041196297_hd_shot_001_000",
         "SaveTik.io_7344678214398151946_hd": "SaveTik.io_7344678214398151946_hd_shot_003_000",
-        "SaveTik.io_7350666335048715572_hd": "SaveTik.io_7350666335048715572_hd_shot_001_001",
-        "SaveTik.io_7353154236290551052_hd": "SaveTik.io_7353154236290551052_hd_shot_002_001",
+        "SaveTik.io_7350666335048715572_hd": "SaveTik.io_7350666335048715572_hd_shot_001_002",
         "SaveTik.io_7358030605755469067_hd": "SaveTik.io_7358030605755469067_hd_shot_001_001",
-        "SaveTik.io_7362759132346060047_hd": "SaveTik.io_7362759132346060047_hd_shot_005_005",
         "SaveTik.io_7365124591385169189_hd": "SaveTik.io_7365124591385169189_hd_shot_001_000",
         "SaveTik.io_7365821285953244466_hd": "SaveTik.io_7365821285953244466_hd_shot_001_000",
         "SaveTik.io_7366538093240896820_hd": "SaveTik.io_7366538093240896820_hd_shot_003_000",
@@ -382,12 +378,8 @@
       },
       "top_sources_by_clips": [
         [
-          "Bili_0384",
-          97
-        ],
-        [
           "Bili_0670",
-          82
+          80
         ],
         [
           "Bili_0077",
@@ -403,11 +395,7 @@
         ],
         [
           "Bili_0410",
-          53
-        ],
-        [
-          "Bili_0299",
-          46
+          48
         ],
         [
           "SaveTik.io_7366969439717297459_hd",
@@ -418,17 +406,25 @@
           37
         ],
         [
-          "SaveTik.io_7365124591385169189_hd",
+          "Bili_0299",
           35
+        ],
+        [
+          "SaveTik.io_7365124591385169189_hd",
+          34
+        ],
+        [
+          "Bili_0098",
+          29
         ]
       ]
     }
   },
   "combined": {
-    "usable_clip_count": 3853,
-    "unique_speakers": 128,
-    "total_duration_seconds": 61422.04,
-    "total_duration_human": "17.06 h",
+    "usable_clip_count": 2262,
+    "unique_speakers": 112,
+    "total_duration_seconds": 32336.08,
+    "total_duration_human": "8.98 h",
     "datasets": [
       "TalkVid",
       "JoyGen"

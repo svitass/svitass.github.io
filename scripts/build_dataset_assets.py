@@ -17,6 +17,7 @@ DATASET_ROOT = ROOT / "dataset"
 OUTPUT_JSON = ROOT / "files" / "dataset" / "chinese-speaking-dataset-summary.json"
 OUTPUT_IMAGE = ROOT / "images" / "projects" / "chinese-speaking-dataset-speakers.png"
 TEMP_DIR = ROOT / "images" / "projects" / ".dataset-speaker-cache"
+TRAIN_FILENAME = "train.txt"
 
 
 DATASETS = {
@@ -180,13 +181,19 @@ def summarize_dataset(name: str, config: dict) -> tuple[dict, dict]:
     dataset_dir = DATASET_ROOT / name
     meta_dir = dataset_dir / "meta"
     media_dir = dataset_dir / "video_audio_clip_root"
+    train_path = dataset_dir / TRAIN_FILENAME
 
     meta_paths = {p.stem: p for p in meta_dir.glob("*.json")}
     mp4_paths = {p.stem: p for p in media_dir.glob("*.mp4")}
     wav_paths = {p.stem: p for p in media_dir.glob("*.wav")}
+    inventory_stems = sorted(mp4_paths.keys() & meta_paths.keys())
 
-    usable_stems = sorted(mp4_paths.keys() & meta_paths.keys())
+    train_lines = [line.strip() for line in train_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    train_stems = [Path(line).stem for line in train_lines]
+    usable_stems = sorted(stem for stem in train_stems if stem in mp4_paths and stem in meta_paths)
     usable_count = len(usable_stems)
+    train_missing_mp4 = sorted(stem for stem in train_stems if stem in meta_paths and stem not in mp4_paths)
+    train_missing_meta = sorted(stem for stem in train_stems if stem not in meta_paths)
 
     video_results = {}
     with ThreadPoolExecutor(max_workers=12) as executor:
@@ -205,6 +212,8 @@ def summarize_dataset(name: str, config: dict) -> tuple[dict, dict]:
             wav_16k.append(wav_path)
         else:
             wav_original.append(wav_path)
+    train_original_wav_count = sum(1 for stem in usable_stems if stem in wav_paths)
+    train_wav16k_count = sum(1 for stem in usable_stems if f"{stem}_16k" in wav_paths)
 
     original_wav_samples = [probe_wav(path) for path in wav_original[: min(80, len(wav_original))]]
     wav16k_samples = [probe_wav(path) for path in wav_16k[: min(80, len(wav_16k))]]
@@ -237,9 +246,14 @@ def summarize_dataset(name: str, config: dict) -> tuple[dict, dict]:
 
     dataset_summary = {
         "name": name,
+        "split_basis": TRAIN_FILENAME,
+        "train_list_count": len(train_lines),
         "meta_json_count": len(meta_paths),
+        "inventory_clip_count": len(inventory_stems),
+        "inventory_meta_without_mp4_count": len(meta_paths) - len(inventory_stems),
         "usable_clip_count": usable_count,
-        "meta_without_mp4_count": len(meta_paths) - usable_count,
+        "train_missing_mp4_count": len(train_missing_mp4),
+        "train_missing_meta_count": len(train_missing_meta),
         "total_duration_seconds": round(sum(durations), 3),
         "total_duration_human": human_duration(sum(durations)),
         "duration_stats_seconds": {
@@ -272,9 +286,11 @@ def summarize_dataset(name: str, config: dict) -> tuple[dict, dict]:
             "median_area_ratio_percent": round(statistics.median(face_ratios) * 100.0, 2),
         },
         "modalities": {
-            "mp4_clips": usable_count,
-            "wav_clips": len(wav_original),
-            "wav_16k_clips": len(wav_16k),
+            "train_mp4_clips": usable_count,
+            "train_wav_clips": train_original_wav_count,
+            "train_wav_16k_clips": train_wav16k_count,
+            "inventory_wav_clips": len(wav_original),
+            "inventory_wav_16k_clips": len(wav_16k),
             "original_wav_sample_rates": sorted({sample["sample_rate"] for sample in original_wav_samples}),
             "original_wav_channels": sorted({sample["channels"] for sample in original_wav_samples}),
             "original_wav_bits": sorted({sample["sample_width"] for sample in original_wav_samples}),
@@ -285,6 +301,7 @@ def summarize_dataset(name: str, config: dict) -> tuple[dict, dict]:
             "root": str(dataset_dir.relative_to(ROOT)).replace("\\", "/"),
             "meta_dir": str(meta_dir.relative_to(ROOT)).replace("\\", "/"),
             "media_dir": str(media_dir.relative_to(ROOT)).replace("\\", "/"),
+            "split_file": str(train_path.relative_to(ROOT)).replace("\\", "/"),
             "pairing_rule": "One JSON metadata file and one MP4 clip share the same stem; each clip also has paired WAV audio.",
             "json_fields": schema_keys,
             "json_video_size_order": "[height, width]",
@@ -371,6 +388,7 @@ def build_collage(all_speakers: list[dict]) -> None:
 def main() -> None:
     summary = {
         "generated_from": str(DATASET_ROOT.relative_to(ROOT)).replace("\\", "/"),
+        "selection_rule": "Only samples listed in dataset/*/train.txt and backed by both JSON metadata and MP4 media are counted.",
         "datasets": {},
     }
 
