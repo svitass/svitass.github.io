@@ -283,7 +283,7 @@ redirect_from:
             involvement: "主导 Demo 打通",
             level: 84,
             tags: ["Unreal Engine", "MetaHuman", "Live Link", "Pixel Streaming"],
-            image: "/images/projects/chat-system.png",
+            image: "/images/projects/2d-realtime-dialogue-cover.jpg",
             link: "/portfolio/realtime-3d-avatar-demo/"
           },
           {
