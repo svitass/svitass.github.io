@@ -354,6 +354,13 @@ redirect_from:
       trackData.data.projects.splice(1, 0, xsensProject);
     }
 
+    trackData.data.projects = trackData.data.projects.map(function (project) {
+      if (project.image === "/images/projects/hardmo-pipeline.jpg") {
+        project.link = "/portfolio/hardmo-plus-annotation-calibration/";
+      }
+      return project;
+    });
+
     var stage = document.querySelector("[data-fishbone]");
     if (!stage) return;
 
