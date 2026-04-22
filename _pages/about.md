@@ -342,6 +342,18 @@ redirect_from:
       return project.image !== "/images/projects/medical-dataset-capture-setup.png";
     });
 
+    var xsensProject = null;
+    trackData.drive.projects = trackData.drive.projects.filter(function (project) {
+      if (project.image === "/images/projects/xsens-retarget.png") {
+        xsensProject = project;
+        return false;
+      }
+      return true;
+    });
+    if (xsensProject) {
+      trackData.data.projects.splice(1, 0, xsensProject);
+    }
+
     var stage = document.querySelector("[data-fishbone]");
     if (!stage) return;
 
