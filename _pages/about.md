@@ -253,23 +253,6 @@ redirect_from:
             tags: ["MuseTalk", "LatentSync", "Lip Sync", "Alignment"],
             image: "/images/projects/lipsync-cover.svg",
             link: "/portfolio/chinese-lipsync-optimization/"
-          },
-          {
-            title: "2D 数字人实时对话",
-            summary: "基于 MuseTalk 和 LiveTalking 做 2D 数字人实时对话系统，支持实时对话、打断、背景切换与自定义形象接入。",
-            involvement: "核心负责",
-            level: 80,
-            tags: ["Realtime Dialogue", "2D Avatar", "Interrupt"],
-            image: "/images/projects/thumb-face.svg"
-          },
-          {
-            title: "3D 数字人实时对话 / 情绪控制",
-            summary: "把实时音频、面部动画和交互状态串到 MetaHuman 中，进一步验证 3D 数字人的情绪和交互响应表现。",
-            involvement: "负责验证与打通",
-            level: 78,
-            tags: ["MetaHuman", "Face Animation", "Emotion State"],
-            image: "/images/projects/chat-system.png",
-            link: "/portfolio/realtime-3d-avatar-demo/"
           }
         ]
       },
