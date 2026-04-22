@@ -296,12 +296,12 @@ redirect_from:
             link: "/portfolio/video-to-3d-avatar-replacement/"
           },
           {
-            title: "实时打断 / 背景切换 / 交互控制",
-            summary: "围绕实际演示需求设计系统交互能力，让数字人具备更完整的可展示性，而不是只有静态生成或单轮响应。",
+            title: "2D 数字人实时对话",
+            summary: "基于 MuseTalk 和 LiveTalking 搭建 2D 数字人实时对话系统，支持实时对话、打断、背景切换与交互控制，让角色具备更完整的可展示性。",
             involvement: "系统链路负责",
             level: 76,
-            tags: ["Interrupt", "Background Switch", "State Control"],
-            image: "/images/projects/chat-architecture.png"
+            tags: ["Realtime Dialogue", "2D Avatar", "Background Switch", "Interrupt"],
+            image: "/images/projects/2d-realtime-dialogue-cover.jpg"
           },
           {
             title: "手术室模拟系统 DigitSurge",
