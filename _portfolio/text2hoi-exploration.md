@@ -1,7 +1,11 @@
 ---
 title: "Text2HOI / OOD-HOI 探索"
+layout: external-redirect
 collection: portfolio
 permalink: /portfolio/text2hoi-exploration/
+link: https://nickk0212.github.io/ood-hoi/
+redirect_url: https://nickk0212.github.io/ood-hoi/
+external_only: true
 excerpt: "围绕文本驱动的人-物交互动作生成做探索，重点关注超出训练域的 HOI 生成能力与交互合理性。"
 header:
   teaser: "projects/text2hoi-method.png"
