@@ -255,9 +255,9 @@ redirect_from:
         projects: [
           {
             title: "中文口型数据清洗与对齐校正",
-            summary: "构建中文口型数据集，清理磨皮美颜、字幕挡脸、手挡脸、模糊样本，并做音画对齐校正，提升训练监督质量。",
-            involvement: "主导推进",
-            level: 86,
+            summary: "构建中文口型数据集，清理磨皮美颜、字幕挡脸、手挡脸、模糊样本，并做音画对齐校正；人工筛样环节有同事协助，其余主体工作由我完成。",
+            involvement: "主要负责",
+            level: 92,
             tags: ["Lip Data", "Cleaning", "Offset Correction"],
             image: "/images/projects/chinese-speaking-dataset-speakers.png",
             link: "/portfolio/chinese-lipsync-optimization/"
