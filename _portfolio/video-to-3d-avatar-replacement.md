@@ -51,17 +51,17 @@ author_profile: false
     <div class="project-visual-grid">
       <div class="project-visual">
         <video controls playsinline preload="metadata" poster="/images/projects/video-replacement-before.png">
-          <source src="/files/video-replacement-before-demo.mp4" type="video/mp4">
+          <source src="/files/video-replacement-before-ppt.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频，请直接下载观看。
         </video>
-        <p class="project-visual__caption">左侧是原始人物视频，用来展示进入角色替换流程之前的真实拍摄输入。也可<a href="/files/video-replacement-before-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
+        <p class="project-visual__caption">左侧是原始人物视频，用来展示进入角色替换流程之前的真实拍摄输入。也可<a href="/files/video-replacement-before-ppt.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
       </div>
       <div class="project-visual">
         <video controls playsinline preload="metadata" poster="/images/projects/video-replacement-after.png">
-          <source src="/files/video-replacement-after-demo.mp4" type="video/mp4">
+          <source src="/files/video-replacement-after-ppt.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频，请直接下载观看。
         </video>
-        <p class="project-visual__caption">右侧是替换为 3D 虚拟角色后的最终效果，对应 PPT 里的结果演示视频。也可<a href="/files/video-replacement-after-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看结果视频。</p>
+        <p class="project-visual__caption">右侧是替换为 3D 虚拟角色后的最终效果，对应 PPT 里的结果演示视频。也可<a href="/files/video-replacement-after-ppt.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看结果视频。</p>
       </div>
     </div>
   </section>
