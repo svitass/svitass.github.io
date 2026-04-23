@@ -273,9 +273,9 @@ redirect_from:
           },
           {
             title: "HardMo++ 标注校准",
-            summary: "围绕手腕、脚踝、侧身等困难场景做标注校准和数据增强，提升动作重建数据在 hardcase 场景下的可用性。",
-            involvement: "核心参与",
-            level: 70,
+            summary: "在职期间围绕手腕、脚踝、侧身等困难场景做过一部分标注校准与数据增强，帮助提升 hardcase 动作重建样本的可用性。",
+            involvement: "阶段参与",
+            level: 52,
             tags: ["HardMo++", "ScoreHMR", "Annotation Calibration"],
             image: "/images/projects/hardmo-pipeline.jpg"
           },
