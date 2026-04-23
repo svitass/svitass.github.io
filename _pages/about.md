@@ -18,6 +18,15 @@ redirect_from:
         </div>
         <div class="resume-hero__identity">
           <h1 class="resume-hero__name">YH</h1>
+          <p class="resume-hero__role">以数字人为核心，持续探索 3D 数字人与可交互虚拟世界。</p>
+          <p class="resume-hero__summary">持续关注数字人领域前沿技术，重点放在 3D 数字人的动作、面部与系统化落地，期待后续能参与构建一个更真实的虚拟世界。</p>
+          <div class="resume-hero__tags" aria-label="能力标签">
+            <span>3D 数字人</span>
+            <span>骨骼动画</span>
+            <span>面部驱动</span>
+            <span>动作生成</span>
+            <span>系统 Demo</span>
+          </div>
           <div class="resume-hero__links" aria-label="联系方式">
             <a class="resume-hero__icon-link" href="https://github.com/svitass" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -40,7 +49,7 @@ redirect_from:
     <div class="section-heading section-heading--wide">
       <p class="section-heading__eyebrow">EXPERIENCE MAP</p>
       <h2>数字人经历鱼骨主线</h2>
-      <p>主线不是简单分类，而是我在数字人方向上逐步搭起来的一条能力链。点击鱼骨上的节点，下方会切换到该方向下的代表项目，一行一个项目，展示项目内容和我的参与度。</p>
+      <p>按数据、骨骼动画、面部、系统应用四条主线整理项目。点击节点查看该方向下的代表项目与参与度。</p>
     </div>
 
     <div class="fishbone-stage" data-fishbone>
@@ -49,19 +58,31 @@ redirect_from:
         <div class="fishbone-track__main" role="tablist" aria-label="数字人经历主线">
           <button class="fishbone-step" type="button" data-track-key="data" data-track-index="0">
             <span class="fishbone-step__index">1</span>
-            <span class="fishbone-step__label">数据</span>
+            <span class="fishbone-step__content">
+              <span class="fishbone-step__label">数据</span>
+              <span class="fishbone-step__meta">采集 / 清洗 / 对齐</span>
+            </span>
           </button>
           <button class="fishbone-step" type="button" data-track-key="drive" data-track-index="1">
             <span class="fishbone-step__index">2</span>
-            <span class="fishbone-step__label">骨骼动画</span>
+            <span class="fishbone-step__content">
+              <span class="fishbone-step__label">骨骼动画</span>
+              <span class="fishbone-step__meta">重定向 / 生成 / 驱动</span>
+            </span>
           </button>
           <button class="fishbone-step" type="button" data-track-key="face" data-track-index="2">
             <span class="fishbone-step__index">3</span>
-            <span class="fishbone-step__label">面部</span>
+            <span class="fishbone-step__content">
+              <span class="fishbone-step__label">面部</span>
+              <span class="fishbone-step__meta">口型 / 表情 / 重建</span>
+            </span>
           </button>
           <button class="fishbone-step is-active" type="button" data-track-key="system" data-track-index="3">
             <span class="fishbone-step__index">4</span>
-            <span class="fishbone-step__label">数字人系统与应用</span>
+            <span class="fishbone-step__content">
+              <span class="fishbone-step__label">数字人系统与应用</span>
+              <span class="fishbone-step__meta">对话 / 控制 / 场景</span>
+            </span>
           </button>
         </div>
 

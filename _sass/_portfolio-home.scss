@@ -48,14 +48,8 @@ body {
 }
 
 .resume-hero {
-  display: grid;
-  gap: 1.5rem;
+  display: block;
   padding-top: 1rem;
-
-  @include breakpoint($large) {
-    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-    align-items: start;
-  }
 }
 
 .resume-hero__copy,
@@ -72,15 +66,16 @@ body {
 .resume-hero__copy {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 260px;
-  padding: 2.5rem 2.35rem;
+  justify-content: flex-start;
+  max-width: 980px;
+  min-height: 0;
+  padding: 2.4rem 2.5rem;
 }
 
 .resume-hero__identity-card {
   display: grid;
-  gap: 1.6rem;
-  align-items: center;
+  gap: 1.8rem;
+  align-items: start;
   width: 100%;
 
   @include breakpoint($medium) {
@@ -114,7 +109,7 @@ body {
 .resume-hero__identity {
   display: grid;
   justify-items: start;
-  gap: 1.15rem;
+  gap: 0.95rem;
 }
 
 .resume-hero__name {
@@ -159,19 +154,38 @@ body {
 }
 
 .resume-hero__role {
-  margin: 0.9rem 0 0;
+  margin: 0;
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
   font-size: clamp(1.3rem, 2.4vw, 1.75rem);
   font-weight: 700;
-  line-height: 1.55;
+  line-height: 1.35;
 }
 
 .resume-hero__summary {
   max-width: 760px;
-  margin: 1rem 0 0;
+  margin: 0;
   color: var(--portfolio-muted);
   font-size: 1.04rem;
-  line-height: 1.95;
+  line-height: 1.8;
+}
+
+.resume-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.resume-hero__tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.5rem 0.95rem;
+  border: 1px solid rgba(31, 36, 48, 0.08);
+  border-radius: 999px;
+  background: rgba(237, 217, 181, 0.18);
+  color: var(--portfolio-deep);
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .resume-hero__actions {
@@ -209,72 +223,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.resume-hero__visual {
-  display: grid;
-  gap: 1rem;
-  padding: 1.2rem;
-  background:
-    radial-gradient(circle at top left, rgba(124, 116, 105, 0.06), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 245, 241, 0.88));
-  color: var(--portfolio-ink);
-}
-
-.resume-hero__map-card {
-  padding: 1rem;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(31, 36, 48, 0.08);
-}
-
-.resume-hero__map-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.8rem;
-  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-}
-
-.resume-hero__map-head span {
-  color: var(--portfolio-muted);
-  font-size: 0.84rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.resume-hero__map-head strong {
-  font-size: 1rem;
-}
-
-.resume-hero__map-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.96);
-}
-
-.resume-hero__signal {
-  display: grid;
-  gap: 0.8rem;
-
-  @include breakpoint($small) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-.resume-hero__signal-item {
-  padding: 0.95rem 1rem;
-  border-radius: 18px;
-  background: var(--portfolio-stone-1);
-  border: 1px solid rgba(31, 36, 48, 0.06);
-}
-
-.resume-hero__signal-item strong {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 .portfolio-hero,
@@ -563,8 +511,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  min-height: 82px;
+  gap: 0.75rem;
+  min-height: 96px;
   padding: 1rem 1.2rem;
   border: 0;
   background: var(--portfolio-stone-1);
@@ -621,7 +569,27 @@ body {
 
 .fishbone-step__label {
   display: block;
-  line-height: 1.4;
+  line-height: 1.3;
+}
+
+.fishbone-step__content {
+  display: grid;
+  gap: 0.22rem;
+  justify-items: start;
+  text-align: left;
+}
+
+.fishbone-step__meta {
+  display: block;
+  color: rgba(116, 109, 99, 0.9);
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.fishbone-step.is-active .fishbone-step__meta {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .experience-showcase {
@@ -1379,6 +1347,20 @@ body {
     min-height: 0;
   }
 
+  .resume-hero__identity-card {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-hero__identity {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .resume-hero__tags,
+  .resume-hero__links {
+    justify-content: center;
+  }
+
   .fishbone-stage {
     grid-template-columns: 1fr;
     padding-top: 1.25rem;
@@ -1408,6 +1390,11 @@ body {
   .fishbone-step:last-child {
     clip-path: none;
     border-radius: 18px;
+  }
+
+  .fishbone-step__content {
+    justify-items: center;
+    text-align: center;
   }
 
   .fishbone-step + .fishbone-step {
@@ -1458,5 +1445,9 @@ body {
     min-height: 78px;
     padding-left: 0.9rem;
     padding-right: 0.9rem;
+  }
+
+  .fishbone-step__meta {
+    font-size: 0.7rem;
   }
 }
