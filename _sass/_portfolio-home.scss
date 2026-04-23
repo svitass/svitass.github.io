@@ -1232,21 +1232,21 @@ body {
 
 .project-detail {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .project-detail__intro {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
 
   @include breakpoint($large) {
-    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.95fr);
     align-items: start;
   }
 }
 
 .project-detail__block {
-  padding: 1.3rem 1.4rem;
+  padding: 1.45rem 1.6rem;
 }
 
 .project-detail__block h2,
