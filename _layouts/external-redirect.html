@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+{% assign redirect_target = page.redirect_url | default: page.link %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <meta http-equiv="refresh" content="0; url={{ redirect_target }}">
+    <link rel="canonical" href="{{ redirect_target }}">
+    <script>
+      window.location.replace({{ redirect_target | jsonify }});
+    </script>
+  </head>
+
+  <body>
+    <div class="page__inner-wrap" style="max-width: 720px; margin: 6rem auto; padding: 0 1rem; text-align: center;">
+      <p>正在跳转到项目主页。</p>
+      <p><a href="{{ redirect_target }}">如果没有自动跳转，点击这里继续</a></p>
+    </div>
+  </body>
+</html>

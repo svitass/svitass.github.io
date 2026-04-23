@@ -1,7 +1,11 @@
 ﻿---
 title: "Text2Motion 与去脚滑优化"
+layout: external-redirect
 collection: portfolio
 permalink: /portfolio/text2motion-footskate-optimization/
+link: https://h-y1heng.github.io/StableMoFusion-page/
+redirect_url: https://h-y1heng.github.io/StableMoFusion-page/
+external_only: true
 excerpt: "基于 Diffusion 的文本生成动作项目，完成推理加速与脚步接地建模，并产出 ACM MM Oral 论文。"
 header:
   teaser: "projects/stablemofusion-footskate-result.png"
