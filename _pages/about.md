@@ -178,8 +178,8 @@ redirect_from:
           {
             title: "视频人物动作估计与动作重定向",
             summary: "围绕视频人物替换任务，串联 3D 姿态估计、SMPLX、中间骨架表达与 Mixamo / MetaHuman 的动作重定向流程。",
-            involvement: "核心实现",
-            level: 76,
+            involvement: "独立完成",
+            level: 96,
             tags: ["WHAM", "SMPLX", "Mixamo", "MetaHuman"],
             image: "/images/projects/video-replacement-pipeline.png",
             link: "/portfolio/video-to-3d-avatar-replacement/"
@@ -200,9 +200,9 @@ redirect_from:
         projects: [
           {
             title: "中文口型同步优化",
-            summary: "构建 5.57h 中文口型数据集，完成样本清洗、音画 offset 校正与两阶段微调，重点改善双唇音、撮口音和快语速场景。",
-            involvement: "主导推进",
-            level: 88,
+            summary: "构建 5.57h 中文口型数据集，完成样本清洗、音画 offset 校正与两阶段微调；除请同事协助筛数据和一起看最终模型效果外，其余主体工作由我完成。",
+            involvement: "主要负责",
+            level: 95,
             tags: ["MuseTalk", "LatentSync", "Lip Sync", "Alignment"],
             image: "/images/projects/chinese-lipsync-compare-cover.jpg",
             link: "/portfolio/chinese-lipsync-optimization/"
@@ -215,9 +215,9 @@ redirect_from:
         projects: [
           {
             title: "3D 数字人实时对话 Demo",
-            summary: "基于 Unreal Engine + MetaHuman 打通角色接入、实时对话、情绪控制、动作控制、背景切换以及人物与相机控制，是整条链路的系统承载项目。",
-            involvement: "主导 Demo 打通",
-            level: 84,
+            summary: "基于 Unreal Engine + MetaHuman 打通角色接入、实时对话、情绪控制、动作控制、背景切换以及人物与相机控制；对话部分复用了公司之前 2D 数字人的后台，其余主体工作由我完成。",
+            involvement: "主要负责",
+            level: 94,
             tags: ["Unreal Engine", "MetaHuman", "Realtime Dialogue", "Emotion Control", "Camera Control"],
             image: "/images/projects/3d-digital-human-demo-poster.jpg",
             link: "/portfolio/realtime-3d-avatar-demo/"
@@ -225,8 +225,8 @@ redirect_from:
           {
             title: "视频人物替换为 3D 虚拟角色",
             summary: "把视频中的人物动作迁移到 3D 虚拟角色并重新合成背景，形成从捕捉到渲染到合成的完整应用流程。",
-            involvement: "核心实现",
-            level: 78,
+            involvement: "独立完成",
+            level: 96,
             tags: ["SAM", "ProPainter", "WHAM", "Blender Python"],
             image: "/images/projects/video-replacement-pipeline.png",
             link: "/portfolio/video-to-3d-avatar-replacement/"
@@ -322,9 +322,9 @@ redirect_from:
     trackData.drive.projects.push(
       {
         title: "Speech2Gesture",
-        summary: "围绕基于语音素材的骨骼驱动展开，关注语音、文本与说话人风格共同作用下的手势骨骼动画生成。",
-        involvement: "持续探索",
-        level: 86,
+        summary: "作为毕业设计围绕基于语音素材的骨骼驱动展开，关注语音、文本与说话人风格共同作用下的手势骨骼动画生成，主体工作由我完成。",
+        involvement: "毕业设计",
+        level: 100,
         tags: ["Speech2Gesture", "Upper-body Motion", "Gesture Generation"],
         image: "/images/projects/speech2gesture-cover.png",
         link: "/portfolio/speech2gesture-exploration/"
@@ -343,8 +343,9 @@ redirect_from:
     trackData.drive.projects = trackData.drive.projects.map(function (project) {
       if (project.image === "/images/projects/video-replacement-pipeline.png") {
         project.title = "视频人物替换为 3D 虚拟角色";
-        project.summary = "把视频中的人物动作迁移到 3D 虚拟角色，围绕 WHAM、SMPLX、Mixamo 和 Blender 管线完成动作重定向、角色驱动与最终合成。";
-        project.involvement = "核心实现";
+        project.summary = "把视频中的人物动作迁移到 3D 虚拟角色，围绕 WHAM、SMPLX、Mixamo 和 Blender 管线完成动作重定向、角色驱动与最终合成，整体由我独立完成。";
+        project.involvement = "独立完成";
+        project.level = 96;
       }
       return project;
     });
