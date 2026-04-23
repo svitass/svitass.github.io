@@ -48,13 +48,21 @@ author_profile: false
       <img src="/images/projects/video-replacement-pipeline.png" alt="视频人物替换为 3D 虚拟角色流程图">
       <p class="project-visual__caption">材料里保留下来的实际流程图，覆盖人物分离、背景恢复、动作获取、角色重定向和最终合成几个关键环节。</p>
     </div>
-    <div class="project-visual">
-      <img src="/images/projects/video-replacement-before.png" alt="视频人物替换原始视频画面">
-      <p class="project-visual__caption">输入端是真实人物视频，先提取背景和人体运动，再进入 3D 角色驱动流程。</p>
-    </div>
-    <div class="project-visual">
-      <img src="/images/projects/video-replacement-after.png" alt="视频人物替换后的 3D 角色结果">
-      <p class="project-visual__caption">输出端替换为 3D 虚拟角色，同时尽量保留原视频动作节奏和背景语义。</p>
+    <div class="project-visual-grid">
+      <div class="project-visual">
+        <video controls playsinline preload="metadata" poster="/images/projects/video-replacement-before.png">
+          <source src="/files/video-replacement-before-demo.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频，请直接下载观看。
+        </video>
+        <p class="project-visual__caption">左侧是原始人物视频，用来展示进入角色替换流程之前的真实拍摄输入。也可<a href="/files/video-replacement-before-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
+      </div>
+      <div class="project-visual">
+        <video controls playsinline preload="metadata" poster="/images/projects/video-replacement-after.png">
+          <source src="/files/video-replacement-after-demo.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频，请直接下载观看。
+        </video>
+        <p class="project-visual__caption">右侧是替换为 3D 虚拟角色后的最终效果，对应 PPT 里的结果演示视频。也可<a href="/files/video-replacement-after-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看结果视频。</p>
+      </div>
     </div>
   </section>
 
