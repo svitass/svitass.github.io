@@ -39,17 +39,26 @@ author_profile: false
     </div>
     <ul class="detail-list">
       <li><strong>MRI 手部数据采集</strong>：重点关注手部动作和手型重建所需的高精度数据，价值在于能补充常规全身数据难以覆盖的手指细节和关节形态。</li>
-      <li><strong>Music2Dance</strong>：持续整合 AIST++、DanceWithMelody、PhantomDanceDataset、GDance 等公开数据，同时补充自采动捕数据，用于音乐驱动舞蹈动作生成方向。</li>
-      <li><strong>Speech2Gesture</strong>：把语音节奏、语义到手势的跨模态映射作为持续关注方向，重点看数据是否适合支撑演讲、对话、播报场景下的上半身动作表达。</li>
-      <li><strong>CyanPuppets</strong>：关注这类更偏角色化、风格化的动作数据源，用来补充非写实角色或风格化数字人的动作表达能力。</li>
+      <li><strong>Music2Dance</strong>：持续汇总 AIST++、DanceWithMelody、PhantomDanceDataset、GDance 等公开舞蹈数据集，重点比较规模、风格和动作表示形式，并额外验证普通视频采集方案的边界。</li>
+      <li><strong>Speech2Gesture</strong>：围绕中文语音驱动手势的数据采集与整理持续推进，重点看数据是否适合支撑演讲、对话、播报场景下的上半身动作表达。</li>
+      <li><strong>CyanPuppets</strong>：这部分对应角色化方向的采集动作数据，更偏虚拟偶像或非写实角色动作素材整理，不是这里 Music2Dance 跳舞视频对应的内容。</li>
     </ul>
   </section>
 
   <section class="project-detail__block">
-    <h2>Music2Dance 与采集补充</h2>
-    <div class="project-visual">
-      <img src="/images/projects/music2dance-dataset-table.png" alt="Music2Dance 相关公开数据集统计表">
-      <p class="project-visual__caption">材料里保留了公开 Music2Dance 数据源汇总，用于快速判断不同舞蹈数据源的规模和是否值得纳入后续数据池。</p>
+    <h2>Music2Dance 数据集汇总与示例视频</h2>
+    <div class="project-visual-grid">
+      <div class="project-visual">
+        <img src="/images/projects/music2dance-dataset-table.png" alt="Music2Dance 相关公开数据集统计表">
+        <p class="project-visual__caption">材料里保留了公开 Music2Dance 数据源汇总，用于快速判断不同舞蹈数据源的规模，并对比它们各自动作表示形式是否适合纳入后续数据池。</p>
+      </div>
+      <div class="project-visual">
+        <video controls playsinline preload="metadata" poster="/images/projects/music2dance-dataset-demo-poster.jpg">
+          <source src="/files/music2dance-dataset-demo.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频，请直接下载观看。
+        </video>
+        <p class="project-visual__caption">这段跳舞视频对应材料里 Music2Dance 方向保留下来的动作预览，用来说明这部分工作关注的是音乐驱动舞蹈动作数据及其表现形式。也可<a href="/files/music2dance-dataset-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
+      </div>
     </div>
     <div class="project-visual">
       <img src="/images/projects/music2dance-capture-setup.png" alt="Music2Dance 自采动捕机位摆放示意">
@@ -58,15 +67,11 @@ author_profile: false
   </section>
 
   <section class="project-detail__block">
-    <h2>语音与风格化动作方向</h2>
-    <div class="project-visual">
-      <img src="/images/projects/cyanpuppets-motion.png" alt="CyanPuppets 风格化动作示意">
-      <p class="project-visual__caption">CyanPuppets 这类数据源的价值不在于规模本身，而在于它提供了更偏角色化、风格化的动作参考，能补充写实人体数据之外的表达空间。</p>
-    </div>
+    <h2>Speech2Gesture 与角色化动作采集</h2>
     <ul class="detail-list">
-      <li><strong>Speech2Gesture</strong> 更关注语音韵律、语义节奏和手势分布是否匹配，适合服务对话数字人、讲解型数字人等场景。</li>
-      <li><strong>CyanPuppets</strong> 更强调角色化动作表现，适合补充 stylized avatar、虚拟偶像或非写实数字人项目的数据参考。</li>
-      <li>这两类方向虽然不像舞蹈数据那样有统一标准，但对扩展数字人的动作表达边界很重要。</li>
+      <li><strong>Speech2Gesture</strong> 对应的是中文语音驱动手势数据采集与筛选，核心场景是演讲、对话、播报这类上半身动作为主的表达任务，而不是舞蹈动作。</li>
+      <li><strong>CyanPuppets</strong> 对应的是角色化方向的采集动作数据，更偏虚拟偶像和非写实角色动作素材整理，用来补充写实人体数据之外的角色动作参考。</li>
+      <li>这两类方向服务的任务和 Music2Dance 不同：前者偏语音驱动手势，后者偏角色化动作素材，因此不再和上面的舞蹈视频混放。</li>
     </ul>
   </section>
 
