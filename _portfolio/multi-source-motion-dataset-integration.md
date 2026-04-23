@@ -2,7 +2,7 @@
 title: "多源动作数据采集与整合"
 collection: portfolio
 permalink: /portfolio/multi-source-motion-dataset-integration/
-excerpt: "围绕 MRI 手部数据、Music2Dance、Speech2Gesture 与 CyanPuppets 等方向持续收集和整理动作数据来源，为数字人动作生成与驱动提供更丰富的数据基础。"
+excerpt: "围绕 MRI 手部数据、Music2Dance 与 Speech2Gesture 等方向持续收集和整理动作数据来源，为数字人动作生成与驱动提供更丰富的数据基础。"
 header:
   teaser: "projects/multi-source-motion-datasets-cover.jpg"
 author_profile: false
@@ -17,7 +17,7 @@ author_profile: false
         <span>MRI Hand Data</span>
         <span>Music2Dance</span>
         <span>Speech2Gesture</span>
-        <span>CyanPuppets</span>
+        <span>OPPO Internship</span>
         <span>Dataset Integration</span>
       </div>
     </section>
@@ -26,7 +26,7 @@ author_profile: false
       <ul class="detail-meta">
         <li><strong>数据源梳理</strong><br>持续收集和整理不同动作方向的数据来源，明确它们的粒度、场景和可复用价值。</li>
         <li><strong>采集与补充</strong><br>结合项目需要补充自采数据，例如 Music2Dance 方向的动捕录制和多机位采集方案验证。</li>
-        <li><strong>整合视角</strong><br>从数字人任务出发评估这些数据能否服务于动作生成、手部细节建模、语音驱动手势和风格化角色动作表达。</li>
+        <li><strong>整合视角</strong><br>从数字人任务出发评估这些数据能否服务于动作生成、手部细节建模和语音驱动手势表达。</li>
       </ul>
     </aside>
   </div>
@@ -40,8 +40,7 @@ author_profile: false
     <ul class="detail-list">
       <li><strong>MRI 手部数据采集</strong>：重点关注手部动作和手型重建所需的高精度数据，价值在于能补充常规全身数据难以覆盖的手指细节和关节形态。</li>
       <li><strong>Music2Dance</strong>：持续汇总 AIST++、DanceWithMelody、PhantomDanceDataset、GDance 等公开舞蹈数据集，重点比较规模、风格和动作表示形式，并额外验证普通视频采集方案的边界。</li>
-      <li><strong>Speech2Gesture</strong>：围绕中文语音驱动手势的数据采集与整理持续推进，重点看数据是否适合支撑演讲、对话、播报场景下的上半身动作表达。</li>
-      <li><strong>CyanPuppets</strong>：这部分对应角色化方向的采集动作数据，更偏虚拟偶像或非写实角色动作素材整理，不是这里 Music2Dance 跳舞视频对应的内容。</li>
+      <li><strong>Speech2Gesture</strong>：这部分对应我在 OPPO 实习参与的中文数据集采集工作，重点不是算法训练，而是围绕多视角视频做审核、筛选和可用性整理，为后续语音驱动手势任务准备可训练数据。</li>
     </ul>
   </section>
 
@@ -67,11 +66,19 @@ author_profile: false
   </section>
 
   <section class="project-detail__block">
-    <h2>Speech2Gesture 与角色化动作采集</h2>
+    <h2>Speech2Gesture 数据集采集（OPPO 实习）</h2>
+    <div class="project-visual">
+      <video controls playsinline preload="metadata" poster="/images/projects/speech2gesture-dataset-demo-poster.jpg">
+        <source src="/files/speech2gesture-dataset-demo.mp4" type="video/mp4">
+        您的浏览器不支持 HTML5 视频，请直接下载观看。
+      </video>
+      <p class="project-visual__caption">这里保留的是 Speech2Gesture 数据采集阶段的样例视频，说明这部分工作对应的是中文语音驱动手势数据，而不是舞蹈动作或角色化动作素材。</p>
+    </div>
     <ul class="detail-list">
-      <li><strong>Speech2Gesture</strong> 对应的是中文语音驱动手势数据采集与筛选，核心场景是演讲、对话、播报这类上半身动作为主的表达任务，而不是舞蹈动作。</li>
-      <li><strong>CyanPuppets</strong> 对应的是角色化方向的采集动作数据，更偏虚拟偶像和非写实角色动作素材整理，用来补充写实人体数据之外的角色动作参考。</li>
-      <li>这两类方向服务的任务和 Music2Dance 不同：前者偏语音驱动手势，后者偏角色化动作素材，因此不再和上面的舞蹈视频混放。</li>
+      <li><strong>工作背景</strong>：Speech2Gesture 领域中文数据集缺乏，因此在 OPPO 实习阶段补了一部分中文语音驱动手势数据采集与整理工作。</li>
+      <li><strong>工作内容</strong>：围绕 6 个视角下的视频做审核、筛选和可用性判断，确保留下来的片段能够服务后续手势生成与驱动任务。</li>
+      <li><strong>结果</strong>：累计采集 437 条数据，最终合格 352 条，形成了可继续处理和训练的中文数据基础。</li>
+      <li><strong>后处理</strong>：后续数据处理沿用 <code>EasyMocap</code> 这条链路，把视频进一步整理成可用的动作表示。</li>
     </ul>
   </section>
 
@@ -89,7 +96,7 @@ author_profile: false
     <h2>结果</h2>
     <ul class="detail-result">
       <li>形成了按动作类型和应用场景拆分的数据源地图，而不是零散下载几个开源数据集。</li>
-      <li>补充调研并验证了 MRI 手部、Music2Dance、Speech2Gesture、CyanPuppets 等不同粒度的数据来源；其中 Music2Dance 自采部分主要用于验证方案边界，并证明普通视频采集难以稳定支撑后续动作建模。</li>
+      <li>补充调研并验证了 MRI 手部、Music2Dance、Speech2Gesture 等不同粒度的数据来源；其中 Speech2Gesture 部分对应 OPPO 实习参与的中文数据采集，Music2Dance 自采部分主要用于验证方案边界，并证明普通视频采集难以稳定支撑后续动作建模。</li>
       <li>把“数据收集”这件事从一次性准备工作，转成了长期支持数字人动作方向的底层能力。</li>
     </ul>
   </section>
