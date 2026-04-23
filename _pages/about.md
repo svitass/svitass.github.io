@@ -34,29 +34,6 @@ redirect_from:
       </div>
     </div>
 
-    <aside class="resume-hero__visual">
-      <div class="resume-hero__map-card">
-        <div class="resume-hero__map-head">
-          <span>Overview Reference</span>
-          <strong>数字人经历总览</strong>
-        </div>
-        <img src="/images/projects/overview.png" alt="数字人方向经历总览图">
-      </div>
-      <div class="resume-hero__signal">
-        <div class="resume-hero__signal-item">
-          <span>中文口型优化</span>
-          <strong>1.95 帧 → 0.62 帧</strong>
-        </div>
-        <div class="resume-hero__signal-item">
-          <span>动作生成成果</span>
-          <strong>ACM MM 2024 Oral</strong>
-        </div>
-        <div class="resume-hero__signal-item">
-          <span>项目产出</span>
-          <strong>论文 / 专利 / Demo</strong>
-        </div>
-      </div>
-    </aside>
   </section>
 
   <section id="experience-map" class="portfolio-section">
