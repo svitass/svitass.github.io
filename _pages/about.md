@@ -241,11 +241,12 @@ redirect_from:
           },
           {
             title: "手术室模拟系统 DigitSurge",
-            summary: "在 Unreal 中搭建手术室环境，结合 LLM 做任务分解，并通过动作生成模块完成医学场景下的数字人系统探索。",
-            involvement: "第一作者方向推进",
-            level: 82,
+            summary: "在 Unreal 中参与手术室环境和研究 demo 搭建，配合任务规划与动作生成模块做医疗场景下的系统验证。",
+            involvement: "研究协作",
+            level: 62,
             tags: ["Unreal Engine", "LLM", "Motion Planning", "Medical Scene"],
-            image: "/images/projects/digitsurge-overview.png"
+            image: "/images/projects/digitsurge-overview.png",
+            link: "/portfolio/digitsurge-surgical-room-simulation/"
           }
         ]
       },
