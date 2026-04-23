@@ -86,10 +86,6 @@ redirect_from:
           </button>
         </div>
 
-        <div class="fishbone-track__notes fishbone-track__notes--bottom" aria-hidden="true">
-          <span>动作处理 / 重定向 / 生成</span>
-          <span>Demo / 交互 / 场景化落地</span>
-        </div>
       </div>
     </div>
 
