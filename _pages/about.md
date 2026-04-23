@@ -327,10 +327,10 @@ redirect_from:
     });
     trackData.drive.projects.push(
       {
-        title: "Speech2Gesture 探索",
-        summary: "围绕语音韵律、语义到上半身动作的映射做持续探索，重点关注可用于数字人对话和讲解场景的手势生成方向。",
-        involvement: "持续探索",
-        level: 64,
+        title: "Speech2Gesture 毕业设计",
+        summary: "硕士毕业设计《基于语音素材的骨骼动作数据生成》，覆盖语音驱动手势生成、中文数据采集与数字人接入验证。",
+        involvement: "毕业设计",
+        level: 86,
         tags: ["Speech2Gesture", "Upper-body Motion", "Gesture Generation"],
         image: "/images/projects/speech2gesture-cover.png",
         link: "/portfolio/speech2gesture-exploration/"
