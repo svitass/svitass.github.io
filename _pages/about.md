@@ -327,9 +327,9 @@ redirect_from:
     });
     trackData.drive.projects.push(
       {
-        title: "Speech2Gesture 毕业设计",
-        summary: "硕士毕业设计《基于语音素材的骨骼动作数据生成》，覆盖语音驱动手势生成、中文数据采集与数字人接入验证。",
-        involvement: "毕业设计",
+        title: "Speech2Gesture",
+        summary: "围绕基于语音素材的骨骼驱动展开，关注语音、文本与说话人风格共同作用下的手势骨骼动画生成。",
+        involvement: "持续探索",
         level: 86,
         tags: ["Speech2Gesture", "Upper-body Motion", "Gesture Generation"],
         image: "/images/projects/speech2gesture-cover.png",
@@ -348,9 +348,9 @@ redirect_from:
 
     trackData.drive.projects = trackData.drive.projects.map(function (project) {
       if (project.image === "/images/projects/video-replacement-pipeline.png") {
-        project.title = "瑙嗛浜虹墿鏇挎崲涓?3D 铏氭嫙瑙掕壊";
-        project.summary = "鎶婄湡浜鸿棰戜腑鐨勪汉鐗╁姩浣滆縼绉诲埌 3D 铏氭嫙瑙掕壊锛屽洿缁?WHAM銆乻MPLX銆丮ixamo 鍜?Blender 绠＄嚎瀹屾垚鍔ㄤ綔閲嶅畾鍚戙€佽鑹查┍鍔ㄤ笌鏈€缁堝悎鎴愩€?";
-        project.involvement = "鏍稿績瀹炵幇";
+        project.title = "视频人物替换为 3D 虚拟角色";
+        project.summary = "把视频中的人物动作迁移到 3D 虚拟角色，围绕 WHAM、SMPLX、Mixamo 和 Blender 管线完成动作重定向、角色驱动与最终合成。";
+        project.involvement = "核心实现";
       }
       return project;
     });
@@ -360,8 +360,8 @@ redirect_from:
     });
     trackData.system.projects = trackData.system.projects.map(function (project) {
       if (project.image === "/images/projects/digitsurge-overview.png") {
-        project.summary = "鍦?Unreal 鍦烘櫙涓粨鍚?LLM 鍋氫换鍔″垎瑙ｅ拰鍔ㄤ綔妯″潡鎺ユ帴锛屽仛鎵嬫湳瀹ゅ満鏅笅鐨勭爺绌跺瀷绯荤粺 demo 鎺㈢储銆?";
-        project.involvement = "RA 鐮旂┒ demo";
+        project.summary = "在 Unreal 场景中结合 LLM 做任务分解和动作模块接入，完成手术室模拟系统研究型 demo 探索。";
+        project.involvement = "RA 研究 demo";
       }
       return project;
     });
