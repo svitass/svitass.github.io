@@ -42,32 +42,29 @@ author_profile: false
   </section>
 
   <section class="project-detail__block">
-    <h2>角色资产接入探索</h2>
+    <h2>人脸重建与角色接入</h2>
+    <p class="project-detail__lead">这部分不再放泛化的调试截图，而是直接展示我在 FaceBuilder 到 MetaHuman 这条链路里实际做的人脸重建与角色接入步骤。</p>
     <div class="project-visual">
-      <img src="/images/projects/image-to-3d-cover.svg" alt="FaceBuilder 到 MetaHuman 的角色接入流程">
-      <p class="project-visual__caption">这部分不是独立的自动角色生成项目，而是为 3D 对话 Demo 补齐可用角色来源。我基于 FaceBuilder、Mesh to MetaHuman 和 Character Assembly 做了接入验证，确认单图出发的角色资产能否进入 MetaHuman 体系并继续用于实时驱动。</p>
+      <img src="/images/projects/facebuilder-marker.png" alt="FaceBuilder 中的人脸标点与头模拟合">
+      <p class="project-visual__caption">第一步是在 FaceBuilder 中做单图标点和头模拟合，先把照片中的五官轮廓、脸型和头部结构对到可编辑网格上，得到可继续处理的头部基础模型。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/facebuilder-ue-import.png" alt="FaceBuilder 头模导入 Unreal Engine 预览">
+      <p class="project-visual__caption">得到头模后，我会先导入 Unreal Engine 做预览，检查基础材质、UV、法线和头部比例是否已经达到可进入 MetaHuman 流程的程度。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/facebuilder-metahuman-identity.png" alt="Mesh to MetaHuman 身份解算界面">
+      <p class="project-visual__caption">核心步骤是 Mesh to MetaHuman 的身份解算。这里要把导入头模和 MetaHuman 身份骨架对齐，让系统识别出可重建的人脸结构，而不是只停留在静态头模展示。</p>
+    </div>
+    <div class="project-visual">
+      <img src="/images/projects/facebuilder-final-assembly.png" alt="MetaHuman 最终角色装配结果">
+      <p class="project-visual__caption">解算完成后再做最终装配，把头部、身体和默认服装组合成完整角色。到这一步，角色才真正能进入后续实时对话和驱动验证流程。</p>
     </div>
     <ul class="detail-list">
-      <li>以 FaceBuilder 生成可编辑头部基础，再通过 Mesh to MetaHuman 接入 MetaHuman 角色体系，减少从静态素材到可驱动角色之间的断层。</li>
-      <li>重点关注的是“能不能接入系统”而不是“能不能自动生成得很完整”，因此后处理、拓扑修正和材质细调仍然需要较多手动修正。</li>
-      <li>这条链路依赖现成软件能力和人工校正，更适合作为 Demo 资产准备方案，而不是单独包装成一条成熟的角色生成主线。</li>
+      <li>这条链路的重点不是“自动一键生成”，而是把照片出发的人脸重建结果稳定接进 MetaHuman 体系。</li>
+      <li>真正费时间的部分主要在标点精修、导入检查、身份解算以及最终装配衔接，而不是单一步骤本身。</li>
+      <li>整理完这套流程后，3D 对话 Demo 就不再依赖固定角色资产，而是具备了从人脸重建到角色接入的补链能力。</li>
     </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>关键实现截图</h2>
-    <div class="project-visual">
-      <img src="/images/projects/realtime-3d-face-driving.png" alt="3D 数字人面部驱动调试界面">
-      <p class="project-visual__caption">在 Unreal Engine 中先验证脸部变形目标和权重写入是否稳定，确保后续音频驱动不会停留在理论链路上。</p>
-    </div>
-    <div class="project-visual">
-      <img src="/images/projects/realtime-3d-livelink.png" alt="3D 数字人 Live Link 骨骼驱动节点">
-      <p class="project-visual__caption">身体侧通过 Live Link 接入姿态流，把外部驱动和角色动画图真正接起来，而不是只做离线导入。</p>
-    </div>
-    <div class="project-visual">
-      <img src="/images/projects/realtime-3d-video-driver.png" alt="3D 数字人视频驱动角色流程图">
-      <p class="project-visual__caption">围绕视频或外部姿态信号做驱动链路验证，覆盖输入解析、去抖、动画补全和角色运行时输出。</p>
-    </div>
   </section>
 
   <section class="project-detail__block">
