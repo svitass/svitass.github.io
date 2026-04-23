@@ -76,22 +76,4 @@ author_profile: false
     </ul>
   </section>
 
-  <section class="project-detail__block">
-    <h2>整合方式</h2>
-    <ul class="detail-list">
-      <li>先按任务维度拆分数据价值，例如手部、舞蹈、语音驱动手势、风格化角色动作，不把所有数据混成一类。</li>
-      <li>统一评估数据的动作粒度、是否有骨骼/关键点/视频配套、能否转成后续模型训练可用的中间格式。</li>
-      <li>把公开数据和自采数据结合使用，避免完全受限于开源数据的分布和表达类型。</li>
-      <li>为后续 Text2Motion、Speech2Gesture、角色驱动和数字人系统任务提供更稳定的数据来源储备。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>结果</h2>
-    <ul class="detail-result">
-      <li>形成了按动作类型和应用场景拆分的数据源地图，而不是零散下载几个开源数据集。</li>
-      <li>补充调研并验证了 MRI 手部、Music2Dance、Speech2Gesture 等不同粒度的数据来源；其中 Speech2Gesture 部分对应 OPPO 实习参与的中文数据采集，Music2Dance 自采部分主要用于验证方案边界，并证明普通视频采集难以稳定支撑后续动作建模。</li>
-      <li>把“数据收集”这件事从一次性准备工作，转成了长期支持数字人动作方向的底层能力。</li>
-    </ul>
-  </section>
 </div>
