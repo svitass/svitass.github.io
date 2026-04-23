@@ -67,13 +67,7 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>Speech2Gesture 数据集采集（OPPO 实习）</h2>
-    <div class="project-visual">
-      <video controls playsinline preload="metadata" poster="/images/projects/speech2gesture-dataset-demo-poster.jpg">
-        <source src="/files/speech2gesture-dataset-demo.mp4" type="video/mp4">
-        您的浏览器不支持 HTML5 视频，请直接下载观看。
-      </video>
-      <p class="project-visual__caption">这里保留的是 Speech2Gesture 数据采集阶段的样例视频，说明这部分工作对应的是中文语音驱动手势数据，而不是舞蹈动作或角色化动作素材。</p>
-    </div>
+    <p class="project-detail__lead">这部分对应的是中文多视角数据集采集与审核工作，重点是围绕 6 个视角下的视频做数据筛选和可用性整理，而不是展示单人动作结果预览。</p>
     <ul class="detail-list">
       <li><strong>工作背景</strong>：Speech2Gesture 领域中文数据集缺乏，因此在 OPPO 实习阶段补了一部分中文语音驱动手势数据采集与整理工作。</li>
       <li><strong>工作内容</strong>：围绕 6 个视角下的视频做审核、筛选和可用性判断，确保留下来的片段能够服务后续手势生成与驱动任务。</li>
