@@ -2,14 +2,11 @@ main:
   - title: "首页"
     url: /#top
 
-  - title: "项目"
-    url: /#projects
+  - title: "数字人经历主线"
+    url: /#experience-map
 
-  - title: "成果"
-    url: /#papers
-
-  - title: "项目详情"
-    url: /portfolio/
+  - title: "论文 / 专利"
+    url: /#outputs
 
   - title: "GitHub"
     url: https://github.com/svitass

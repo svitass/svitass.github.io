@@ -48,7 +48,7 @@ redirect_from:
   <section id="experience-map" class="portfolio-section">
     <div class="section-heading section-heading--wide">
       <p class="section-heading__eyebrow">EXPERIENCE MAP</p>
-      <h2>数字人经历鱼骨主线</h2>
+      <h2>数字人经历主线</h2>
       <p>按数据、骨骼动画、面部、系统应用四条主线整理项目。点击节点查看该方向下的代表项目与参与度。</p>
     </div>
 
@@ -106,7 +106,7 @@ redirect_from:
     </div>
   </section>
 
-  <section class="portfolio-section">
+  <section id="outputs" class="portfolio-section">
     <div class="section-heading section-heading--wide">
       <p class="section-heading__eyebrow">OUTPUTS</p>
       <h2>论文 / 专利</h2>
