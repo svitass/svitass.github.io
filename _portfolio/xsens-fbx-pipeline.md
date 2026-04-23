@@ -2,7 +2,7 @@
 title: "Xsens 动作处理与 FBX 管线"
 collection: portfolio
 permalink: /portfolio/xsens-fbx-pipeline/
-excerpt: "围绕 Xsens 动作数据到 SMPLH 的重定向、骨骼数据提取和文本增强标准化处理，构建可用于 HumanML3D / Text2Motion 方向的数据处理管线。"
+excerpt: "围绕 Xsens 动作数据到 SMPLH 的重定向、骨骼数据提取，以及中英文本增强与 HumanML3D 标准化处理，构建可用于 Text2Motion 方向的数据处理管线。"
 header:
   teaser: "projects/xsens-fbx-pipeline-cover.jpg"
 author_profile: false
@@ -26,7 +26,7 @@ author_profile: false
       <ul class="detail-meta">
         <li><strong>重定向管线</strong><br>把 Xsens 采集到的动作批量重定向到 SMPLH 骨骼，统一下游动作表达格式。</li>
         <li><strong>数据提取</strong><br>从 FBX 中提取骨骼动画、位姿和时序信息，转成后续 HumanML3D / Text2Motion 可用的中间表示。</li>
-        <li><strong>文本处理</strong><br>配合动作片段做文本增强和标准化整理，减少描述风格不一致对训练造成的噪声。</li>
+        <li><strong>文本处理</strong><br>将中文描述翻译成英文，并调用 LLM 为每条句子生成 3 条同义表达，再按 HumanML3D 方式提取词性和统一文本字段。</li>
       </ul>
     </aside>
   </div>
@@ -41,7 +41,7 @@ author_profile: false
       <li>先从 Xsens 动捕结果导出 FBX，保证原始动作时序、根节点位移和骨骼层级信息完整保留。</li>
       <li>在中间处理环节完成骨骼映射与动画检查，把原始 Xsens 骨架统一到后续使用的 SMPLH 表达。</li>
       <li>提取骨骼序列、旋转和平移等关键时序数据，并转成 HumanML3D / Text2Motion 更容易消费的结构化格式。</li>
-      <li>在动作数据落盘前补充文本增强、描述标准化和字段统一，避免后续训练阶段再重复清洗。</li>
+      <li>在动作数据落盘前完成中文转英文、同义句增强、词性提取，以及动作原点、朝向、落地状态等标准化处理，避免后续训练阶段再重复清洗。</li>
     </ul>
   </section>
 
@@ -74,10 +74,10 @@ author_profile: false
   <section class="project-detail__block">
     <h2>文本增强与标准化</h2>
     <ul class="detail-list">
-      <li>在动作片段整理完成后，我会进一步补充文本描述，把原始描述扩成更适合训练的动作语句，增强动作和语言之间的对应关系。</li>
-      <li>标准化处理重点包括动作主语、时态、方向词、身体部位词和节奏描述的统一，减少同义表述过散造成的文本噪声。</li>
-      <li>文本增强不是为了“写得更花”，而是为了让同一类动作能在训练数据里形成更稳定的语义分布。</li>
-      <li>这样整理后的数据不仅能服务 Text2Motion，也更容易向 Music2Dance、Speech2Gesture 等跨模态方向复用。</li>
+      <li>在动作片段整理完成后，我会先把中文描述翻译成英文，再调用 LLM 对每条句子做数据增强，生成 3 条语义一致但表达不同的英文同义句。</li>
+      <li>随后沿用 HumanML3D 的文本处理方式，提取词性等语言特征，把增强后的文本转成后续 Text2Motion 训练可直接使用的字段格式。</li>
+      <li>动作侧也按 HumanML3D 的标准化流程处理，包括统一原点、统一朝向、把角色放到地面，并整理时序表达，减少不同采集片段之间的分布偏差。</li>
+      <li>这部分增强和标准化不是为了把描述“写得更花”，而是为了让文本语义与动作表达都更稳定，方便后续模型训练和数据复用。</li>
     </ul>
   </section>
 
@@ -86,7 +86,7 @@ author_profile: false
     <ul class="detail-result">
       <li>完成了 Xsens 动作到 SMPLH 骨架的统一重定向思路，减少不同来源动作数据在骨骼表达上的断层。</li>
       <li>把 FBX 动画进一步拆成后续训练可消费的骨骼时序数据，而不是停留在单一软件内播放。</li>
-      <li>结合文本增强与标准化处理，为 HumanML3D / Text2Motion 方向的数据制作提供了更稳定的底层管线。</li>
+      <li>结合中英文本增强、词性提取与动作标准化处理，为 HumanML3D / Text2Motion 方向的数据制作提供了更稳定的底层管线。</li>
     </ul>
   </section>
 </div>
