@@ -221,10 +221,10 @@ redirect_from:
         projects: [
           {
             title: "3D 数字人实时对话 Demo",
-            summary: "基于 Unreal Engine + MetaHuman 打通角色接入、音频驱动面部动画、Live Link、交互状态与前端展示，是整条链路的系统承载项目。",
+            summary: "基于 Unreal Engine + MetaHuman 打通角色接入、实时对话、情绪控制、动作控制、背景切换以及人物与相机控制，是整条链路的系统承载项目。",
             involvement: "主导 Demo 打通",
             level: 84,
-            tags: ["Unreal Engine", "MetaHuman", "Live Link", "Pixel Streaming"],
+            tags: ["Unreal Engine", "MetaHuman", "Realtime Dialogue", "Emotion Control", "Camera Control"],
             image: "/images/projects/3d-digital-human-demo-poster.jpg",
             link: "/portfolio/realtime-3d-avatar-demo/"
           },

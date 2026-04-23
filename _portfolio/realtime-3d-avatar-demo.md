@@ -2,7 +2,7 @@
 title: "3D数字人实时对话 Demo"
 collection: portfolio
 permalink: /portfolio/realtime-3d-avatar-demo/
-excerpt: "基于 Unreal Engine + MetaHuman 打通角色资产接入、面部驱动、交互控制与可对话 Demo 验证。"
+excerpt: "基于 Unreal Engine + MetaHuman 打通角色接入、实时对话、情绪控制、动作控制、背景切换以及人物与相机控制。"
 header:
   teaser: "projects/3d-digital-human-demo-poster.jpg"
 author_profile: false
@@ -12,31 +12,44 @@ author_profile: false
   <div class="project-detail__intro">
     <section class="project-detail__block">
       <h2>项目定位</h2>
-      <p class="project-detail__lead">围绕 3D 数字人的真实可演示链路做系统打通，让角色资产接入、音频驱动面部动画、交互状态切换和实时对话能够在一个 Demo 里连续工作。</p>
+      <p class="project-detail__lead">围绕 3D 数字人的真实可演示链路做系统打通，让角色资产接入、实时对话、情绪控制、动作控制、背景切换以及人物与相机控制能够在一个 Demo 里连续工作。</p>
       <div class="detail-chips">
         <span>Unreal Engine</span>
         <span>MetaHuman</span>
         <span>Live Link</span>
         <span>Pixel Streaming</span>
         <span>Realtime Dialogue</span>
+        <span>Emotion Control</span>
       </div>
     </section>
     <aside class="project-detail__block">
       <h2>我的职责</h2>
       <ul class="detail-meta">
         <li><strong>角色接入</strong><br>打通 Character Assembly 与可对话角色的基础接入流程。</li>
-        <li><strong>驱动链路</strong><br>完成音频驱动面部动画、Live Link 与交互控制的关键链路验证。</li>
-        <li><strong>系统 Demo</strong><br>完成能够进行对话演示的 3D 数字人 Demo 验证。</li>
+        <li><strong>驱动链路</strong><br>完成音频驱动面部动画、动作控制、人物与相机控制等关键链路验证。</li>
+        <li><strong>系统 Demo</strong><br>完成支持对话、情绪控制、背景切换和交互展示的 3D 数字人 Demo 验证。</li>
       </ul>
     </aside>
   </div>
 
   <section class="project-detail__block">
+    <h2>当前支持功能</h2>
+    <ul class="detail-list">
+      <li><strong>实时对话</strong>：支持网页侧输入触发角色响应，完成 Listening、Thinking、Talking 等基本交互闭环。</li>
+      <li><strong>情绪控制</strong>：支持根据交互状态或控制指令切换角色情绪表现，增强表达层次。</li>
+      <li><strong>动作控制</strong>：支持对角色动作进行调用与切换，不只停留在静态站姿或单一播报状态。</li>
+      <li><strong>背景切换</strong>：支持在不同展示背景之间切换，便于 Demo 演示不同场景。</li>
+      <li><strong>人物与相机控制</strong>：支持角色与镜头的基础控制，便于调整展示构图和演示视角。</li>
+    </ul>
+  </section>
+
+  <section class="project-detail__block">
     <h2>技术链路</h2>
     <ul class="detail-list">
       <li>以 Unreal Engine + MetaHuman 为渲染与角色基础，确认角色资产、装配和运行时控制接口。</li>
-      <li>围绕音频输入与面部动画驱动，打通音频到口型/面部表情的响应链路。</li>
-      <li>设计对话状态机，支持 Idle、Listening、Thinking、Talking 等交互状态切换。</li>
+      <li>围绕音频输入与面部动画驱动，打通音频到口型、表情和情绪表现的响应链路。</li>
+      <li>设计对话状态机，支持 Idle、Listening、Thinking、Talking 等交互状态切换，并与动作控制联动。</li>
+      <li>补充背景切换、人物控制和相机控制接口，让 Demo 更适合实际演示和场景展示。</li>
       <li>结合 Pixel Streaming / Web 对话界面，验证网页侧触发、角色响应与演示展示的一致性。</li>
     </ul>
   </section>
@@ -81,7 +94,7 @@ author_profile: false
   <section class="project-detail__block">
     <h2>结果</h2>
     <ul class="detail-result">
-      <li>完成可对话 3D 数字人 Demo，覆盖角色接入、面部语音驱动、交互状态和展示界面。</li>
+      <li>完成可对话 3D 数字人 Demo，当前已支持对话、情绪控制、动作控制、背景切换以及人物与相机控制。</li>
       <li>验证了 Character Assembly、Live Link、交互控制等关键模块可以作为后续工程化扩展基础。</li>
       <li>补齐了基于 FaceBuilder / MetaHuman 的角色资产接入方案，让 Demo 具备可替换角色来源与完整演示闭环。</li>
     </ul>
