@@ -53,7 +53,7 @@ author_profile: false
     </div>
     <div class="project-visual">
       <img src="/images/projects/music2dance-capture-setup.png" alt="Music2Dance 自采动捕机位摆放示意">
-      <p class="project-visual__caption">除公开数据外，我也验证了多机位采集方案，并录制了 5 位虚拟偶像根据音乐跳舞的动作，累计 2889 条片段，用来补充公开舞蹈数据在风格和角色形象上的不足。</p>
+      <p class="project-visual__caption">这部分自采内容主要用于验证多机位视频采集方案，而不是作为稳定可用的数据补充。实际验证后证明，这种基于普通视频的方式并不可靠：算法会预测被遮挡的部位，导致帧间动作不连续，容易出现跳变，因此没有继续作为后续数据池的核心来源。</p>
     </div>
   </section>
 
@@ -84,7 +84,7 @@ author_profile: false
     <h2>结果</h2>
     <ul class="detail-result">
       <li>形成了按动作类型和应用场景拆分的数据源地图，而不是零散下载几个开源数据集。</li>
-      <li>补充了 MRI 手部、Music2Dance 自采、Speech2Gesture、CyanPuppets 等不同粒度的数据来源，增强了后续项目的数据弹性。</li>
+      <li>补充调研并验证了 MRI 手部、Music2Dance、Speech2Gesture、CyanPuppets 等不同粒度的数据来源；其中 Music2Dance 自采部分主要用于验证方案边界，并证明普通视频采集难以稳定支撑后续动作建模。</li>
       <li>把“数据收集”这件事从一次性准备工作，转成了长期支持数字人动作方向的底层能力。</li>
     </ul>
   </section>
