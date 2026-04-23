@@ -8,7 +8,7 @@ header:
 author_profile: false
 ---
 
-<div class="project-detail">
+<div class="project-detail project-detail--dataset-integration">
   <div class="project-detail__intro">
     <section class="project-detail__block">
       <h2>项目定位</h2>
