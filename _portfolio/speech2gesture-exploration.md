@@ -33,11 +33,18 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>核心思路</h2>
-    <div class="project-visual">
-      <img src="/images/projects/speech2gesture-skeleton-structure.png" alt="Speech2Gesture 骨骼结构示意">
-      <p class="project-visual__caption">语音驱动输出的不是贴图或视频特效，而是可继续驱动角色的骨骼动作序列，因此动作表示和骨骼结构需要先统一下来。</p>
+    <div class="project-visual-grid">
+      <div class="project-visual">
+        <img src="/images/projects/speech2gesture-model-pipeline.svg" alt="Speech2Gesture 模型流程图">
+        <p class="project-visual__caption">这里把模型流程补全成一条清晰链路：语音、文本和说话人信息先分别编码，再做多模态融合，随后由解码器逐帧生成骨骼动作序列，并通过 <strong>6D rotation</strong> 和 <strong>Slerp</strong> 保持旋转稳定。</p>
+      </div>
+      <div class="project-visual">
+        <img src="/images/projects/speech2gesture-skeleton-structure.png" alt="Speech2Gesture 骨骼结构示意">
+        <p class="project-visual__caption">语音驱动输出的不是贴图或视频特效，而是可继续驱动角色的骨骼动作序列，因此动作表示和骨骼结构需要先统一下来。</p>
+      </div>
     </div>
     <ul class="detail-list">
+      <li>模型主链路可以概括为：语音、文本和说话人风格信息分别编码，做多模态融合，然后由解码器逐帧生成骨骼动作，再进入平滑和角色驱动链路。</li>
       <li>输入侧同时使用语音、文本和说话人信息，而不是只依赖单一音频特征。</li>
       <li>模型重点解决动作静态、抖动、不连续和语义相关性不足几个问题。</li>
       <li>动作用 <strong>6D rotation</strong> 表示，并结合 <strong>Slerp</strong> 后处理，减少欧拉角表示带来的跳变和抖动。</li>
