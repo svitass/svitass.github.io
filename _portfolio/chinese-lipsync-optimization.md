@@ -33,13 +33,13 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>训练数据统计</h2>
-    <p class="project-detail__lead">这部分统计只按 <code>dataset/TalkVid/train.txt</code> 与 <code>dataset/JoyGen/train.txt</code> 中实际参与训练、且同时具备 <code>json + mp4 + wav</code> 的样本计算，不包含仓库中被过滤掉的库存视频。</p>
+    <p class="project-detail__lead">以下统计基于 <code>dataset/TalkVid/train.txt</code> 与 <code>dataset/JoyGen/train.txt</code> 中实际参与训练、且同时具备 <code>json + mp4 + wav</code> 的样本。</p>
     <div class="dataset-showcase">
       <div class="dataset-showcase__intro">
         <article class="dataset-panel dataset-panel--highlight">
           <p class="portfolio-eyebrow">TRAIN SPLIT</p>
           <h3>实际训练使用的中文说话视频</h3>
-          <p>重算后共有 <strong>2262</strong> 个视频片段，累计 <strong>8.98 小时</strong>，覆盖 <strong>325 个说话人</strong>。其中 TalkVid 按源视频 ID 归并为 234 人，JoyGen 按源前缀归并为 91 人。</p>
+          <p>训练集共包含 <strong>2262</strong> 个视频片段，累计 <strong>8.98 小时</strong>，覆盖 <strong>325 个说话人</strong>。其中 TalkVid 按源视频 ID 归并为 234 人，JoyGen 按源前缀归并为 91 人。</p>
           <div class="dataset-kpis">
             <div class="dataset-kpi">
               <span>总时长</span>
@@ -96,7 +96,7 @@ author_profile: false
           <a class="dataset-speakers__link" href="/files/dataset/chinese-speaking-dataset-summary.json">下载统计 JSON</a>
         </div>
         <img src="/images/projects/chinese-speaking-dataset-speakers.png" alt="中文说话人视频数据集说话人总览图">
-        <p class="dataset-speakers__caption">总览图仅基于训练集样本生成。JoyGen 按源视频前缀归并；TalkVid 按去除 <code>clipxxx_</code> 后的源视频 ID 归并。此前按 <code>clip</code> 前缀统计会把同一身份拆成多组，这一版已修正。</p>
+        <p class="dataset-speakers__caption">总览图基于训练集样本生成。JoyGen 按源视频前缀归并；TalkVid 按去除 <code>clipxxx_</code> 后的源视频 ID 归并。</p>
       </article>
     </div>
 
@@ -165,7 +165,7 @@ author_profile: false
         <p class="project-visual__caption">优化后：经过数据清洗、音画 offset 校正和两阶段微调后，唇形闭合、撮口与快语速下的稳定性都有明显改善。</p>
       </div>
     </div>
-    <p class="project-visual__caption">上面保留的是你补充到 <code>材料/</code> 里的真实前后对比视频，页面内可以直接播放，也能更直观看到中文口型优化带来的差异。</p>
+    <p class="project-visual__caption">页面内可直接对比优化前后的口型效果，更直观看到唇形闭合、撮口和快语速场景下的改善。</p>
   </section>
 
   <section class="project-detail__block">

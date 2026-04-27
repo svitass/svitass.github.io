@@ -56,7 +56,7 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>人脸重建与角色接入</h2>
-    <p class="project-detail__lead">这部分不再放泛化的调试截图，而是直接展示我在 FaceBuilder 到 MetaHuman 这条链路里实际做的人脸重建与角色接入步骤。</p>
+    <p class="project-detail__lead">这一节展示我在 FaceBuilder 到 MetaHuman 链路中完成的人脸重建与角色接入步骤。</p>
     <div class="project-visual">
       <img src="/images/projects/facebuilder-marker.png" alt="FaceBuilder 中的人脸标点与头模拟合">
       <p class="project-visual__caption">第一步是在 FaceBuilder 中做单图标点和头模拟合，先把照片中的五官轮廓、脸型和头部结构对到可编辑网格上，得到可继续处理的头部基础模型。</p>
