@@ -61,22 +61,24 @@ author_profile: false
         <p class="project-visual__caption">这段跳舞视频对应材料里 Music2Dance 方向保留下来的动作预览，用来说明这部分工作关注的是音乐驱动舞蹈动作数据及其表现形式。也可<a href="/files/music2dance-dataset-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
       </div>
     </div>
-    <div class="project-visual">
-      <img src="/images/projects/music2dance-capture-setup.png" alt="Music2Dance 自采动捕机位摆放示意">
-      <p class="project-visual__caption">这部分自采内容主要用于验证多机位视频采集方案，而不是作为稳定可用的数据补充。实际验证后证明，这种基于普通视频的方式并不可靠：算法会预测被遮挡的部位，导致帧间动作不连续，容易出现跳变，因此没有继续作为后续数据池的核心来源。</p>
-    </div>
   </section>
 
   <section class="project-detail__block">
     <h2>CyanPuppets 多机位视频采集方案</h2>
-    <div class="project-visual">
-      <img src="/images/projects/xsens-fbx-pipeline-cover.jpg" alt="CyanPuppets 多机位视频采集方案界面">
-      <p class="project-visual__caption">这张图对应的是 CyanPuppets 方向里对多机位视频采集方案的验证界面。它更适合放在“多源动作数据采集与整合”里，说明这部分工作关注的是采集方案、机位覆盖和角色动作记录，而不是 Xsens 到 SMPLH 的骨骼处理流程。</p>
+    <div class="project-visual-grid">
+      <div class="project-visual">
+        <img src="/images/projects/music2dance-capture-setup.png" alt="CyanPuppets 多机位视频采集机位摆放示意">
+        <p class="project-visual__caption">左图对应的是多机位视频采集方案本身，重点是机位间距、主辅机位关系和拍摄覆盖范围。</p>
+      </div>
+      <div class="project-visual">
+        <img src="/images/projects/xsens-fbx-pipeline-cover.jpg" alt="CyanPuppets 多机位视频采集结果预览">
+        <p class="project-visual__caption">右图对应的是采集方案验证时的角色预览界面，用来说明这部分工作最终关注的是角色动作记录与多视角素材组织。</p>
+      </div>
     </div>
     <ul class="detail-list">
       <li>核心问题是多机位视频采集能否稳定覆盖角色动作、视角变化和后续整理所需的信息，而不是骨骼命名或 FBX 曲线提取。</li>
       <li>这类内容本质上属于数据源补充与采集方案验证，更贴近 CyanPuppets 这种围绕角色视频数据组织展开的方向。</li>
-      <li>因此我把这张图从 Xsens 页面移出，改放到这里，作为多源动作数据采集方案的一部分。</li>
+      <li>因此这一栏只保留机位方案和角色预览两张图，分别对应采集布置与采集结果展示。</li>
     </ul>
   </section>
 
