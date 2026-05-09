@@ -73,11 +73,6 @@ author_profile: false
       <img src="/images/projects/facebuilder-final-assembly.png" alt="MetaHuman 最终角色装配结果">
       <p class="project-visual__caption">解算完成后再做最终装配，把头部、身体和默认服装组合成完整角色。到这一步，角色才真正能进入后续实时对话和驱动验证流程。</p>
     </div>
-    <ul class="detail-list">
-      <li>这条链路的重点不是“自动一键生成”，而是把照片出发的人脸重建结果稳定接进 MetaHuman 体系。</li>
-      <li>真正费时间的部分主要在标点精修、导入检查、身份解算以及最终装配衔接，而不是单一步骤本身。</li>
-      <li>整理完这套流程后，3D 对话 Demo 就不再依赖固定角色资产，而是具备了从人脸重建到角色接入的补链能力。</li>
-    </ul>
   </section>
 
   <section class="project-detail__block">
