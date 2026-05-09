@@ -75,11 +75,6 @@ author_profile: false
         <p class="project-visual__caption">右图对应的是采集方案验证时的角色预览界面，用来说明这部分工作最终关注的是角色动作记录与多视角素材组织。</p>
       </div>
     </div>
-    <ul class="detail-list">
-      <li>核心问题是多机位视频采集能否稳定覆盖角色动作、视角变化和后续整理所需的信息，而不是骨骼命名或 FBX 曲线提取。</li>
-      <li>这类内容本质上属于数据源补充与采集方案验证，更贴近 CyanPuppets 这种围绕角色视频数据组织展开的方向。</li>
-      <li>因此这一栏只保留机位方案和角色预览两张图，分别对应采集布置与采集结果展示。</li>
-    </ul>
   </section>
 
   <section class="project-detail__block">
