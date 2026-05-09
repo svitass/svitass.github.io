@@ -4,7 +4,7 @@ collection: portfolio
 permalink: /portfolio/xsens-fbx-pipeline/
 excerpt: "围绕 Xsens 动作数据到 SMPLH 的重定向、骨骼数据提取，以及中英文本增强与 HumanML3D 标准化处理，构建可用于 Text2Motion 方向的数据处理管线。"
 header:
-  teaser: "projects/xsens-fbx-pipeline-cover.jpg"
+  teaser: "projects/xsens-retarget.png"
 author_profile: false
 ---
 
@@ -34,8 +34,8 @@ author_profile: false
   <section class="project-detail__block">
     <h2>技术链路</h2>
     <div class="project-visual">
-      <img src="/images/projects/xsens-fbx-pipeline-cover.jpg" alt="Xsens 到 SMPLH 与 FBX 处理流程拼图">
-      <p class="project-visual__caption">材料里能对应上的图主要覆盖三步：Xsens 采集动作导入、在中间工具里做骨骼与动画曲线处理、再把结果映射到目标 SMPLH 骨骼或统一骨架。</p>
+      <img src="/images/projects/xsens-retarget.png" alt="Xsens 动作重定向到 SMPLH 骨骼的处理界面">
+      <p class="project-visual__caption">这里更适合展示 Xsens 动作重定向到 SMPLH 的核心处理界面：先对齐骨骼语义和参考姿态，再检查关节映射、根位移和整体动作稳定性，保证后续 FBX 数据提取与统一表达可用。</p>
     </div>
     <ul class="detail-list">
       <li>先从 Xsens 动捕结果导出 FBX，保证原始动作时序、根节点位移和骨骼层级信息完整保留。</li>

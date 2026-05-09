@@ -16,6 +16,7 @@ author_profile: false
       <div class="detail-chips">
         <span>MRI Hand Data</span>
         <span>Music2Dance</span>
+        <span>CyanPuppets</span>
         <span>Speech2Gesture</span>
         <span>OPPO Internship</span>
         <span>Dataset Integration</span>
@@ -40,6 +41,7 @@ author_profile: false
     <ul class="detail-list">
       <li><strong>MRI 手部数据采集</strong>：重点关注手部动作和手型重建所需的高精度数据，价值在于能补充常规全身数据难以覆盖的手指细节和关节形态。</li>
       <li><strong>Music2Dance</strong>：持续汇总 AIST++、DanceWithMelody、PhantomDanceDataset、GDance 等公开舞蹈数据集，重点比较规模、风格和动作表示形式，并额外验证普通视频采集方案的边界。</li>
+      <li><strong>CyanPuppets</strong>：关注多机位视频采集方案在角色动作覆盖、视角切换和后续数据整理上的可行性，更偏向采集方案验证，而不是骨骼重定向或 FBX 处理。</li>
       <li><strong>Speech2Gesture</strong>：这部分对应我在 OPPO 实习参与的中文数据集采集工作，重点不是算法训练，而是围绕多视角视频做审核、筛选和可用性整理，为后续语音驱动手势任务准备可训练数据。</li>
     </ul>
   </section>
@@ -63,6 +65,19 @@ author_profile: false
       <img src="/images/projects/music2dance-capture-setup.png" alt="Music2Dance 自采动捕机位摆放示意">
       <p class="project-visual__caption">这部分自采内容主要用于验证多机位视频采集方案，而不是作为稳定可用的数据补充。实际验证后证明，这种基于普通视频的方式并不可靠：算法会预测被遮挡的部位，导致帧间动作不连续，容易出现跳变，因此没有继续作为后续数据池的核心来源。</p>
     </div>
+  </section>
+
+  <section class="project-detail__block">
+    <h2>CyanPuppets 多机位视频采集方案</h2>
+    <div class="project-visual">
+      <img src="/images/projects/xsens-fbx-pipeline-cover.jpg" alt="CyanPuppets 多机位视频采集方案界面">
+      <p class="project-visual__caption">这张图对应的是 CyanPuppets 方向里对多机位视频采集方案的验证界面。它更适合放在“多源动作数据采集与整合”里，说明这部分工作关注的是采集方案、机位覆盖和角色动作记录，而不是 Xsens 到 SMPLH 的骨骼处理流程。</p>
+    </div>
+    <ul class="detail-list">
+      <li>核心问题是多机位视频采集能否稳定覆盖角色动作、视角变化和后续整理所需的信息，而不是骨骼命名或 FBX 曲线提取。</li>
+      <li>这类内容本质上属于数据源补充与采集方案验证，更贴近 CyanPuppets 这种围绕角色视频数据组织展开的方向。</li>
+      <li>因此我把这张图从 Xsens 页面移出，改放到这里，作为多源动作数据采集方案的一部分。</li>
+    </ul>
   </section>
 
   <section class="project-detail__block">
