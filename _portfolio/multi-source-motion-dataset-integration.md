@@ -71,7 +71,7 @@ author_profile: false
         <p class="project-visual__caption">左图对应的是多机位视频采集方案本身，重点是机位间距、主辅机位关系和拍摄覆盖范围。</p>
       </div>
       <div class="project-visual">
-        <img src="/images/projects/xsens-fbx-pipeline-cover.jpg" alt="CyanPuppets 多机位视频采集结果预览">
+        <img src="/images/projects/cyanpuppets-preview.jpg" alt="CyanPuppets 多机位视频采集结果预览">
         <p class="project-visual__caption">右图对应的是采集方案验证时的角色预览界面，用来说明这部分工作最终关注的是角色动作记录与多视角素材组织。</p>
       </div>
     </div>
