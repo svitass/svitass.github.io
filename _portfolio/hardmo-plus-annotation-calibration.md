@@ -53,21 +53,4 @@ author_profile: false
     </div>
   </section>
 
-  <section class="project-detail__block">
-    <h2>为什么难</h2>
-    <ul class="detail-list">
-      <li>hardcase 场景往往伴随大幅度动作、遮挡、侧身、手脚细节丢失，常规人体重建方法容易在这些位置崩掉。</li>
-      <li>如果标注标准不统一，困难样本本身就会带入额外噪声，后面再强的模型也很难稳定收敛。</li>
-      <li>所以 HardMo++ 这类工作不只是模型堆叠，更依赖数据标准、关键部位约束和整合流程的共同校准。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>结果</h2>
-    <ul class="detail-result">
-      <li>参与了 HardMo++ 困难场景数据与重建流程相关工作，重点聚焦手部、脚部和困难姿态样本的可用性提升。</li>
-      <li>把“难样本”从单纯的失败案例，转成了可以系统分析、校准和优化的数据与重建问题。</li>
-      <li>这类 hardcase 处理经验也为后续动作生成、角色驱动和视频动作迁移项目打下了更稳的底层基础。</li>
-    </ul>
-  </section>
 </div>
