@@ -96,7 +96,6 @@ redirect_from:
           <h3 data-track-title>数字人系统与应用</h3>
           <p data-track-description>把角色、驱动、交互和场景化展示真正串起来，让数字人能力不只停留在单点算法，而能进入可演示的系统形态。</p>
         </div>
-        <a class="experience-showcase__link" href="/portfolio/">查看独立项目详情页</a>
       </div>
       <div class="experience-showcase__list" data-track-projects></div>
     </div>
