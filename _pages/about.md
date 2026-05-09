@@ -200,7 +200,7 @@ redirect_from:
         projects: [
           {
             title: "中文口型同步优化",
-            summary: "构建 5.57h 中文口型数据集，完成样本清洗、音画 offset 校正与两阶段微调；除请同事协助筛数据和一起看最终模型效果外，其余主体工作由我完成。",
+            summary: "构建 8.98h 中文口型训练数据，完成样本清洗、音画 offset 校正与两阶段微调。",
             involvement: "主要负责",
             level: 95,
             tags: ["MuseTalk", "LatentSync", "Lip Sync", "Alignment"],
