@@ -24,9 +24,8 @@ author_profile: false
     <aside class="project-detail__block">
       <h2>我的职责</h2>
       <ul class="detail-meta">
-        <li><strong>标注标准校准</strong><br>围绕手部、脚部和困难姿态场景参与标注标准对齐，减少 hardcase 样本在数据侧的噪声。</li>
-        <li><strong>关键部位细化</strong><br>关注手部与脚部关键点在重建中的约束作用，帮助后续模型更稳定地处理复杂动作。</li>
-        <li><strong>流程参与</strong><br>参与从基础人体重建到手部/脚部细节补强、再到最终 SMPL 优化整合的完整链路理解和校验。</li>
+        <li><strong>脚腕校准</strong><br>围绕脚腕相关样本做标注与结果校准，减少 hardcase 场景下脚部重建误差。</li>
+        <li><strong>侧身校准</strong><br>针对侧身姿态样本做校准与核对，提升困难姿态场景下的重建稳定性。</li>
       </ul>
     </aside>
   </div>
