@@ -44,49 +44,4 @@ author_profile: false
       <li>在动作数据落盘前完成中文转英文、同义句增强、词性提取，以及动作原点、朝向、落地状态等标准化处理，避免后续训练阶段再重复清洗。</li>
     </ul>
   </section>
-
-  <section class="project-detail__block">
-    <h2>Xsens 到 SMPLH 重定向</h2>
-    <div class="project-visual">
-      <img src="/images/projects/xsens-retarget.png" alt="Xsens 到目标骨骼的重定向界面">
-      <p class="project-visual__caption">这张图对应的是把源骨骼映射到目标骨骼的关键步骤。重点不是简单改个名字，而是把关节语义、层级关系和动作幅度稳定对齐到可复用的骨架标准上。</p>
-    </div>
-    <ul class="detail-list">
-      <li>重定向阶段需要先对齐参考姿态，避免源骨架与目标骨架的初始站姿差异把误差放大到整段动作上。</li>
-      <li>脚、手、骨盆和脊柱是最容易暴露问题的部位，必须优先检查接地、摆臂、根位移和转身时的稳定性。</li>
-      <li>统一到 SMPLH 之后，动作才能更顺利进入后续生成模型、重定向流程或数字人角色驱动链路。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>SMPLH 骨骼数据提取</h2>
-    <div class="project-visual">
-      <img src="/images/projects/xsens-smplh-extraction.jpg" alt="SMPLH 骨骼数据提取与动画曲线处理界面">
-      <p class="project-visual__caption">材料里这张界面图能支撑“骨骼数据提取”这一段：动作不是只保留可视化效果，而是需要把骨骼层级、动画曲线和时序信息拆出来，变成后续训练可直接使用的数据。</p>
-    </div>
-    <ul class="detail-list">
-      <li>从 FBX 中读取骨骼动画时，需要明确每一帧的关节旋转、位移和根节点运动，避免只保存渲染结果而丢掉训练所需的结构信息。</li>
-      <li>提取阶段同时要处理坐标系、单位、朝向和帧率统一，否则同一批动作会在后续处理时表现出明显分布偏差。</li>
-      <li>这一步决定了动作数据能否真正转成 HumanML3D 风格样本，而不是停留在软件内部可播放、但模型不可用的状态。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>文本增强与标准化</h2>
-    <ul class="detail-list">
-      <li>在动作片段整理完成后，我会先把中文描述翻译成英文，再调用 LLM 对每条句子做数据增强，生成 3 条语义一致但表达不同的英文同义句。</li>
-      <li>随后沿用 HumanML3D 的文本处理方式，提取词性等语言特征，把增强后的文本转成后续 Text2Motion 训练可直接使用的字段格式。</li>
-      <li>动作侧也按 HumanML3D 的标准化流程处理，包括统一原点、统一朝向、把角色放到地面，并整理时序表达，减少不同采集片段之间的分布偏差。</li>
-      <li>这部分增强和标准化不是为了把描述“写得更花”，而是为了让文本语义与动作表达都更稳定，方便后续模型训练和数据复用。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>结果</h2>
-    <ul class="detail-result">
-      <li>完成了 Xsens 动作到 SMPLH 骨架的统一重定向思路，减少不同来源动作数据在骨骼表达上的断层。</li>
-      <li>把 FBX 动画进一步拆成后续训练可消费的骨骼时序数据，而不是停留在单一软件内播放。</li>
-      <li>结合中英文本增强、词性提取与动作标准化处理，为 HumanML3D / Text2Motion 方向的数据制作提供了更稳定的底层管线。</li>
-    </ul>
-  </section>
 </div>
