@@ -33,15 +33,9 @@ author_profile: false
 
   <section class="project-detail__block">
     <h2>核心思路</h2>
-    <div class="project-visual-grid">
-      <div class="project-visual">
-        <img src="/images/projects/speech2gesture-method-pipeline.png" alt="Speech2Gesture 方法 pipeline 图">
-        <p class="project-visual__caption">方法图展示了语音特征、文本特征和说话人嵌入如何进入编码器与动作解码器，以及同步判别器、质量判别器和重建损失如何共同约束生成结果。</p>
-      </div>
-      <div class="project-visual">
-        <img src="/images/projects/speech2gesture-skeleton-structure.png" alt="Speech2Gesture 骨骼结构示意">
-        <p class="project-visual__caption">语音驱动输出的不是贴图或视频特效，而是可继续驱动角色的骨骼动作序列，因此动作表示和骨骼结构需要先统一下来。</p>
-      </div>
+    <div class="project-visual">
+      <img src="/images/projects/speech2gesture-method-pipeline.png" alt="Speech2Gesture 方法 pipeline 图">
+      <p class="project-visual__caption">方法图展示了语音特征、文本特征和说话人嵌入如何进入编码器与动作解码器，以及同步判别器、质量判别器和重建损失如何共同约束生成结果。</p>
     </div>
     <ul class="detail-list">
       <li>模型主链路是：语音特征、文本特征和说话人嵌入共同条件化动作解码器，逐帧生成骨骼动作序列，再由同步、质量和重建相关约束共同拉住生成质量。</li>
@@ -49,19 +43,6 @@ author_profile: false
       <li>模型重点解决动作静态、抖动、不连续和语义相关性不足几个问题。</li>
       <li>动作用 <strong>6D rotation</strong> 表示，并结合 <strong>Slerp</strong> 后处理，减少欧拉角表示带来的跳变和抖动。</li>
       <li>编码器部分同时尝试了时间维融合和特征维融合两种音频文本融合方式，解码器负责逐帧生成动作序列。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>驱动表示</h2>
-    <div class="project-visual">
-      <img src="/images/projects/speech2gesture-cover.png" alt="Speech2Gesture 骨骼动作结果预览">
-      <p class="project-visual__caption">语音驱动阶段输出的是骨骼动作结果预览。后续只要保持统一的关节点名称、父节点关系、位置/旋转/缩放格式，就可以继续接入角色驱动链路。</p>
-    </div>
-    <ul class="detail-list">
-      <li>语音驱动并不直接替代骨骼系统，而是复用现有骨骼动画输入格式，把生成动作送回角色。</li>
-      <li>这样做的好处是方法层和引擎层解耦，模型侧关注“生成什么动作”，角色侧关注“如何正确播放这些动作”。</li>
-      <li>这也是它能与既有数字人骨骼驱动流程衔接的关键，而不是变成单独的离线演示。</li>
     </ul>
   </section>
 
@@ -76,19 +57,4 @@ author_profile: false
     </div>
   </section>
 
-  <section class="project-detail__block">
-    <h2>项目结果</h2>
-    <ul class="detail-result">
-      <li>梳理并展示了从语音输入到骨骼动作输出的完整方法链路。</li>
-      <li>明确了骨骼结构、动作表示与角色驱动接口之间的衔接关系。</li>
-      <li>通过方法图、结构图和结果视频较完整地呈现了语音驱动手势生成的核心工作。</li>
-    </ul>
-  </section>
-
-  <section class="project-detail__block">
-    <h2>资料</h2>
-    <ul class="detail-list">
-      <li><a class="project-link" href="/files/speech2gesture-results.mp4">下载结果视频</a></li>
-    </ul>
-  </section>
 </div>
