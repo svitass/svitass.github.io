@@ -168,7 +168,7 @@ redirect_from:
           },
           {
             title: "Text2Motion 与去脚滑优化",
-            summary: "在 Diffusion 动作生成链路中做采样加速、文本特征缓存和脚步接地判断，兼顾生成质量与工业场景可用性。",
+            summary: "负责去脚滑模块开发，在 Diffusion 动作生成链路中完成脚步接地判断与相关优化，提升生成动作的稳定性与可用性。",
             involvement: "核心负责",
             level: 86,
             tags: ["Diffusion", "DPM-Solver++", "Foot Contact", "SMPLH"],
