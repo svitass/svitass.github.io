@@ -35,7 +35,7 @@ author_profile: false
     <h2>系统概览</h2>
     <div class="project-visual">
       <img src="/images/projects/digitsurge-overview.png" alt="DigitSurge 方法与系统概览图">
-      <p class="project-visual__caption">现有材料里的概览图展示了这套研究 demo 的基本结构：上游由文本任务规划拆分出轨迹目标和局部动作，再通过动作模型生成结果，最后落到 Unreal 手术室环境里做场景化验证。</p>
+      <p class="project-visual__caption">这张概览图展示了这套研究 demo 的基本结构：上游由文本任务规划拆分出轨迹目标和局部动作，再通过动作模型生成结果，最后落到 Unreal 手术室环境里做场景化验证。</p>
     </div>
     <ul class="detail-list">
       <li>输入端不是直接生成整段复杂手术流程，而是先把任务拆成更容易控制的轨迹目标和局部动作描述。</li>
@@ -51,7 +51,7 @@ author_profile: false
         <source src="/files/digitsurge-demo.mp4" type="video/mp4">
         您的浏览器不支持 HTML5 视频，请直接下载观看。
       </video>
-      <p class="project-visual__caption">这段视频对应材料里保留下来的 DigitSurge 演示内容，重点是展示手术室环境、角色动作和文本驱动说明如何被放进同一套研究 demo 里。也可<a href="/files/digitsurge-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
+      <p class="project-visual__caption">这段视频展示的是 DigitSurge 的实际演示内容，重点是说明手术室环境、角色动作和文本驱动指令如何被放进同一套研究 demo 里。也可<a href="/files/digitsurge-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
     </div>
   </section>
 

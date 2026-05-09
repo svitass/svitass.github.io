@@ -38,7 +38,7 @@ author_profile: false
     <h2>方法框架</h2>
     <div class="project-visual">
       <img src="/images/projects/text2hoi-method.png" alt="Text2HOI 方法框架图">
-      <p class="project-visual__caption">材料里的方法图展示了这个方向的核心：文本和物体几何一起作为输入，分别约束人体姿态分支与物体姿态分支，再通过接触引导和交互优化去减少悬浮与穿插问题。</p>
+      <p class="project-visual__caption">这张方法图展示了这个方向的核心：文本和物体几何一起作为输入，分别约束人体姿态分支与物体姿态分支，再通过接触引导和交互优化去减少悬浮与穿插问题。</p>
     </div>
     <ul class="detail-list">
       <li>文本输入不只是普通 caption，而是需要同时约束动作类型、交互对象和动作发生方式。</li>

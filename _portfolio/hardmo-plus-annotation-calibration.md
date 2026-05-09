@@ -35,7 +35,7 @@ author_profile: false
     <h2>技术链路</h2>
     <div class="project-visual">
       <img src="/images/projects/hardmo-pipeline.jpg" alt="HardMo++ 方法流程图">
-      <p class="project-visual__caption">材料里保留下来的流程图展示了这条链路的核心思路：先结合 HardMo-4DHumans 和 2D Pose Estimation 得到基础人体，再通过 HaMeR、ScoreHMR、多视角引导和 SMPL 优化把手部、脚部和整体姿态整合起来。</p>
+      <p class="project-visual__caption">这张流程图展示了这条链路的核心思路：先结合 HardMo-4DHumans 和 2D Pose Estimation 得到基础人体，再通过 HaMeR、ScoreHMR、多视角引导和 SMPL 优化把手部、脚部和整体姿态整合起来。</p>
     </div>
     <ul class="detail-list">
       <li>以 4DHumans 为基础人体重建入口，先获得可用的全身 SMPL 结果，而不是一开始就直接处理所有细节。</li>
@@ -49,7 +49,7 @@ author_profile: false
     <h2>效果对比</h2>
     <div class="project-visual">
       <img src="/images/projects/hardmo-results.jpg" alt="HardMo++ 效果对比图">
-      <p class="project-visual__caption">这张结果图对应材料里的 HardMo++ 页面，按输入、4DHumans、HardMo、HardMoPlus 和最终 pipeline 的顺序展示对比，能直观看到在复杂动作、肢体张开和足部接地场景下，结果会逐步稳定下来。</p>
+      <p class="project-visual__caption">这张结果图按输入、4DHumans、HardMo、HardMoPlus 和最终 pipeline 的顺序展示对比，能直观看到在复杂动作、肢体张开和足部接地场景下，结果会逐步稳定下来。</p>
     </div>
   </section>
 

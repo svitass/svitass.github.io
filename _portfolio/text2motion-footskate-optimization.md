@@ -57,7 +57,7 @@ author_profile: false
     </div>
     <div class="project-visual">
       <img src="/images/projects/stablemofusion-footskate-result.png" alt="Text2Motion 去脚滑前后效果对比图">
-      <p class="project-visual__caption">材料中的定性结果图直接展示了脚滑基线与优化后结果的差异，重点是脚步接地更可信。</p>
+      <p class="project-visual__caption">这张定性结果图直接展示了脚滑基线与优化后结果的差异，重点是脚步接地更可信。</p>
     </div>
   </section>
 

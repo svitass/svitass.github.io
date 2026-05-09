@@ -46,7 +46,7 @@ author_profile: false
     <h2>效果展示</h2>
     <div class="project-visual">
       <img src="/images/projects/video-replacement-pipeline.png" alt="视频人物替换为 3D 虚拟角色流程图">
-      <p class="project-visual__caption">材料里保留下来的实际流程图，覆盖人物分离、背景恢复、动作获取、角色重定向和最终合成几个关键环节。</p>
+      <p class="project-visual__caption">这张实际流程图覆盖人物分离、背景恢复、动作获取、角色重定向和最终合成几个关键环节。</p>
     </div>
     <div class="project-visual-grid">
       <div class="project-visual">

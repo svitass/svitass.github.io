@@ -51,14 +51,14 @@ author_profile: false
     <div class="project-visual-grid">
       <div class="project-visual">
         <img src="/images/projects/music2dance-dataset-table.png" alt="Music2Dance 相关公开数据集统计表">
-        <p class="project-visual__caption">材料里保留了公开 Music2Dance 数据源汇总，用于快速判断不同舞蹈数据源的规模，并对比它们各自动作表示形式是否适合纳入后续数据池。</p>
+        <p class="project-visual__caption">这里汇总了公开 Music2Dance 数据源，用于快速判断不同舞蹈数据源的规模，并对比它们各自动作表示形式是否适合纳入后续数据池。</p>
       </div>
       <div class="project-visual">
         <video controls playsinline preload="metadata" poster="/images/projects/music2dance-dataset-demo-poster.jpg">
           <source src="/files/music2dance-dataset-demo.mp4" type="video/mp4">
           您的浏览器不支持 HTML5 视频，请直接下载观看。
         </video>
-        <p class="project-visual__caption">这段跳舞视频对应材料里 Music2Dance 方向保留下来的动作预览，用来说明这部分工作关注的是音乐驱动舞蹈动作数据及其表现形式。也可<a href="/files/music2dance-dataset-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
+        <p class="project-visual__caption">这段跳舞视频展示的是 Music2Dance 方向的动作预览，用来说明这部分工作关注的是音乐驱动舞蹈动作数据及其表现形式。也可<a href="/files/music2dance-dataset-demo.mp4" target="_blank" rel="noopener noreferrer">单独打开</a>查看原视频。</p>
       </div>
     </div>
   </section>
@@ -82,7 +82,7 @@ author_profile: false
     <p class="project-detail__lead">这部分对应的是中文多视角数据集采集与审核工作，重点是围绕 6 个视角下的视频做数据筛选和可用性整理，而不是展示单人动作结果预览。</p>
     <ul class="detail-list">
       <li><strong>工作背景</strong>：Speech2Gesture 领域中文数据集缺乏，因此在 OPPO 实习阶段补了一部分中文语音驱动手势数据采集与整理工作。</li>
-      <li><strong>工作内容</strong>：围绕 6 个视角下的视频做审核、筛选和可用性判断，确保留下来的片段能够服务后续手势生成与驱动任务。</li>
+      <li><strong>工作内容</strong>：围绕 6 个视角下的视频做审核、筛选和可用性判断，确保最终筛出的片段能够服务后续手势生成与驱动任务。</li>
       <li><strong>结果</strong>：累计采集 437 条数据，最终合格 352 条，形成了可继续处理和训练的中文数据基础。</li>
       <li><strong>后处理</strong>：后续数据处理沿用 <code>EasyMocap</code> 这条链路，把视频进一步整理成可用的动作表示。</li>
     </ul>
