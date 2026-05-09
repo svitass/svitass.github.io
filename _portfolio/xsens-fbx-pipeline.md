@@ -41,7 +41,7 @@ author_profile: false
         <img src="/images/projects/xsens-smplh-extraction.jpg" alt="SMPLH 骨骼数据提取与映射检查界面">
       </div>
     </div>
-    <p class="project-visual__caption">这两张图分别对应 Xsens 动作重定向和后续骨骼数据提取的关键界面：先对齐骨骼语义和参考姿态，检查关节映射、根位移和整体动作稳定性，再把 FBX 动画整理成统一的 SMPLH 表达与后续可消费的结构化数据。</p>
+    <p class="project-visual__caption">这两张图分别对应 Xsens 动作重定向和后续骨骼数据提取的关键界面：先对齐骨骼语义和参考姿态，检查关节映射、根位移和整体动作稳定性。</p>
     <ul class="detail-list">
       <li>先从 Xsens 动捕结果导出 FBX，保证原始动作时序、根节点位移和骨骼层级信息完整保留。</li>
       <li>在中间处理环节完成骨骼映射与动画检查，把原始 Xsens 骨架统一到后续使用的 SMPLH 表达。</li>
